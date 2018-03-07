@@ -4,22 +4,23 @@ using UnityEngine;
 
 public class FirstPerosn : MonoBehaviour {
 
-    Vector2 mouse;
+    Vector2 mouse; /* créer un nouveau vecteur en dim 2 */ 
     Vector2 smooth;
-    public float sensitivity;
+    public float sensitivity; /* créer un floatant, une constante */ 
     public float smoothing;
 
-    GameObject character;
+    GameObject character; /*créer un objet "personnage", une entité dans les scenes */ 
 
-	void Start ()
+	void Start () /* début, statut de base */
     {
-        character = this.transform.parent.gameObject;
+        character = this.transform.parent.gameObject; /* Transform: permet de toucher a la postion, la rotation et l'echelle du gameObject, celui ci est toujours lié au Transform.
+                                                         Le parent permet de créer une hierarchie */ 
 	}
 	
-	void Update ()
+	void Update () /* "rafraichissement" apres chaque mouvement */ 
     {
         var md = new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y"));
-        md = Vector2.Scale(md, new Vector2(sensitivity * smoothing, sensitivity * smoothing));
+        md = Vector2.Scale(md, new Vector2(sensitivity * smoothing, sensitivity * smoothing)); /* scale: multiplie les deux composents des deux vecteurs */ 
 
         smooth.x = Mathf.Lerp(smooth.x, md.x, 1f / smoothing);
         smooth.y = Mathf.Lerp(smooth.y, md.y, 1f / smoothing);
