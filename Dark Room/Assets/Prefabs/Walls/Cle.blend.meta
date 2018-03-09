@@ -3,22 +3,35 @@ guid: c9f6c784ca920df4983e2654f3671268
 timeCreated: 1519895797
 licenseType: Free
 ModelImporter:
-  serializedVersion: 22
+  serializedVersion: 21
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Circle_MeshPart0
+    100004: Circle_MeshPart1
+    100006: Circle_MeshPart2
     400000: //RootNode
+    400002: Circle_MeshPart0
+    400004: Circle_MeshPart1
+    400006: Circle_MeshPart2
     2100000: Material_005__TexturesCom_MetalBare0207_2_seamless_S_jpg
     2300000: //RootNode
+    2300002: Circle_MeshPart0
+    2300004: Circle_MeshPart1
+    2300006: Circle_MeshPart2
     3300000: //RootNode
+    3300002: Circle_MeshPart0
+    3300004: Circle_MeshPart1
+    3300006: Circle_MeshPart2
     4300000: Circle
+    4300002: Circle_MeshPart0
+    4300004: Circle_MeshPart1
+    4300006: Circle_MeshPart2
     7400000: Default Take
     9500000: //RootNode
-  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
-    materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -31,7 +44,6 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    importAnimatedCustomProperties: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
@@ -56,8 +68,6 @@ ModelImporter:
     optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
-    preserveHierarchy: 0
-    indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88

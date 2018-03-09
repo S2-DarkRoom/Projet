@@ -1,0 +1,37 @@
+.Introduction
+{
+	font-size: 1.2em; /* taille du texte */ 
+	font-family: Arial; /* police */ 
+	font-style: italic; 
+	font-weight: bold;
+	text-decoration: underline;
+	text-align: justify; /* aligne le texte sur toute la largeur */ 
+	width: 600px;
+	margin: auto;
+	border: 1px solid black; 
+	text-align: justify;
+	padding: 12px; 
+	margin-bottom: 20px; 
+}
+
+h1
+{
+	text-align: center;
+	border: 3px blue groove; /* ajoute une bordure */ 
+	border-radius: 20px / 10px; /* ajoute un angle a la bordure */ 
+	box-shadow: 6px 6px 6px black; /* ajoute une ombre a la bordure */ 
+	text-shadow: 6px 6px 6px black; /* ajoute une ombre au texte */ 
+	width: 600px; /* manipule la largeur */ 
+	height: ; /* manippule la hauteur */ 
+	min-width: ; /* manipule la largeur et la hauuteur max ou min que l'on veut sur un paragrphe ou un titre */ 
+	max-width: ;
+	min-height: ;
+	max-height: ; 
+}
+
+ body
+{
+	background-color: white; /* couleur de fond */ 
+	background-image: url(""); /* image de fond */ 
+	background-attachment: fixed; /* le background ne suis plus le texte */ 
+} 
