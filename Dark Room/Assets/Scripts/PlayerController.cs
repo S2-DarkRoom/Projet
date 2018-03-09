@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour {
         Cursor.lockState = CursorLockMode.Locked;
 	}
 	
-	void Update ()
+	void FixedUpdate ()
     {
         float moveHorizontal = Input.GetAxis("Horizontal") * speed;
         float moveVertical = Input.GetAxis("Vertical") * speed;
