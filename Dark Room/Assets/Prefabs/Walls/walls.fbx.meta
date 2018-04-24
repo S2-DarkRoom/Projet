@@ -3,7 +3,7 @@ guid: 09c6af7c52c0a7a49ac0b1336af19e97
 timeCreated: 1520778218
 licenseType: Free
 ModelImporter:
-  serializedVersion: 22
+  serializedVersion: 21
   fileIDToRecycleName:
     100000: Cube.001
     100002: Cube.002
@@ -25,6 +25,8 @@ ModelImporter:
     100034: DoorFrame.004
     100036: Floor
     100038: //RootNode
+    100040: DoorFrame.004_MeshPart0
+    100042: DoorFrame.004_MeshPart1
     400000: Cube.001
     400002: Cube.002
     400004: Cube.003
@@ -45,6 +47,8 @@ ModelImporter:
     400034: DoorFrame.004
     400036: Floor
     400038: //RootNode
+    400040: DoorFrame.004_MeshPart0
+    400042: DoorFrame.004_MeshPart1
     2100000: No Name
     2100002: Material
     2100004: Material.001
@@ -67,6 +71,8 @@ ModelImporter:
     2300032: DoorFrame.002
     2300034: DoorFrame.004
     2300036: Floor
+    2300038: DoorFrame.004_MeshPart0
+    2300040: DoorFrame.004_MeshPart1
     3300000: Cube.001
     3300002: Cube.002
     3300004: Cube.003
@@ -86,6 +92,8 @@ ModelImporter:
     3300032: DoorFrame.002
     3300034: DoorFrame.004
     3300036: Floor
+    3300038: DoorFrame.004_MeshPart0
+    3300040: DoorFrame.004_MeshPart1
     4300000: DoorFrame
     4300002: Floor
     4300004: Door
@@ -105,12 +113,12 @@ ModelImporter:
     4300032: DoorFrame.004
     4300034: Door.006
     4300036: Door.007
-  externalObjects: {}
+    4300038: DoorFrame.004_MeshPart0
+    4300040: DoorFrame.004_MeshPart1
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
-    materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -123,7 +131,6 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    importAnimatedCustomProperties: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
@@ -148,8 +155,6 @@ ModelImporter:
     optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
-    preserveHierarchy: 0
-    indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88

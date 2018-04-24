@@ -8,13 +8,13 @@ public class Minuteur : MonoBehaviour
 
     private float time = 3600.0f;
 
+
     void Update ()
     {
         time -= Time.deltaTime; 
-        if (time <= 0)
-        {
-            time = 0;
-        }
+		if (time <= 0) {
+			time = 0;
+		}
 	}
     void OnGUI()
     {
