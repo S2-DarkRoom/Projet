@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI; 
 
 public class Minuteur : MonoBehaviour
@@ -12,8 +13,10 @@ public class Minuteur : MonoBehaviour
     void Update ()
     {
         time -= Time.deltaTime; 
-		if (time <= 0) {
+		if (time <= 0) 
+		{
 			time = 0;
+			SceneManager.LoadScene("Menu");
 		}
 	}
     void OnGUI()
