@@ -2,7 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DeleteCamera : MonoBehaviour {
+public class DeleteCamera : MonoBehaviour
+{
+    public GameObject player;
+
+    void Start()
+    {
+        player.SetActive(false);
+    }
 
     void Update()
     {
@@ -17,6 +24,7 @@ public class DeleteCamera : MonoBehaviour {
 
     void Delete ()
     {
+        player.SetActive(true);
         Destroy(gameObject);
 	}
 }

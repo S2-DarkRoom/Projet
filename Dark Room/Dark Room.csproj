@@ -241,15 +241,15 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\AudioManager.cs" />
-    <Compile Include="Assets\DeleteCamera.cs" />
-    <Compile Include="Assets\InventorySlot.cs" />
-    <Compile Include="Assets\InventoryUI.cs" />
+    <Compile Include="Assets\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Scripts\ChangeScene.cs" />
+    <Compile Include="Assets\Scripts\DeleteCamera.cs" />
     <Compile Include="Assets\Scripts\Doors.cs" />
     <Compile Include="Assets\Scripts\FirstPerson.cs" />
     <Compile Include="Assets\Scripts\GameSettings.cs" />
     <Compile Include="Assets\Scripts\Inventory.cs" />
+    <Compile Include="Assets\Scripts\InventorySlot.cs" />
+    <Compile Include="Assets\Scripts\InventoryUI.cs" />
     <Compile Include="Assets\Scripts\MenuPrincipal.cs" />
     <Compile Include="Assets\Scripts\Minuteur.cs" />
     <Compile Include="Assets\Scripts\Pausemenu.cs" />
@@ -257,7 +257,7 @@
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\RayCast.cs" />
     <Compile Include="Assets\Scripts\SettingsManager.cs" />
-    <Compile Include="Assets\Sound.cs" />
+    <Compile Include="Assets\Scripts\Sound.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
