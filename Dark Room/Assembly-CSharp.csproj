@@ -55,6 +55,7 @@
      <Compile Include="Assets\CameraScript.cs" />
      <Compile Include="Assets\InventorySlot.cs" />
      <Compile Include="Assets\InventoryUI.cs" />
+     <Compile Include="Assets\PlayerController_multi.cs" />
      <Compile Include="Assets\Scripts\ChangeScene.cs" />
      <Compile Include="Assets\Scripts\Doors.cs" />
      <Compile Include="Assets\Scripts\FirstPerson.cs" />

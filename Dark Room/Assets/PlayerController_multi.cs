@@ -1,13 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
 
-public class PlayerController :  MonoBehaviour
+public class PlayerController : NetworkBehaviour
 {
 
     public float speed;
-	
-	void FixedUpdate ()
+
+    void FixedUpdate()
     {
         float moveHorizontal = Input.GetAxis("Horizontal") * speed;
         float moveVertical = Input.GetAxis("Vertical") * speed;
