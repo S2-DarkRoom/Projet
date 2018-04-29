@@ -17,7 +17,7 @@ public class MenuPrincipal : MonoBehaviour
 
 	public void PlayExplorer()
 	{
-		SceneManager.LoadScene("Explore");
+		SceneManager.LoadScene("Game 1");
 	}
 
     public void Exit()
