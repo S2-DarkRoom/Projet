@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using unityEngine.Network;
+using UnityEngine.Networking;
 
 public class PlayerSetup : NetworkBehaviour
 { 
@@ -8,7 +8,7 @@ public class PlayerSetup : NetworkBehaviour
 
     private void Start()
     {
-        if (!isPlayerController)
+        if (!isLocalPlayer)
         {
             for (int i = 0; i < componentsToDisable.Length; i++)
             {
