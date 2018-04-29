@@ -5,10 +5,32 @@ using UnityEngine.SceneManagement;
 
 public class ChangeScene : MonoBehaviour {
 
-	void Start () {
-		
-	}
+	void Start ()
+    {
+        Scene sc = SceneManager.GetActiveScene();
 
+        if (sc.name == "TitleGame")
+        {
+            StartCoroutine(Wait());
+            SceneManager.LoadScene("TitleCredit");
+        }
+            
+        else if (sc.name == "TitleCredit")
+        {
+            StartCoroutine(Wait());
+            SceneManager.LoadScene("Menu");
+        }
+            
+        else if (sc.name == "Menu")
+            SceneManager.LoadScene("Game");
+    }
+
+    IEnumerator Wait()
+    {
+        yield return new WaitForSecondsRealtime(20);
+    }
+
+    /*
 	void Update () 
 	{
         Scene sc = SceneManager.GetActiveScene();
@@ -23,4 +45,7 @@ public class ChangeScene : MonoBehaviour {
                 SceneManager.LoadScene("Game");
         }
 	}
+    */
+
+
 }
