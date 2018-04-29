@@ -26,7 +26,6 @@ public class Doors : MonoBehaviour {
                     Debug.Log("Opening Door");
                     _animator.SetBool("open", true);
 					FindObjectOfType<AudioManager> ().Play ("Porte");
-					//FindObjectOfType<AudioManager> ().Play ("Theme2");
                     return true;
                 }
             } 
