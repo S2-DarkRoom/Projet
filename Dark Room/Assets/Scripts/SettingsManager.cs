@@ -84,7 +84,7 @@ public class SettingsManager : MonoBehaviour {
 
 	public void LoadSettings ()
 	{
-		gameSettings = JsonUtility.FromJson<GameSettings> (File.ReadAllText(Application.persistentDataPath + "/gamesettings.json")); 
+		/*gameSettings = JsonUtility.FromJson<GameSettings> (File.ReadAllText(Application.persistentDataPath + "/gamesettings.json")); */
 
 		musicVolumeSlider.value = gameSettings.musicVolume; 
 		antialiasingDropdown.value = gameSettings.antialiasing; 
