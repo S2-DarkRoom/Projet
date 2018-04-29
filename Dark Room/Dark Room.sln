@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dark Room", "Assembly-CSharp.csproj", "{3E8C360C-5E7A-498B-2132-DC030F401F3C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dark Room", "Assembly-CSharp-firstpass.csproj", "{CAEA64BD-509F-DAD1-0D41-6BF8AC04FCF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dark Room", "Assembly-CSharp-Editor-firstpass.csproj", "{2C0317F9-1347-EF93-9DB2-A2CDC680BC62}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +17,14 @@ Global
 		{3E8C360C-5E7A-498B-2132-DC030F401F3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E8C360C-5E7A-498B-2132-DC030F401F3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E8C360C-5E7A-498B-2132-DC030F401F3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAEA64BD-509F-DAD1-0D41-6BF8AC04FCF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAEA64BD-509F-DAD1-0D41-6BF8AC04FCF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAEA64BD-509F-DAD1-0D41-6BF8AC04FCF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAEA64BD-509F-DAD1-0D41-6BF8AC04FCF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C0317F9-1347-EF93-9DB2-A2CDC680BC62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C0317F9-1347-EF93-9DB2-A2CDC680BC62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C0317F9-1347-EF93-9DB2-A2CDC680BC62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C0317F9-1347-EF93-9DB2-A2CDC680BC62}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
