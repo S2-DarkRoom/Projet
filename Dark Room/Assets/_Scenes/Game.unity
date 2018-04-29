@@ -14266,6 +14266,7 @@ GameObject:
   - component: {fileID: 1437976096}
   - component: {fileID: 1437976101}
   - component: {fileID: 1437976102}
+  - component: {fileID: 1437976103}
   m_Layer: 0
   m_Name: Camera_Intro
   m_TagString: Untagged
@@ -14346,8 +14347,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1437976095}
-  m_LocalRotation: {x: 0.12535577, y: -0.80635464, z: -0.5477432, w: -0.1845411}
-  m_LocalPosition: {x: 21.24989, y: 1.8590922, z: -5.8495255}
+  m_LocalRotation: {x: -0.006337092, y: 0.85733145, z: -0.01055798, w: -0.51461756}
+  m_LocalPosition: {x: 21.273167, y: 2.3448963, z: -5.568468}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -14371,11 +14372,11 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1437976095}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 9dea44dea18b9534894216eb2f1a55cc, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -14445,6 +14446,17 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &1437976103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1437976095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3f3edd92b623244c84ccfd8d7cc96d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1446441820
 GameObject:
   m_ObjectHideFlags: 0
