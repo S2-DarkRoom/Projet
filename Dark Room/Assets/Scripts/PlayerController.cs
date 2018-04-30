@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour {
+public class PlayerController : MonoBehaviour
+{
 
     public float speed;
-	
-	void FixedUpdate ()
+
+    void FixedUpdate()
     {
         float moveHorizontal = Input.GetAxis("Horizontal") * speed;
         float moveVertical = Input.GetAxis("Vertical") * speed;
