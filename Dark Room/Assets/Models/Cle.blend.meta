@@ -1,9 +1,9 @@
 fileFormatVersion: 2
-guid: 8a1b9f83b2f268349baa00c1167ddcb4
+guid: c9f6c784ca920df4983e2654f3671268
 timeCreated: 1519895797
 licenseType: Free
 ModelImporter:
-  serializedVersion: 22
+  serializedVersion: 21
   fileIDToRecycleName:
     100000: //RootNode
     100002: Circle_MeshPart0
@@ -28,17 +28,10 @@ ModelImporter:
     4300006: Circle_MeshPart2
     7400000: Default Take
     9500000: //RootNode
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Material_005__TexturesCom_MetalBare0207_2_seamless_S_jpg
-    second: {fileID: 2100000, guid: 4391eceab494f4b46ae2d84ba0598eab, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
-    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -51,7 +44,6 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    importAnimatedCustomProperties: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5

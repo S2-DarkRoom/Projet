@@ -1,22 +1,42 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class PlayerController :  MonoBehaviour
+[RequireComponent(typeof(PlayerMotor))]
+public class PlayerController : MonoBehaviour
 {
+    [SerializeField]
+    private float speed;
+    [SerializeField]
+    private float lookSensitivity = 3f;
 
-    public float speed;
-	
-	void FixedUpdate ()
+    private PlayerMotor motor;
+
+    private void Start()
     {
-        float moveHorizontal = Input.GetAxis("Horizontal") * speed;
-        float moveVertical = Input.GetAxis("Vertical") * speed;
-
-        moveHorizontal *= Time.deltaTime;
-        moveVertical *= Time.deltaTime;
-
-        Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
-
-        transform.Translate(movement);
+        motor = GetComponent<PlayerMotor>();
     }
-}
+
+    private void Update()
+    {
+        float _xMov = Input.GetAxisRaw("Horizontal");
+        float _zMov = Input.GetAxisRaw("Vertical");
+
+        Vector3 _moveHorizontal = transform.right * _xMov;
+        Vector3 _moveVertical = transform.forward * _zMov;
+
+        Vector3 _velocity = (_moveHorizontal + _moveVertical).normalized * speed;
+
+        motor.Move(_velocity);
+
+        float _yRot = Input.GetAxisRaw("Mouse X");
+
+        Vector3 _rotation = new Vector3(0, _yRot, 0) * lookSensitivity;
+
+        motor.Rotate(_rotation);
+
+        float _xRot = Input.GetAxisRaw("Mouse Y");
+
+        Vector3 _cameraRotation = new Vector3(_xRot, 0, 0) * lookSensitivity;
+
+        motor.RotateCamera(_cameraRotation);
+    }
+ }

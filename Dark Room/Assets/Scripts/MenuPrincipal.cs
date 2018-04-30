@@ -10,6 +10,16 @@ public class MenuPrincipal : MonoBehaviour
         SceneManager.LoadScene("Game");
     }
 
+	public void PlayMulti()
+	{
+		SceneManager.LoadScene("Multi");
+	}
+
+	public void PlayExplorer()
+	{
+		SceneManager.LoadScene("Explore");
+	}
+
     public void Exit()
     {
         Application.Quit();

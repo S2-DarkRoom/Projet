@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d23eda2c3d538524bb07143bb1a97bcc
+guid: 3356cae5aca0c3e408a2fc6b510c01e2
 timeCreated: 1524928106
 licenseType: Free
 ModelImporter:
@@ -49,11 +49,13 @@ ModelImporter:
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
