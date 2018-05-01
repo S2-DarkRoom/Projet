@@ -76,7 +76,7 @@
      <Compile Include="Assets\Scripts\SettingsManager.cs" />
      <Compile Include="Assets\Scripts\Sound.cs" />
      <None Include="Assets\Models\plants\dd\AlphaTest-Bumped.shader" />
-     <None Include="Assets\Blood decal pack\readme.txt" />
+     <None Include="Assets\Models\Blood decal pack\readme.txt" />
      <None Include="Assets\Models\AdventureForge\CabinetsAndShelvesReadme.txt" />
      <None Include="Assets\Standard Assets\Fonts\OpenSans\License!.txt" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
