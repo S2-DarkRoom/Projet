@@ -25,7 +25,8 @@ public class Doors : MonoBehaviour {
                 {
                     Debug.Log("Opening Door");
                     _animator.SetBool("open", true);
-					FindObjectOfType<AudioManager> ().Play ("Porte");
+                    if (name == "Door")
+                        FindObjectOfType<AudioManager> ().Play ("Porte");
                     return true;
                 }
             } 
@@ -33,7 +34,8 @@ public class Doors : MonoBehaviour {
         }
 
         _animator.SetBool("open", true);
-		FindObjectOfType<AudioManager> ().Play ("Porte");
+        if (name == "Door")
+		    FindObjectOfType<AudioManager> ().Play ("Porte");
         return true;
     }
 }
