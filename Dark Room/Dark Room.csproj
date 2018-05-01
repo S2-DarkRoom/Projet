@@ -247,6 +247,7 @@
     <Compile Include="Assets\Scripts\DeleteCamera.cs" />
     <Compile Include="Assets\Scripts\Doors.cs" />
     <Compile Include="Assets\Scripts\FirstPerson.cs" />
+    <Compile Include="Assets\Scripts\flashlight.cs" />
     <Compile Include="Assets\Scripts\GameSettings.cs" />
     <Compile Include="Assets\Scripts\Inventory.cs" />
     <Compile Include="Assets\Scripts\InventorySlot.cs" />
@@ -265,6 +266,7 @@
     <Compile Include="Assets\Scripts\Sound.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Models\AdventureForge\CabinetsAndShelvesReadme.txt" />
     <None Include="Assets\Models\plants\dd\AlphaTest-Bumped.shader" />
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
     <None Include="Assets\Standard Assets\Fonts\OpenSans\License!.txt" />

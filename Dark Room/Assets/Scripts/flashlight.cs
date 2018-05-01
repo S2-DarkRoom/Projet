@@ -15,9 +15,11 @@ public class flashlight : MonoBehaviour {
     private GameObject batteryPickedUp;
 
 	// Use this for initialization
-	void Start () {
+	void Start ()
+    {
         maxnrj = 10 * batteries;
         currentnrj = maxnrj;
+        lightobj.SetActive(false);
 	}
 	
 	// Update is called once per frame
