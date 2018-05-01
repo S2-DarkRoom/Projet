@@ -15,6 +15,11 @@ public class Doors : MonoBehaviour {
         _animator = GetComponent<Animator>();
     }
 
+    public void Close()
+    {
+        _animator.SetBool("open", false);
+    }
+
     public bool TryOpen()
     {
         if (locked == true)
@@ -23,9 +28,8 @@ public class Doors : MonoBehaviour {
             {
                 if (Inventory.items[i].name == this.name)
                 {
-                    Debug.Log("Opening Door");
                     _animator.SetBool("open", true);
-                    if (name == "Door")
+                    if (name != "Interactible")
                         FindObjectOfType<AudioManager> ().Play ("Porte");
                     return true;
                 }
@@ -34,7 +38,7 @@ public class Doors : MonoBehaviour {
         }
 
         _animator.SetBool("open", true);
-        if (name == "Door")
+        if (name != "Interactible")
 		    FindObjectOfType<AudioManager> ().Play ("Porte");
         return true;
     }

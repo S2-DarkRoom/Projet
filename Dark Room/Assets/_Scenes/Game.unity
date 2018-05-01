@@ -3958,7 +3958,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f3e3aeb3a4c2134e862415cb0866e2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Door
+  name: DoorToilet1
   open: 0
   locked: 1
 --- !u!95 &285296130
@@ -6082,7 +6082,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f3e3aeb3a4c2134e862415cb0866e2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Door
+  name: DoorToilet3
   open: 0
   locked: 1
 --- !u!95 &505254074
@@ -6498,7 +6498,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f3e3aeb3a4c2134e862415cb0866e2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Door
+  name: DoorSecret
   open: 0
   locked: 1
 --- !u!95 &534506357
@@ -8354,7 +8354,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f3e3aeb3a4c2134e862415cb0866e2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Drawer
+  name: Interactible
   open: 0
   locked: 1
 --- !u!54 &724754815
@@ -12687,7 +12687,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f3e3aeb3a4c2134e862415cb0866e2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Chest
+  name: Interactible
   open: 0
   locked: 0
 --- !u!54 &1145940311
@@ -13930,7 +13930,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f3e3aeb3a4c2134e862415cb0866e2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Door
+  name: Door1
   open: 0
   locked: 1
 --- !u!95 &1306329571
@@ -14970,6 +14970,10 @@ Prefab:
       propertyPath: m_TagString
       value: doors
       objectReference: {fileID: 0}
+    - target: {fileID: 9575536, guid: c7ba8aacb1d261048bab2170e7576836, type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 6c7c52101fda1cf4d8eb5a7ee7789202, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c7ba8aacb1d261048bab2170e7576836, type: 2}
   m_IsPrefabParent: 0
@@ -15654,7 +15658,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f3e3aeb3a4c2134e862415cb0866e2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Door
+  name: Door3
   open: 0
   locked: 1
 --- !u!95 &1458081887
@@ -19957,7 +19961,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f3e3aeb3a4c2134e862415cb0866e2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Door
+  name: DoorToilet2
   open: 0
   locked: 0
 --- !u!95 &1826194087
@@ -20076,7 +20080,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f3e3aeb3a4c2134e862415cb0866e2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Door
+  name: Door2
   open: 0
   locked: 0
 --- !u!95 &1831951955
