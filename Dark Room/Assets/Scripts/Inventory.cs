@@ -1,9 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Networking;
 
-public class Inventory : NetworkBehaviour
+public class Inventory : MonoBehaviour
 {
     #region Singleton
     public delegate void OnItemChanged();

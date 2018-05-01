@@ -1942,7 +1942,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 195900225}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -65.7251, y: -157, z: 0}
+  m_LocalPosition: {x: -58.66507, y: -157, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1891040711}
@@ -2969,12 +2969,12 @@ Prefab:
     - target: {fileID: 224902760947759188, guid: 339103360b2dbbf4a9236dd441c794a7,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 409.5
+      value: 306
       objectReference: {fileID: 0}
     - target: {fileID: 224902760947759188, guid: 339103360b2dbbf4a9236dd441c794a7,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 163
+      value: 298.5
       objectReference: {fileID: 0}
     - target: {fileID: 224902760947759188, guid: 339103360b2dbbf4a9236dd441c794a7,
         type: 2}
@@ -3856,6 +3856,8 @@ GameObject:
   - component: {fileID: 285296128}
   - component: {fileID: 285296129}
   - component: {fileID: 285296130}
+  - component: {fileID: 285296132}
+  - component: {fileID: 285296131}
   m_Layer: 0
   m_Name: DoorToilet1
   m_TagString: doors
@@ -3962,6 +3964,57 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &285296131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 285296124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1590678366, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Animator: {fileID: 285296130}
+  m_ParameterSendBits: 0
+  param0: 
+  param1: 
+  param2: 
+  param3: 
+  param4: 
+  param5: 
+--- !u!114 &285296132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 285296124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 19
+    i1: 106
+    i2: 122
+    i3: 108
+    i4: 5
+    i5: 136
+    i6: 144
+    i7: 132
+    i8: 26
+    i9: 238
+    i10: 62
+    i11: 250
+    i12: 52
+    i13: 69
+    i14: 87
+    i15: 99
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 1
 --- !u!224 &290783279
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5010,7 +5063,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 443090649}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 267.2749, y: 92, z: 0}
+  m_LocalPosition: {x: 274.33493, y: 92, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2008422862}
@@ -5569,7 +5622,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 498711599}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -101.066895, y: 32, z: 0}
+  m_LocalPosition: {x: -108.12692, y: 32, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 724057806}
@@ -5616,7 +5669,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 500786525}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 102.2749, y: -349, z: 0}
+  m_LocalPosition: {x: 109.33493, y: -349, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 354583677}
@@ -5740,6 +5793,8 @@ GameObject:
   - component: {fileID: 505254072}
   - component: {fileID: 505254073}
   - component: {fileID: 505254074}
+  - component: {fileID: 505254076}
+  - component: {fileID: 505254075}
   m_Layer: 0
   m_Name: DoorToilet3
   m_TagString: doors
@@ -5846,6 +5901,57 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &505254075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 505254068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1590678366, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Animator: {fileID: 505254074}
+  m_ParameterSendBits: 0
+  param0: 
+  param1: 
+  param2: 
+  param3: 
+  param4: 
+  param5: 
+--- !u!114 &505254076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 505254068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 19
+    i1: 106
+    i2: 122
+    i3: 108
+    i4: 5
+    i5: 136
+    i6: 144
+    i7: 132
+    i8: 26
+    i9: 238
+    i10: 62
+    i11: 250
+    i12: 52
+    i13: 69
+    i14: 87
+    i15: 99
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 1
 --- !u!1 &520855446
 GameObject:
   m_ObjectHideFlags: 0
@@ -6242,6 +6348,8 @@ GameObject:
   - component: {fileID: 534506355}
   - component: {fileID: 534506356}
   - component: {fileID: 534506357}
+  - component: {fileID: 534506359}
+  - component: {fileID: 534506358}
   m_Layer: 0
   m_Name: DoorSecret
   m_TagString: doors
@@ -6348,6 +6456,57 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &534506358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 534506351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1590678366, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Animator: {fileID: 534506357}
+  m_ParameterSendBits: 0
+  param0: 
+  param1: 
+  param2: 
+  param3: 
+  param4: 
+  param5: 
+--- !u!114 &534506359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 534506351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 19
+    i1: 106
+    i2: 122
+    i3: 108
+    i4: 5
+    i5: 136
+    i6: 144
+    i7: 132
+    i8: 26
+    i9: 238
+    i10: 62
+    i11: 250
+    i12: 52
+    i13: 69
+    i14: 87
+    i15: 99
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 1
 --- !u!224 &534518389
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6955,7 +7114,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 585271479}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -125.7251, y: -68, z: 0}
+  m_LocalPosition: {x: -118.66507, y: -68, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1673179045}
@@ -7856,6 +8015,7 @@ GameObject:
   - component: {fileID: 696083006}
   - component: {fileID: 696083005}
   - component: {fileID: 696083004}
+  - component: {fileID: 696083009}
   - component: {fileID: 696083008}
   m_Layer: 5
   m_Name: InventoryCanvas
@@ -7928,7 +8088,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 696083003}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 409.5, y: 163, z: 0}
+  m_LocalPosition: {x: 306, y: 298.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1052778868}
@@ -7948,7 +8108,39 @@ MonoBehaviour:
   m_GameObject: {fileID: 696083003}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f255cc3c97d7ed4791b159780d9fe0a, type: 3}
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 0
+    i2: 0
+    i3: 0
+    i4: 0
+    i5: 0
+    i6: 0
+    i7: 0
+    i8: 0
+    i9: 0
+    i10: 0
+    i11: 0
+    i12: 0
+    i13: 0
+    i14: 0
+    i15: 0
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 1
+--- !u!114 &696083009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 696083003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c1ae44c5037dcb439987546485aeb2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   itemsParent: {fileID: 2087647360}
@@ -7997,7 +8189,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 724057805}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 179.2749, y: 215, z: 0}
+  m_LocalPosition: {x: 186.33493, y: 215, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 498711600}
@@ -8779,7 +8971,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 789304517}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 265.2749, y: -7, z: 0}
+  m_LocalPosition: {x: 272.33493, y: -7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1574997081}
@@ -12794,7 +12986,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1225366781}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 266.2749, y: -92, z: 0}
+  m_LocalPosition: {x: 273.33493, y: -92, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 352806709}
@@ -13345,6 +13537,8 @@ GameObject:
   - component: {fileID: 1306329569}
   - component: {fileID: 1306329570}
   - component: {fileID: 1306329571}
+  - component: {fileID: 1306329573}
+  - component: {fileID: 1306329572}
   m_Layer: 0
   m_Name: DoorRoom1
   m_TagString: doors
@@ -13451,6 +13645,57 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1306329572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1306329565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1590678366, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Animator: {fileID: 1306329571}
+  m_ParameterSendBits: 0
+  param0: 
+  param1: 
+  param2: 
+  param3: 
+  param4: 
+  param5: 
+--- !u!114 &1306329573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1306329565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 19
+    i1: 106
+    i2: 122
+    i3: 108
+    i4: 5
+    i5: 136
+    i6: 144
+    i7: 132
+    i8: 26
+    i9: 238
+    i10: 62
+    i11: 250
+    i12: 52
+    i13: 69
+    i14: 87
+    i15: 99
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 1
 --- !u!1001 &1312598384
 Prefab:
   m_ObjectHideFlags: 0
@@ -14913,6 +15158,8 @@ GameObject:
   - component: {fileID: 1458081885}
   - component: {fileID: 1458081886}
   - component: {fileID: 1458081887}
+  - component: {fileID: 1458081889}
+  - component: {fileID: 1458081888}
   m_Layer: 0
   m_Name: DoorRoom3
   m_TagString: doors
@@ -15019,6 +15266,57 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1458081888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1458081881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1590678366, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Animator: {fileID: 1458081887}
+  m_ParameterSendBits: 0
+  param0: 
+  param1: 
+  param2: 
+  param3: 
+  param4: 
+  param5: 
+--- !u!114 &1458081889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1458081881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 19
+    i1: 106
+    i2: 122
+    i3: 108
+    i4: 5
+    i5: 136
+    i6: 144
+    i7: 132
+    i8: 26
+    i9: 238
+    i10: 62
+    i11: 250
+    i12: 52
+    i13: 69
+    i14: 87
+    i15: 99
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 1
 --- !u!1 &1461556257
 GameObject:
   m_ObjectHideFlags: 0
@@ -15041,7 +15339,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1461556257}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 265.2749, y: -178, z: 0}
+  m_LocalPosition: {x: 272.33493, y: -178, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 528625761}
@@ -16856,7 +17154,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1667406936}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 105.2749, y: -294, z: 0}
+  m_LocalPosition: {x: 112.33493, y: -294, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 473549441}
@@ -18955,6 +19253,8 @@ GameObject:
   - component: {fileID: 1826194085}
   - component: {fileID: 1826194086}
   - component: {fileID: 1826194087}
+  - component: {fileID: 1826194089}
+  - component: {fileID: 1826194088}
   m_Layer: 0
   m_Name: DoorToilet2
   m_TagString: doors
@@ -19061,6 +19361,57 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1826194088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1826194081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1590678366, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Animator: {fileID: 1826194087}
+  m_ParameterSendBits: 0
+  param0: 
+  param1: 
+  param2: 
+  param3: 
+  param4: 
+  param5: 
+--- !u!114 &1826194089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1826194081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 19
+    i1: 106
+    i2: 122
+    i3: 108
+    i4: 5
+    i5: 136
+    i6: 144
+    i7: 132
+    i8: 26
+    i9: 238
+    i10: 62
+    i11: 250
+    i12: 52
+    i13: 69
+    i14: 87
+    i15: 99
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 1
 --- !u!1 &1831951949
 GameObject:
   m_ObjectHideFlags: 0
@@ -19074,6 +19425,8 @@ GameObject:
   - component: {fileID: 1831951953}
   - component: {fileID: 1831951954}
   - component: {fileID: 1831951955}
+  - component: {fileID: 1831951957}
+  - component: {fileID: 1831951956}
   m_Layer: 0
   m_Name: DoorRoom2
   m_TagString: doors
@@ -19180,6 +19533,57 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1831951956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1831951949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1590678366, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Animator: {fileID: 1831951955}
+  m_ParameterSendBits: 0
+  param0: 
+  param1: 
+  param2: 
+  param3: 
+  param4: 
+  param5: 
+--- !u!114 &1831951957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1831951949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 19
+    i1: 106
+    i2: 122
+    i3: 108
+    i4: 5
+    i5: 136
+    i6: 144
+    i7: 132
+    i8: 26
+    i9: 238
+    i10: 62
+    i11: 250
+    i12: 52
+    i13: 69
+    i14: 87
+    i15: 99
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 1
 --- !u!1 &1831970454
 GameObject:
   m_ObjectHideFlags: 0
@@ -21832,8 +22236,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2041918050}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 409.5, y: 163, z: 0}
-  m_LocalScale: {x: 1.02375, y: 1.02375, z: 1.02375}
+  m_LocalPosition: {x: 306, y: 298.5, z: 0}
+  m_LocalScale: {x: 0.765, y: 0.765, z: 0.765}
   m_Children:
   - {fileID: 598569992}
   m_Father: {fileID: 0}

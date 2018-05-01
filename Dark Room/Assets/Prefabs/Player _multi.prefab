@@ -227,7 +227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3afb4234734dc5a4285f56ea6a266d26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 0}
+  cam: {fileID: 20191730328192064}
 --- !u!114 &114270090022367442
 MonoBehaviour:
   m_ObjectHideFlags: 1
