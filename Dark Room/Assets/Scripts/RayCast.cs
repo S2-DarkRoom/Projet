@@ -16,7 +16,6 @@ public class RayCast : MonoBehaviour {
         Debug.DrawRay(this.transform.position, this.transform.forward * distance, Color.magenta);
         if (Physics.Raycast(this.transform.position, this.transform.forward, out hit, distance))
         {
-            Debug.Log("I touched" + hit.collider.gameObject.name);
             if (hit.collider.tag == "pickup")
             {
                 displayMessage = true;
@@ -24,7 +23,6 @@ public class RayCast : MonoBehaviour {
 
                 if (Input.GetKeyDown(KeyCode.E))
                 {
-                    Debug.Log("Picking up" + hit.collider.gameObject.name);
                     Pickups item = hit.collider.GetComponent<Pickups>();
                     Inventory.instance.Add(item);
                     displayMessage = false;
@@ -67,6 +65,16 @@ public class RayCast : MonoBehaviour {
                             door.open = true;
                             displayMessage = false;
                         }
+                    }
+                }
+
+                else
+                {
+                    displayMessage = true;
+                    message = "[E] Fermer";
+                    if (Input.GetKeyDown(KeyCode.E))
+                    {
+                        door.Close();
                     }
                 }
             }

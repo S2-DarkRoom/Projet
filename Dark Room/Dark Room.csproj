@@ -242,6 +242,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\AudioManager.cs" />
+    <Compile Include="Assets\Scripts\CameraScript.cs" />
     <Compile Include="Assets\Scripts\ChangeScene.cs" />
     <Compile Include="Assets\Scripts\DeleteCamera.cs" />
     <Compile Include="Assets\Scripts\Doors.cs" />
@@ -254,12 +255,17 @@
     <Compile Include="Assets\Scripts\Minuteur.cs" />
     <Compile Include="Assets\Scripts\Pausemenu.cs" />
     <Compile Include="Assets\Scripts\Pickups.cs" />
+    <Compile Include="Assets\Scripts\PlayAudio.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\PlayerController_multi.cs" />
+    <Compile Include="Assets\Scripts\PlayerMotor_multi.cs" />
+    <Compile Include="Assets\Scripts\PlayerSetup_multi.cs" />
     <Compile Include="Assets\Scripts\RayCast.cs" />
     <Compile Include="Assets\Scripts\SettingsManager.cs" />
     <Compile Include="Assets\Scripts\Sound.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Models\plants\dd\AlphaTest-Bumped.shader" />
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
     <None Include="Assets\Standard Assets\Fonts\OpenSans\License!.txt" />
   </ItemGroup>
