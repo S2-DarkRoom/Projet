@@ -67,6 +67,16 @@ public class RayCast : MonoBehaviour {
                         }
                     }
                 }
+
+                else
+                {
+                    displayMessage = true;
+                    message = "[E] Fermer";
+                    if (Input.GetKeyDown(KeyCode.E))
+                    {
+                        door.Close();
+                    }
+                }
             }
             
             else

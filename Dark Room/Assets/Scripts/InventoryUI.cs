@@ -10,7 +10,6 @@ public class InventoryUI : MonoBehaviour {
 	void Start ()
     {
         inventory = Inventory.instance;
-        UpdateUI();
 
         slots = itemsParent.GetComponentsInChildren<InventorySlot>();
         inventoryUI.SetActive(!inventoryUI.activeSelf);
