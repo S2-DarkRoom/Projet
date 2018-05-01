@@ -42,7 +42,6 @@ public class SettingsManager : MonoBehaviour {
 	public void onFullscreenToggle ()
 	{
 		gameSettings.fullscreen = Screen.fullScreen = fullscreenToggle.isOn; 
-		Debug.Log ("Fullscreen?"); 
 	}
 
 	public void onResolutionChange ()

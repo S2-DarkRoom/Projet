@@ -29,8 +29,14 @@ public class Doors : MonoBehaviour {
                 if (Inventory.items[i].name == this.name)
                 {
                     _animator.SetBool("open", true);
-                    if (name != "Interactible")
-                        FindObjectOfType<AudioManager> ().Play ("Porte");
+                    if (name == "Door1" || name == "Door2" || name == "Door3" || name == "DoorToilet3" || name == "DoorToilet2" || name == "DoorToilet1" || name == "DoorSecret")
+                        FindObjectOfType<AudioManager>().Play("Porte");
+
+                    else if (name == "Chest")
+                    {
+                        this.GetComponent<Chest>().DeleteCollider();
+                    }
+
                     return true;
                 }
             } 
@@ -38,8 +44,8 @@ public class Doors : MonoBehaviour {
         }
 
         _animator.SetBool("open", true);
-        if (name != "Interactible")
-		    FindObjectOfType<AudioManager> ().Play ("Porte");
+        if (name == "Door1" || name == "Door2" || name == "Door3" || name == "DoorToilet3" || name == "DoorToilet2" || name == "DoorToilet1" || name == "DoorSecret")
+            FindObjectOfType<AudioManager> ().Play ("Porte");
         return true;
     }
 }

@@ -7,29 +7,34 @@ public class flashlight : MonoBehaviour {
     private bool Ison;
     public GameObject lightobj;
 
-    public float maxnrj;
+    bool lightInHand = false;
+
+    private float maxnrj;
     private float currentnrj;
     private float usednrj;
 
     private int batteries = 3;
     private GameObject batteryPickedUp;
 
-	// Use this for initialization
-	void Start ()
+    InventorySlot[] slots;
+
+    void Start ()
     {
-        maxnrj = 10 * batteries;
+        maxnrj = 50 * batteries;
         currentnrj = maxnrj;
-        lightobj.SetActive(false);
-	}
+        this.gameObject.SetActive(false);
+    }
 	
-	// Update is called once per frame
-	void Update () {
-        maxnrj = 10 * batteries;
+	void Update ()
+    {
+        maxnrj = 50 * batteries;
         currentnrj = maxnrj;
 
-        if (Input.GetKeyDown("f"))
-            Ison = !Ison;
+        if (lightInHand)
+            if(Input.GetKeyDown("f"))
+                Ison = !Ison;
 
+        
         if (Ison)
         {
             lightobj.SetActive(true);
@@ -55,17 +60,18 @@ public class flashlight : MonoBehaviour {
         else
             lightobj.SetActive(false);
 
+
         /* pour la batterie
-         * public void OnTriggerEnter(Collider other)
-         * {
-         *      if (other.tag = "Battery")
-         *      {
-         *          batteryPickedUp = other.gameObjetc;.
-         *          batteries++;
-         *          Destroy(batteryPickedUp);
-         *      }
-         * }
-         * */
+        public void OnTriggerEnter(Collider other)
+        {
+               if (other.tag = "Battery")
+               {
+                   batteryPickedUp = other.gameObjetc;.
+                   batteries++;
+                   Destroy(batteryPickedUp);
+               }
+         }
+         */
 
 
     }
