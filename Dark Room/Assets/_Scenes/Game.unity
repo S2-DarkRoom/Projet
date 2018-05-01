@@ -12082,7 +12082,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40723e1c430aea64f8c6c282ff382c28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Flashlight
+  name: FlashlightPlayer
   icon: {fileID: 21300000, guid: fc7cb9d2dc1d8b94fbfc810c01ce0470, type: 3}
 --- !u!114 &1039045130
 MonoBehaviour:
@@ -12095,7 +12095,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a57367bb186dc234cb8c1c3c84f2e73a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lightobj: {fileID: 0}
+  lightobj: {fileID: 1763891319}
 --- !u!224 &1041295078
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14870,7 +14870,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40723e1c430aea64f8c6c282ff382c28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: FlashLight
+  name: Flashlight
   icon: {fileID: 21300000, guid: fc7cb9d2dc1d8b94fbfc810c01ce0470, type: 3}
 --- !u!1001 &1312598384
 Prefab:

@@ -27,8 +27,7 @@ public class RayCast : MonoBehaviour {
                     Pickups item = hit.collider.GetComponent<Pickups>();
                     if (item.name == "Flashlight")
                     {
-                        Debug.Log("Picked lamp");
-                        flashlight.SetActive(true);
+                        flashlight.GetComponent<flashlight>().Enabled();
                     }
 
                     Inventory.instance.Add(item);

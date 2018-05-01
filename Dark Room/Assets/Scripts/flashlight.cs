@@ -7,7 +7,7 @@ public class flashlight : MonoBehaviour {
     private bool Ison;
     public GameObject lightobj;
 
-    bool lightInHand = false;
+    private bool lightInHand = false;
 
     private float maxnrj;
     private float currentnrj;
@@ -24,6 +24,12 @@ public class flashlight : MonoBehaviour {
         currentnrj = maxnrj;
         this.gameObject.SetActive(false);
     }
+
+    public void Enabled()
+    {
+        gameObject.SetActive(true);
+        lightInHand = true;
+    }
 	
 	void Update ()
     {
@@ -31,35 +37,36 @@ public class flashlight : MonoBehaviour {
         currentnrj = maxnrj;
 
         if (lightInHand)
-            if(Input.GetKeyDown("f"))
+        {
+            if (Input.GetKeyDown("f"))
                 Ison = !Ison;
 
-        
-        if (Ison)
-        {
-            lightobj.SetActive(true);
-
-            if (currentnrj <= 0)
-            {
-                lightobj.SetActive(false);
-                batteries = 0;
-            }
-            if (currentnrj > 0)
+            if (Ison)
             {
                 lightobj.SetActive(true);
-                currentnrj -= 0.5f * Time.deltaTime;
-                usednrj += 10f * Time.deltaTime;
+
+                if (currentnrj <= 0)
+                {
+                    lightobj.SetActive(false);
+                    batteries = 0;
+                }
+                if (currentnrj > 0)
+                {
+                    lightobj.SetActive(true);
+                    currentnrj -= 0.5f * Time.deltaTime;
+                    usednrj += 10f * Time.deltaTime;
+                }
+
+                if (usednrj > 50)
+                {
+                    batteries -= 1;
+                    usednrj = 0;
+                }
             }
 
-            if (usednrj > 50)
-            {
-                batteries -= 1;
-                usednrj = 0;
-            }
+            else
+                lightobj.SetActive(false);
         }
-        else
-            lightobj.SetActive(false);
-
 
         /* pour la batterie
         public void OnTriggerEnter(Collider other)
