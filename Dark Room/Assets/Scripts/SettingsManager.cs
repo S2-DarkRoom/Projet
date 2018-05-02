@@ -20,7 +20,7 @@ public class SettingsManager : MonoBehaviour {
 
 	void OnEnable()
 	{
-		gameSettings = new GameSettings ();
+        gameSettings = new GameSettings ();
 
 		fullscreenToggle.onValueChanged.AddListener (delegate {onFullscreenToggle (); });
 		resolutionDropdown.onValueChanged.AddListener (delegate {onResolutionChange (); });
