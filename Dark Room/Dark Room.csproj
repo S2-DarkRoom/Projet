@@ -250,6 +250,7 @@
     <Compile Include="Assets\Scripts\FirstPerson.cs" />
     <Compile Include="Assets\Scripts\flashlight.cs" />
     <Compile Include="Assets\Scripts\GameSettings.cs" />
+    <Compile Include="Assets\Scripts\GetCode.cs" />
     <Compile Include="Assets\Scripts\Inventory.cs" />
     <Compile Include="Assets\Scripts\InventorySlot.cs" />
     <Compile Include="Assets\Scripts\InventoryUI.cs" />
@@ -267,6 +268,7 @@
     <Compile Include="Assets\Scripts\Sound.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Blood decal pack\readme.txt" />
     <None Include="Assets\Models\AdventureForge\CabinetsAndShelvesReadme.txt" />
     <None Include="Assets\Models\plants\dd\AlphaTest-Bumped.shader" />
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />

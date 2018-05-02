@@ -23,6 +23,7 @@ public class flashlight : MonoBehaviour {
         maxnrj = 50 * batteries;
         currentnrj = maxnrj;
         this.gameObject.SetActive(false);
+        lightobj.SetActive(false);
     }
 
     public void Enabled()
@@ -39,7 +40,9 @@ public class flashlight : MonoBehaviour {
         if (lightInHand)
         {
             if (Input.GetKeyDown("f"))
+            {
                 Ison = !Ison;
+            }
 
             if (Ison)
             {
