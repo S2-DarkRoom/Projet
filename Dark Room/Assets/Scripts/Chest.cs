@@ -9,5 +9,6 @@ public class Chest : MonoBehaviour {
     public void DeleteCollider()
     {
         monColliderAsupprimer.enabled = false;
+		FindObjectOfType<AudioManager>().Play("Porte");
     }
 }
