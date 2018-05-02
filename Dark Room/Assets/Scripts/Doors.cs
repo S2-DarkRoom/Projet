@@ -31,9 +31,10 @@ public class Doors : MonoBehaviour {
                     _animator.SetBool("open", true);
                     if (name == "Door1" || name == "Door2" || name == "Door3" || name == "DoorToilet3" || name == "DoorToilet2" || name == "DoorToilet1" || name == "DoorSecret")
                         FindObjectOfType<AudioManager>().Play("Porte");
+
                     else if (name == "Chest")
                     {
-						FindObjectOfType<AudioManager>().Play("Porte");
+						FindObjectOfType<AudioManager>().Play("Chest");
                         this.GetComponent<Chest>().DeleteCollider();
                     }
 
