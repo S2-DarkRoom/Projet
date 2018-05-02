@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class ActivateCine : MonoBehaviour
 {
-    public GameObject cam2;
+    public GameObject cam;
     bool entered = false;
 
     private void Start()
     {
-        cam2.SetActive(false);
+        cam.SetActive(false);
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (!entered)
-            cam2.SetActive(true);
+            cam.SetActive(true);
         entered = true;
     }
 }
