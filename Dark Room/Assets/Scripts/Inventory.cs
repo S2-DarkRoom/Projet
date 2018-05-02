@@ -30,7 +30,7 @@ public class Inventory : NetworkBehaviour
         items.Add(item);
 
         if (onItemChangedCallBack != null)
-        onItemChangedCallBack.Invoke();
+            onItemChangedCallBack.Invoke();
     }
 
 }

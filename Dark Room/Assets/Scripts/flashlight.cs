@@ -41,6 +41,7 @@ public class flashlight : MonoBehaviour {
         {
             if (Input.GetKeyDown("f"))
             {
+                FindObjectOfType<AudioManager>().Play("On");
                 Ison = !Ison;
             }
 

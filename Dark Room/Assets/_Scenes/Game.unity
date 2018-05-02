@@ -10686,7 +10686,25 @@ MonoBehaviour:
     loop: 0
     source: {fileID: 0}
   - name: Chest
-    clip: {fileID: 8300000, guid: e517b5df2c32a184cacddb57e5dc8ffd, type: 3}
+    clip: {fileID: 8300000, guid: ddf237e5dfa200b41aa82c656c468bf4, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Key
+    clip: {fileID: 8300000, guid: b9929943df4072e4bb07b9f5610e8930, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Flashlight
+    clip: {fileID: 8300000, guid: 4b0ab9387c32ff34c9120173ee7e15a1, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: On
+    clip: {fileID: 8300000, guid: 5905af7a2153eea4798e872f9fe74de9, type: 3}
     volume: 1
     pitch: 1
     loop: 0
@@ -14555,7 +14573,7 @@ GameObject:
   - component: {fileID: 1206474832}
   - component: {fileID: 1206474831}
   m_Layer: 0
-  m_Name: Audio
+  m_Name: Main Audio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14572,7 +14590,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e8a0b85a0c29ff1418676c24dffd84e8, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.7
   m_Pitch: 1
   Loop: 0
   Mute: 0

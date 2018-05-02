@@ -27,8 +27,12 @@ public class RayCast : MonoBehaviour {
                     Pickups item = hit.collider.GetComponent<Pickups>();
                     if (item.name == "Flashlight")
                     {
+                        FindObjectOfType<AudioManager>().Play("Flashlight");
                         flashlight.GetComponent<flashlight>().Enabled();
                     }
+
+                    if (item.name.Substring(0, 4) == "Door" || item.name == "Chest")
+                        FindObjectOfType<AudioManager>().Play("Key");
 
                     Inventory.instance.Add(item);
                     displayMessage = false;
