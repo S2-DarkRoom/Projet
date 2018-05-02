@@ -314,13 +314,6 @@ AnimationClip:
   m_GenerateMotionCurves: 0
   m_Events:
   - time: 7.5
-    functionName: 
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 7.5
     functionName: Delete
     data: 
     objectReferenceParameter: {fileID: 0}

@@ -271,6 +271,7 @@
   <ItemGroup>
     <None Include="Assets\Models\AdventureForge\CabinetsAndShelvesReadme.txt" />
     <None Include="Assets\Models\Blood decal pack\readme.txt" />
+    <None Include="Assets\Models\Tim&apos;s Assets\Doors\Shader\BloodyDoor.shader" />
     <None Include="Assets\Models\plants\dd\AlphaTest-Bumped.shader" />
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
     <None Include="Assets\Standard Assets\Fonts\OpenSans\License!.txt" />
