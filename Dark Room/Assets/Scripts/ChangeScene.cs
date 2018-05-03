@@ -5,8 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class ChangeScene : MonoBehaviour {
 
+    /*
 	void Start ()
     {
+        
         Scene sc = SceneManager.GetActiveScene();
 
         if (sc.name == "TitleGame")
@@ -29,8 +31,8 @@ public class ChangeScene : MonoBehaviour {
     {
         yield return new WaitForSecondsRealtime(20);
     }
-
-    /*
+    */
+    
 	void Update () 
 	{
         Scene sc = SceneManager.GetActiveScene();
@@ -45,7 +47,7 @@ public class ChangeScene : MonoBehaviour {
                 SceneManager.LoadScene("Game");
         }
 	}
-    */
+    
 
 
 }
