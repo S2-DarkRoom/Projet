@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class RayCast : MonoBehaviour {
 
+    public GameObject flashlight;
     public float distance;
     RaycastHit hit;
     float displayTime = 2;
@@ -24,11 +25,22 @@ public class RayCast : MonoBehaviour {
                 if (Input.GetKeyDown(KeyCode.E))
                 {
                     Pickups item = hit.collider.GetComponent<Pickups>();
+                    if (item.name == "Flashlight")
+                    {
+                        FindObjectOfType<AudioManager>().Play("Flashlight");
+                        flashlight.GetComponent<flashlight>().Enabled();
+                    }
+
+                    if (item.name.Substring(0, 4) == "Door" || item.name == "Chest")
+                        FindObjectOfType<AudioManager>().Play("Key");
+
                     Inventory.instance.Add(item);
                     displayMessage = false;
+
                     Destroy(hit.collider.gameObject);
                 }
             }
+
 
             else if (hit.collider.tag == "doors")
             {
@@ -68,7 +80,8 @@ public class RayCast : MonoBehaviour {
                     }
                 }
 
-                else
+                /* A UPDATE : POSSIBILITE DE FERMER PORTE OU MEUBLE
+                else if (name != "Door1" && name != "Door2" && name != "Door3" && name != "DoorToilet3" && name != "DoorToilet2" && name != "DoorToilet1" && name != "DoorSecret")
                 {
                     displayMessage = true;
                     message = "[E] Fermer";
@@ -77,6 +90,7 @@ public class RayCast : MonoBehaviour {
                         door.Close();
                     }
                 }
+                */
             }
             
             else

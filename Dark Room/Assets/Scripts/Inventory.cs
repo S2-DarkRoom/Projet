@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
 
-public class Inventory : MonoBehaviour
+public class Inventory : NetworkBehaviour
 {
     #region Singleton
     public delegate void OnItemChanged();
@@ -29,7 +30,7 @@ public class Inventory : MonoBehaviour
         items.Add(item);
 
         if (onItemChangedCallBack != null)
-        onItemChangedCallBack.Invoke();
+            onItemChangedCallBack.Invoke();
     }
 
 }

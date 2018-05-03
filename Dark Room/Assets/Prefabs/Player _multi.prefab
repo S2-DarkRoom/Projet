@@ -227,7 +227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3afb4234734dc5a4285f56ea6a266d26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 20191730328192064}
+  cam: {fileID: 20913114244195720, guid: 6bd7e1f526fae6d4484e75c2a84cdc6f, type: 2}
 --- !u!114 &114270090022367442
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -239,6 +239,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3906a386ed262de43b7ceb412b0a7def, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flashlight: {fileID: 1277074845241942, guid: 603e7da5d6663b440938ec76c5897f56, type: 2}
   distance: 3
 --- !u!114 &114302729550277642
 MonoBehaviour:

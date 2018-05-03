@@ -9,26 +9,29 @@ EditorBuildSettings:
     path: Assets/_Scenes/TitleGame.unity
     guid: 728b4feac22440b4281e302b5fdd8ba2
   - enabled: 1
+    path: Assets/_Scenes/TitleCredit.unity
+    guid: 8b308ed2a41f164418ca974c6b7c0591
+  - enabled: 1
     path: Assets/_Scenes/Menu.unity
     guid: 72186f2ff53db9a43990e39acff037ef
   - enabled: 1
     path: Assets/_Scenes/Game.unity
     guid: a009e366c8abe834999f1150f6c24021
   - enabled: 0
-    path: Assets/_Scenes/Explorer.unity
-    guid: 7bdd61e393dd50b488bf313de6fc0419
-  - enabled: 1
-    path: Assets/_Scenes/Multi.unity
-    guid: 2b12c934b9acb724a965f2e17ac6e0df
-  - enabled: 1
-    path: Assets/_Scenes/Game 1.unity
-    guid: 8d6ffa5b1a4324945a61034f75e50172
-  - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
+    path: Assets/_Scenes/Game 1.unity
+    guid: 214822561fdd67b458a8af83373da8e8
+  - enabled: 1
     path: Assets/_Scenes/Multi.unity
     guid: 2b12c934b9acb724a965f2e17ac6e0df
-  - enabled: 1
-    path: Assets/_Scenes/TitleCredit.unity
-    guid: 8b308ed2a41f164418ca974c6b7c0591
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: Assets/_Scenes/Multi.unity
+    guid: 2b12c934b9acb724a965f2e17ac6e0df
