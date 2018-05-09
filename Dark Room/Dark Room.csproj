@@ -248,6 +248,7 @@
     <Compile Include="Assets\Scripts\Chest.cs" />
     <Compile Include="Assets\Scripts\CodeUI.cs" />
     <Compile Include="Assets\Scripts\DeleteCamera.cs" />
+    <Compile Include="Assets\Scripts\DigitSlot.cs" />
     <Compile Include="Assets\Scripts\Doors.cs" />
     <Compile Include="Assets\Scripts\FirstPerson.cs" />
     <Compile Include="Assets\Scripts\flashlight.cs" />
