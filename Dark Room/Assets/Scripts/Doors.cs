@@ -29,23 +29,17 @@ public class Doors : MonoBehaviour {
                 if (Inventory.items[i].name == this.name)
                 {
                     _animator.SetBool("open", true);
-                    if (name == "Door1" || name == "Door2" || name == "Door3" || name == "DoorToilet3" || name == "DoorToilet2" || name == "DoorToilet1" || name == "DoorSecret")
+                    if (name.Substring(0, 4) == "Door") //cas des portes 
                         FindObjectOfType<AudioManager>().Play("Porte");
-
-                    else if (name == "Chest")
-                    {
-						FindObjectOfType<AudioManager>().Play("Chest");
-                        this.GetComponent<Chest>().DeleteCollider();
-                    }
 
                     return true;
                 }
-            } 
+            }
             return false;
         }
 
         _animator.SetBool("open", true);
-        if (name == "Door1" || name == "Door2" || name == "Door3" || name == "DoorToilet3" || name == "DoorToilet2" || name == "DoorToilet1" || name == "DoorSecret")
+        if (name.Substring(0, 4) == "Door")
             FindObjectOfType<AudioManager> ().Play ("Porte");
         return true;
     }

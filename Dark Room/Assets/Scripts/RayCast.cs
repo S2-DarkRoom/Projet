@@ -11,6 +11,8 @@ public class RayCast : MonoBehaviour {
     bool displayMessage = false;
     string message = "";
     bool lockedMessage = false;
+    bool code = false;
+    bool stopDisplay = false;
 
     void Update ()
     {
@@ -58,6 +60,13 @@ public class RayCast : MonoBehaviour {
                     }
                 }
 
+                else if (code)
+                {
+                    code = false;
+                    displayMessage = false;
+                    hit.collider.GetComponent<CodeUI>().Called();
+                }
+
                 else if (door.open == false)
                 {
                     displayMessage = true;
@@ -65,23 +74,33 @@ public class RayCast : MonoBehaviour {
 
                     if (Input.GetKeyDown(KeyCode.E))
                     {
-                        if (door.TryOpen() == false)
+                        if (name.Substring(0, 4) == "Door")
                         {
-                            displayMessage = true;
-                            message = "Locked";
-                            lockedMessage = true;
+                            if (door.TryOpen() == false)
+                            {
+                                displayMessage = true;
+                                message = "Locked";
+                                lockedMessage = true;
+                            }
+
+                            else
+                            {
+                                door.open = true;
+                                displayMessage = false;
+                            }
                         }
 
                         else
                         {
-                            door.open = true;
                             displayMessage = false;
+                            code = true;
+                            stopDisplay = true;
                         }
                     }
                 }
 
-                /* A UPDATE : POSSIBILITE DE FERMER PORTE OU MEUBLE
-                else if (name != "Door1" && name != "Door2" && name != "Door3" && name != "DoorToilet3" && name != "DoorToilet2" && name != "DoorToilet1" && name != "DoorSecret")
+                /* A UPDATE : POSSIBILITE DE FERMER PORTE */
+                else if (name.Substring(0, 4) == "Door")
                 {
                     displayMessage = true;
                     message = "[E] Fermer";
@@ -90,7 +109,7 @@ public class RayCast : MonoBehaviour {
                         door.Close();
                     }
                 }
-                */
+                
             }
             
             else

@@ -5,6 +5,7 @@ using UnityEngine;
 public class Chest : MonoBehaviour {
 
     public BoxCollider monColliderAsupprimer;
+    public GameObject UICode;
 
     public void DeleteCollider()
     {
