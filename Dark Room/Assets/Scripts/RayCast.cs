@@ -12,7 +12,6 @@ public class RayCast : MonoBehaviour {
     string message = "";
     bool lockedMessage = false;
     bool code = false;
-    bool stopDisplay = false;
 
     void Update ()
     {
@@ -94,7 +93,6 @@ public class RayCast : MonoBehaviour {
                         {
                             displayMessage = false;
                             code = true;
-                            stopDisplay = true;
                         }
                     }
                 }
