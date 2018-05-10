@@ -8,7 +8,6 @@ public class DigitSlot : MonoBehaviour
 
     public void AddDigit(int i)
     {
-        Debug.Log("add a digit in position" + i);
         icon.sprite = digits[i];
         icon.enabled = true;
     }

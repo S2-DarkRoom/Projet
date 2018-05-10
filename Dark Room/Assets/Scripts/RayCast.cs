@@ -12,6 +12,7 @@ public class RayCast : MonoBehaviour {
     string message = "";
     bool lockedMessage = false;
     bool code = false;
+    public GameObject UIcode;
 
     void Update ()
     {
@@ -68,7 +69,9 @@ public class RayCast : MonoBehaviour {
 
                 else if (door.open == false)
                 {
-                    displayMessage = true;
+                    if (UIcode.activeSelf == false)
+                        displayMessage = true;
+
                     message = "[E] Ouvrir";
 
                     if (Input.GetKeyDown(KeyCode.E))
