@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CodeUI : MonoBehaviour {
-
+public class CodeUI : MonoBehaviour
+{
     public GameObject UI;
     public GameObject UIwrong;
     public GameObject UIenter;
@@ -12,6 +12,8 @@ public class CodeUI : MonoBehaviour {
     int curr;
     public Transform digitsParent;
     private Animator _animator;
+    bool enter = true;
+    bool displayMessage = false;
 
     DigitSlot[] slots;
 
@@ -28,23 +30,38 @@ public class CodeUI : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             UI.SetActive(false);
+            displayMessage = false;
+            Reset();
         }
 
         //Valider le code
         else if (Input.GetKeyDown(KeyCode.A))
         {
-            if (entered == code)
+            if (enter)
             {
-                _animator.SetBool("open", true);
-                UI.SetActive(false);
-                GetComponent<Chest>().DeleteCollider();
-                GetComponent<Doors>().open = true;
-                this.enabled = false;
+                if (entered == code)
+                {
+                    _animator.SetBool("open", true);
+                    displayMessage = false;
+                    UI.SetActive(false);
+                    GetComponent<Chest>().DeleteCollider();
+                    GetComponent<Doors>().open = true;
+                    this.enabled = false;
+                }
+
+                else
+                {
+                    enter = false;
+                    WrongCode();
+                }
             }
 
             else
             {
-                WrongCode();
+                enter = true;
+                UIwrong.SetActive(false);
+                UIenter.SetActive(true);
+                Reset();
             }
         }
 
@@ -92,6 +109,28 @@ public class CodeUI : MonoBehaviour {
     {
         UIenter.SetActive(false);
         UIwrong.SetActive(true);
+
+        enter = false;
+    }
+
+    void OnGUI()
+    {
+        if (displayMessage)
+        {
+            string message;
+
+            if (enter)
+                message = "[A] Validate";
+            else
+                message = "[A] Try Again";
+
+            GUI.Label(new Rect(Screen.width / 2 - 30, Screen.height / 2 + 200, 250f, 250f), message);
+        }
+    }
+
+    void Reset()
+    {
+        //FIXME
     }
 
     //Appel du script
@@ -99,5 +138,6 @@ public class CodeUI : MonoBehaviour {
     {
         UI.SetActive(true);
         UIwrong.SetActive(false);
+        displayMessage = true;
     }
 }
