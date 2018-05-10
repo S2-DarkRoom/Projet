@@ -2494,7 +2494,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &204300210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5089,6 +5089,10 @@ Prefab:
     - target: {fileID: 1838700806137084, guid: c8ef5e37f230f9741bba232ac40667ff, type: 2}
       propertyPath: m_Name
       value: Sheet1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1838700806137084, guid: c8ef5e37f230f9741bba232ac40667ff, type: 2}
+      propertyPath: m_TagString
+      value: pickup
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c8ef5e37f230f9741bba232ac40667ff, type: 2}
@@ -9075,8 +9079,8 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 2
-  m_Color: {r: 1, g: 0.33088237, b: 0.33088237, a: 1}
-  m_Intensity: 0.6
+  m_Color: {r: 1, g: 0.28676468, b: 0.28676468, a: 1}
+  m_Intensity: 0.8
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -9095,7 +9099,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 2
+  m_Lightmapping: 4
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
@@ -13313,7 +13317,7 @@ GameObject:
   - component: {fileID: 1015693002}
   m_Layer: 0
   m_Name: Sheet1.2
-  m_TagString: Untagged
+  m_TagString: pickup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -14172,8 +14176,8 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 2
-  m_Color: {r: 1, g: 0.41911763, b: 0.41911763, a: 1}
-  m_Intensity: 0.6
+  m_Color: {r: 1, g: 0.28676468, b: 0.28676468, a: 1}
+  m_Intensity: 0.8
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -14192,7 +14196,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 2
+  m_Lightmapping: 4
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
@@ -15847,7 +15851,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 23.674957, y: 13.937988}
+  m_AnchoredPosition: {x: 265.7, y: 13.937988}
   m_SizeDelta: {x: -255.34998, y: -136.07605}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1219422532
@@ -20025,8 +20029,8 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 2
-  m_Color: {r: 1, g: 0.4044118, b: 0.4044118, a: 1}
-  m_Intensity: 0.6
+  m_Color: {r: 1, g: 0.28676468, b: 0.28676468, a: 1}
+  m_Intensity: 0.8
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -20045,7 +20049,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 2
+  m_Lightmapping: 4
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
@@ -28880,8 +28884,8 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 2
-  m_Color: {r: 1, g: 0.32352942, b: 0.32352942, a: 1}
-  m_Intensity: 0.6
+  m_Color: {r: 1, g: 0.28676468, b: 0.28676468, a: 1}
+  m_Intensity: 0.8
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -28900,7 +28904,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 2
+  m_Lightmapping: 4
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
