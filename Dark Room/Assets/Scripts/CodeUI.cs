@@ -33,6 +33,7 @@ public class CodeUI : MonoBehaviour {
                 UI.SetActive(false);
                 GetComponent<Chest>().DeleteCollider();
                 GetComponent<Doors>().open = true;
+                this.enabled = false;
             }
 
             else
@@ -40,78 +41,36 @@ public class CodeUI : MonoBehaviour {
                 return;
             }
         }
+
+        if ()
         if (Input.GetKeyDown(KeyCode.Keypad0) || Input.GetKeyDown(KeyCode.Keypad1) || Input.GetKeyDown(KeyCode.Keypad2) || Input.GetKeyDown(KeyCode.Keypad3) || Input.GetKeyDown(KeyCode.Keypad4) || Input.GetKeyDown(KeyCode.Keypad5) || Input.GetKeyDown(KeyCode.Keypad6) || Input.GetKeyDown(KeyCode.Keypad7) || Input.GetKeyDown(KeyCode.Keypad8) || Input.GetKeyDown(KeyCode.Keypad9))
         {
             Debug.Log("Entered a digit");
 
             if (Input.GetKeyDown(KeyCode.Keypad0))
-            {
-                entered += "0";
                 curr = 0;
-            }
-
-            if (Input.GetKeyDown(KeyCode.Keypad1))
-            {
-                Debug.Log("Entered 1");
-                entered += "1";
+            else if (Input.GetKeyDown(KeyCode.Keypad1))
                 curr = 1;
-            }
-
-            if (Input.GetKeyDown(KeyCode.Keypad2))
-            {
-                entered += "2";
+            else if (Input.GetKeyDown(KeyCode.Keypad2))
                 curr = 2;
-            }
-
-            if (Input.GetKeyDown(KeyCode.Keypad3))
-            {
-                entered += "3";
+            else if (Input.GetKeyDown(KeyCode.Keypad3))
                 curr = 3;
-            }
-
-            if (Input.GetKeyDown(KeyCode.Keypad4))
-            {
-                entered += "4";
+            else if (Input.GetKeyDown(KeyCode.Keypad4))
                 curr = 4;
-            }
-
-            if (Input.GetKeyDown(KeyCode.Keypad5))
-            {
-                entered += "5";
+            else if (Input.GetKeyDown(KeyCode.Keypad5))
                 curr = 5;
-            }
-
-            if (Input.GetKeyDown(KeyCode.Keypad6))
-            {
-                entered += "6";
+            else if (Input.GetKeyDown(KeyCode.Keypad6))
                 curr = 6;
-            }
-
-            if (Input.GetKeyDown(KeyCode.Keypad7))
-            {
-                entered += "7";
+            else if (Input.GetKeyDown(KeyCode.Keypad7))
                 curr = 7;
-            }
-
-            if (Input.GetKeyDown(KeyCode.Keypad8))
-            {
-                entered += "8";
+            else if (Input.GetKeyDown(KeyCode.Keypad8))
                 curr = 8;
-            }
-
-            if (Input.GetKeyDown(KeyCode.Keypad9))
-            {
-                entered += "9";
+            else if (Input.GetKeyDown(KeyCode.Keypad9))
                 curr = 9;
-            }
 
-            for (int i = 0; i < slots.Length; i++)
-            {
-                if (i < entered.Length)
-                {
-                    slots[i].AddDigit(curr);
-                }
-            }
+            entered += curr;
+
+            slots[entered.Length - 1].AddDigit(curr);
         }
 
         if (Input.GetKeyDown(KeyCode.Delete) || Input.GetKeyDown(KeyCode.Backspace))

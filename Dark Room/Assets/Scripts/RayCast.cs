@@ -73,8 +73,9 @@ public class RayCast : MonoBehaviour {
 
                     if (Input.GetKeyDown(KeyCode.E))
                     {
-                        if (name.Substring(0, 4) == "Door")
+                        if (door.name.Substring(0, 4) == "Door")
                         {
+                            Debug.Log("substring");
                             if (door.TryOpen() == false)
                             {
                                 displayMessage = true;
@@ -89,7 +90,7 @@ public class RayCast : MonoBehaviour {
                             }
                         }
 
-                        else
+                        else if (door.name == "Chest")
                         {
                             displayMessage = false;
                             code = true;
