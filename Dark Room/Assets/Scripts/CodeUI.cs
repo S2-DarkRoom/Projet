@@ -101,7 +101,10 @@ public class CodeUI : MonoBehaviour
         //Le joueur veut supprimer le dernier chiffre
         if (Input.GetKeyDown(KeyCode.Delete) || Input.GetKeyDown(KeyCode.Backspace))
         {
-            //FIXME
+            if (entered != "")
+                entered = entered.Remove(entered.Length - 1);
+
+            slots[entered.Length].DeleteDigit();
         }
     }
 
@@ -130,7 +133,12 @@ public class CodeUI : MonoBehaviour
 
     void Reset()
     {
-        //FIXME
+        entered = "";
+
+        for (int i = 0; i < 4; i++)
+        {
+            slots[i].DeleteDigit();
+        }
     }
 
     //Appel du script
