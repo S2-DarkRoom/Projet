@@ -97,10 +97,10 @@ public class TutorialManager : MonoBehaviour {
     void OnGUI()
     {
         if (instructions.sprite == last)
-            GUI.Label(new Rect(75, 150, 200f, 200f), "[X] Quitter");
+            GUI.Label(new Rect(Screen.height * 0.05f, Screen.width * 0.1f, 200f, 200f), "[X] Quitter");
             
 
         if (showText || currentTuto.order % 2 == 0)
-            GUI.Label(new Rect(75, 150, 200f, 200f), "[X] Suivant");
+            GUI.Label(new Rect(Screen.height * 0.05f, Screen.width * 0.1f, 200f, 200f), "[X] Suivant");
     }
 }
