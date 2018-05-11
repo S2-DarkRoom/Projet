@@ -540,6 +540,57 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 27657091}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &28066818
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 198526805}
+    m_Modifications:
+    - target: {fileID: 4254152442706558, guid: 7f53b4556562b59478160d19e624c44c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -95.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4254152442706558, guid: 7f53b4556562b59478160d19e624c44c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 72.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 4254152442706558, guid: 7f53b4556562b59478160d19e624c44c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 4254152442706558, guid: 7f53b4556562b59478160d19e624c44c, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4254152442706558, guid: 7f53b4556562b59478160d19e624c44c, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4254152442706558, guid: 7f53b4556562b59478160d19e624c44c, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4254152442706558, guid: 7f53b4556562b59478160d19e624c44c, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4254152442706558, guid: 7f53b4556562b59478160d19e624c44c, type: 2}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1433816414211712, guid: 7f53b4556562b59478160d19e624c44c, type: 2}
+      propertyPath: m_Name
+      value: Battery1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 7f53b4556562b59478160d19e624c44c, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &28066819 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4254152442706558, guid: 7f53b4556562b59478160d19e624c44c,
+    type: 2}
+  m_PrefabInternal: {fileID: 28066818}
 --- !u!4 &36991631 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4423203035691760, guid: 4af79360864e84a4e82cc3c1997c6e80,
@@ -2489,7 +2540,7 @@ GameObject:
   - component: {fileID: 190412826}
   - component: {fileID: 190412827}
   m_Layer: 0
-  m_Name: '[0,1] Moving Player'
+  m_Name: '[1,2] Moving Player'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2611,6 +2662,7 @@ Transform:
   - {fileID: 1015693001}
   - {fileID: 1981722128}
   - {fileID: 87265353}
+  - {fileID: 28066819}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4855,7 +4907,7 @@ GameObject:
   - component: {fileID: 290614978}
   - component: {fileID: 290614977}
   m_Layer: 0
-  m_Name: '[2,3] Pickup'
+  m_Name: '[3,4] Pickup'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28395,8 +28447,10 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 2024385465}
+  - component: {fileID: 2024385467}
+  - component: {fileID: 2024385466}
   m_Layer: 0
-  m_Name: '[4,5] Activate Flashlight'
+  m_Name: '[5,6] Activate Flashlight'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28415,6 +28469,37 @@ Transform:
   m_Father: {fileID: 104866171}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2024385466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2024385464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca8e211c8077ad7468a8f6241c4f05ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  order: 6
+  sprite: {fileID: 21300000, guid: 394602fa0fafceb42b37350dd26395af, type: 3}
+  Keys:
+  - x
+--- !u!114 &2024385467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2024385464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca8e211c8077ad7468a8f6241c4f05ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  order: 5
+  sprite: {fileID: 21300000, guid: 82ca0c92468c4124ea1f45471379c527, type: 3}
+  Keys:
+  - f
+  - f
 --- !u!1 &2033602086
 GameObject:
   m_ObjectHideFlags: 0
