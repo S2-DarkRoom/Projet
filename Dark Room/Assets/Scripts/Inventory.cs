@@ -33,4 +33,14 @@ public class Inventory : NetworkBehaviour
             onItemChangedCallBack.Invoke();
     }
 
+    public bool CheckForObject(string name)
+    {
+        foreach (Pickups obj in items)
+        {
+            if (obj.name == name)
+                return true;
+        }
+        return false;
+    }
+
 }
