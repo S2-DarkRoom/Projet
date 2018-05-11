@@ -5,10 +5,15 @@ using UnityEngine;
 public class DeleteCamera : MonoBehaviour
 {
     public GameObject player;
+    public GameObject manager;
+    public GameObject UI;
+    public new string name;
 
     void Start()
     {
+        manager.SetActive(false);
         player.SetActive(false);
+        UI.SetActive(false);
     }
 
     void PlayerOff()
@@ -29,6 +34,12 @@ public class DeleteCamera : MonoBehaviour
 
     void Delete()
     {
+        if (name == "Intro")
+        {
+            manager.SetActive(true);
+            UI.SetActive(true);
+        }
+
         player.SetActive(true);
         Destroy(gameObject);
 	}
