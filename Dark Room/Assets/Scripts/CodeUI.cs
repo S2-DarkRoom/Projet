@@ -128,6 +128,7 @@ public class CodeUI : MonoBehaviour
                 message = "[A] Try Again";
 
             GUI.Label(new Rect(Screen.width / 2 - 30, Screen.height / 2 + 200, 250f, 250f), message);
+            GUI.Label(new Rect(Screen.width / 2 - 30, Screen.height / 2 + 220, 250f, 250f), "[Echap] Exit");
         }
     }
 
@@ -146,6 +147,7 @@ public class CodeUI : MonoBehaviour
     {
         UI.SetActive(true);
         UIwrong.SetActive(false);
+        UIenter.SetActive(true);
         displayMessage = true;
     }
 }
