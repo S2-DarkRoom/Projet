@@ -30,7 +30,7 @@ public class InventoryUI : MonoBehaviour {
         {
             if (i < Inventory.items.Count)
             {
-                if (Inventory.items[i].name.Substring(0, 7) != "Battery")
+                if (Inventory.items[i].name != "Battery")
                     slots[i].AddItem(Inventory.items[i]);
             }
         }
