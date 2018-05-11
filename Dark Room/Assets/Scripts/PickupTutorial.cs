@@ -7,6 +7,7 @@ public class PickupTutorial : Tutorial
     public Transform itemsParent;
     Inventory inventory;
     InventorySlot[] slots;
+    public string obj;
     
     public void Start()
     {
@@ -17,7 +18,7 @@ public class PickupTutorial : Tutorial
 
     public override void CheckIfHappening()
     {
-        if (inventory.CheckForObject("Flashlight"))
+        if (inventory.CheckForObject(obj))
                 TutorialManager.Instance.CompletedTutorial();
     }
 }

@@ -649,6 +649,11 @@ Prefab:
       propertyPath: m_Name
       value: Battery1
       objectReference: {fileID: 0}
+    - target: {fileID: 114436709647706564, guid: 7f53b4556562b59478160d19e624c44c,
+        type: 2}
+      propertyPath: name
+      value: Battery
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7f53b4556562b59478160d19e624c44c, type: 2}
   m_IsPrefabParent: 0
@@ -1410,7 +1415,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 5364e4b2292e2614b9384a23c0aef643, type: 3}
   - {fileID: 21300000, guid: af191667c4eccd54c98d9e2a888c9fa5, type: 3}
   - {fileID: 21300000, guid: 82ca0c92468c4124ea1f45471379c527, type: 3}
-  - {fileID: 21300000, guid: 5918740ab0da03240a54528a075d8d3c, type: 3}
+  - {fileID: 0}
   - {fileID: 21300000, guid: ed58f846b5d0d434f82149e3e2353e95, type: 3}
   first: {fileID: 21300000, guid: 571e08518bcaf4a45ac81b9765db6cf9, type: 3}
   last: {fileID: 21300000, guid: 3101950ed4a3a744ab5232527a45e90b, type: 3}
@@ -1431,6 +1436,7 @@ Transform:
   - {fileID: 190412825}
   - {fileID: 290614976}
   - {fileID: 2024385465}
+  - {fileID: 1580762961}
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5038,7 +5044,7 @@ GameObject:
   - component: {fileID: 290614978}
   - component: {fileID: 290614977}
   m_Layer: 0
-  m_Name: '[3,4] Pickup'
+  m_Name: '[3,4] Pickup Flashlight'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5069,7 +5075,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   order: 4
-  sprite: {fileID: 21300000, guid: 394602fa0fafceb42b37350dd26395af, type: 3}
+  sprite: {fileID: 21300000, guid: ad3a736001c96e44d89c7260cafd53dd, type: 3}
   Keys:
   - x
 --- !u!114 &290614978
@@ -5086,6 +5092,7 @@ MonoBehaviour:
   order: 3
   sprite: {fileID: 21300000, guid: af191667c4eccd54c98d9e2a888c9fa5, type: 3}
   itemsParent: {fileID: 2087647360}
+  obj: Flashlight
 --- !u!224 &290783279
 RectTransform:
   m_ObjectHideFlags: 0
@@ -20441,6 +20448,66 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eb2f0a51926f73f41a40df629ef7c1ef, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1580762960
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1580762961}
+  - component: {fileID: 1580762962}
+  - component: {fileID: 1580762963}
+  m_Layer: 0
+  m_Name: '[7,8] Find Battery'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1580762961
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1580762960}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 104866171}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1580762962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1580762960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9518f3c6782ecc4caa29a9b502f82b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  order: 7
+  sprite: {fileID: 21300000, guid: ed58f846b5d0d434f82149e3e2353e95, type: 3}
+  itemsParent: {fileID: 2087647360}
+  obj: Battery
+--- !u!114 &1580762963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1580762960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca8e211c8077ad7468a8f6241c4f05ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  order: 8
+  sprite: {fileID: 21300000, guid: bed8a8ac84bba4143b463f7c2d9ae655, type: 3}
+  Keys:
+  - x
 --- !u!1 &1597916043
 GameObject:
   m_ObjectHideFlags: 0
@@ -28876,7 +28943,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   order: 6
-  sprite: {fileID: 21300000, guid: 394602fa0fafceb42b37350dd26395af, type: 3}
+  sprite: {fileID: 21300000, guid: b9bdbf5739340d743b6a4548dbd76e5a, type: 3}
   Keys:
   - x
 --- !u!114 &2024385467

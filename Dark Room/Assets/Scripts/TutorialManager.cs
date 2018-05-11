@@ -28,6 +28,7 @@ public class TutorialManager : MonoBehaviour {
     public GameObject manager;
     public GameObject UI;
     public Image instructions;
+    bool showText = true;
     
 
 	void Start ()
@@ -43,8 +44,18 @@ public class TutorialManager : MonoBehaviour {
             manager.SetActive(false);
         }
 
-        if (instructions.sprite == first && Input.GetKeyDown(KeyCode.Space))
+        if (instructions.sprite == first && Input.GetKeyDown(KeyCode.X))
+        {
+            showText = false;
             SetNextTutorial(1);
+        }
+
+        if (instructions.sprite == last && Input.GetKeyDown(KeyCode.X))
+        {
+            showText = false;
+            UI.SetActive(false);
+            manager.SetActive(false);
+        }
 
         if (currentTuto)
             currentTuto.CheckIfHappening();
@@ -81,5 +92,15 @@ public class TutorialManager : MonoBehaviour {
         }
 
         return null;
+    }
+
+    void OnGUI()
+    {
+        if (instructions.sprite == last)
+            GUI.Label(new Rect(75, 150, 200f, 200f), "[X] Quitter");
+            
+
+        if (showText || currentTuto.order % 2 == 0)
+            GUI.Label(new Rect(75, 150, 200f, 200f), "[X] Suivant");
     }
 }
