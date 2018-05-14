@@ -33,8 +33,11 @@ public class RayCast : MonoBehaviour {
                         flashlight.GetComponent<flashlight>().Enabled();
                     }
 
-                    if (item.name.Substring(0, 4) == "Door" || item.name == "Chest")
+                    else if (item.name.Substring(0, 4) == "Door" || item.name == "Chest")
                         FindObjectOfType<AudioManager>().Play("Key");
+
+                    else if (item.name == "Crowbar")
+                        FindObjectOfType<AudioManager>().Play("Crowbar");
 
                     Inventory.instance.Add(item);
                     displayMessage = false;

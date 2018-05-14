@@ -12856,6 +12856,12 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: Crowbar
+    clip: {fileID: 8300000, guid: 46c514b8cb362d34cb716571fcd29364, type: 3}
+    volume: 0.43
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
 --- !u!4 &850160407
 Transform:
   m_ObjectHideFlags: 0
@@ -21410,6 +21416,10 @@ Prefab:
     - target: {fileID: 400000, guid: 21126664e6368ab4ea9b012a90c1d2d9, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.43449432
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 21126664e6368ab4ea9b012a90c1d2d9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 21126664e6368ab4ea9b012a90c1d2d9, type: 3}
