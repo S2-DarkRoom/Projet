@@ -23879,6 +23879,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1550162447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1550162444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2b44a5a2f41656428c811061d1db306, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  order: 1
 --- !u!1 &1550425125
 GameObject:
   m_ObjectHideFlags: 0
@@ -25548,6 +25560,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1640395009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1640395006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2b44a5a2f41656428c811061d1db306, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  order: 3
 --- !u!224 &1644534544
 RectTransform:
   m_ObjectHideFlags: 0
@@ -28580,6 +28604,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1796827561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1796827558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2b44a5a2f41656428c811061d1db306, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  order: 4
 --- !u!1001 &1805625873
 Prefab:
   m_ObjectHideFlags: 0
@@ -31007,6 +31043,22 @@ Prefab:
     - target: {fileID: 400036, guid: 457994be64978f042b0ba7991d7fa210, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0.175
+      objectReference: {fileID: 0}
+    - target: {fileID: 100046, guid: 457994be64978f042b0ba7991d7fa210, type: 3}
+      propertyPath: m_Name
+      value: Button1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100026, guid: 457994be64978f042b0ba7991d7fa210, type: 3}
+      propertyPath: m_Name
+      value: Button2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100012, guid: 457994be64978f042b0ba7991d7fa210, type: 3}
+      propertyPath: m_Name
+      value: Button3
+      objectReference: {fileID: 0}
+    - target: {fileID: 100036, guid: 457994be64978f042b0ba7991d7fa210, type: 3}
+      propertyPath: m_Name
+      value: Button4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 457994be64978f042b0ba7991d7fa210, type: 3}
@@ -34135,6 +34187,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.39909324, y: 0.33076525, z: 0.89312893}
   m_Center: {x: 12.419662, y: -0.9733331, z: -0.053435043}
+--- !u!114 &2021482780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2021482777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2164a96a33fb6cc4cb1ba6028bb802ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttons: []
+  victory: 21314
 --- !u!1 &2024385464
 GameObject:
   m_ObjectHideFlags: 0
@@ -35046,6 +35111,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &2080658113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2080658110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2b44a5a2f41656428c811061d1db306, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  order: 2
 --- !u!1 &2081229408
 GameObject:
   m_ObjectHideFlags: 0

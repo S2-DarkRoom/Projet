@@ -46,6 +46,18 @@ public class RayCast : MonoBehaviour {
                 }
             }
 
+            else if (hit.collider.tag == "interactive")
+            {
+                displayMessage = true;
+                message = "[E] Appuyer";
+
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    string button = hit.collider.GetComponent<ButtonPush>().order;
+                    FindObjectOfType<Shower>().OnButtonPushed(button);
+                }
+            }
+
 
             else if (hit.collider.tag == "doors")
             {
