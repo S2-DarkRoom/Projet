@@ -50,9 +50,11 @@ public class RayCast : MonoBehaviour {
             {
                 displayMessage = true;
                 message = "[E] Appuyer";
+                Debug.Log("Interactive");
 
                 if (Input.GetKeyDown(KeyCode.E))
                 {
+                    Debug.Log("Hit E");
                     string button = hit.collider.GetComponent<ButtonPush>().order;
                     FindObjectOfType<Shower>().OnButtonPushed(button);
                 }
