@@ -10,6 +10,7 @@ public class Levier : MonoBehaviour
     public Material[] red;
     public Material[] greenglass;
     public Material[] redglass;
+    public GameObject door;
     Shower shower;
     Animator anim;
     bool set = false;
@@ -47,7 +48,12 @@ public class Levier : MonoBehaviour
         time = 2f;
 
         if (ok)
+        {
             Green(true);
+            door.GetComponent<Doors>().open = true;
+            door.GetComponent<Doors>().TryOpen(true);
+        }
+            
         else
             Red(true);
 

@@ -21391,6 +21391,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 960411e4369601f4898a3aa98d894e3c, type: 2}
   redglass:
   - {fileID: 2100000, guid: 252c8f0280b89d047bc2d404d917bf2c, type: 2}
+  door: {fileID: 2058223303}
 --- !u!4 &1344015564
 Transform:
   m_ObjectHideFlags: 0
@@ -24734,7 +24735,7 @@ Animator:
   m_GameObject: {fileID: 1550162444}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 28ebf2d081bd77a4d9055d4b01931145, type: 2}
+  m_Controller: {fileID: 9100000, guid: 8ba15e7e1064e3742a77daf08ca8f982, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -26406,6 +26407,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.019694101, y: 0.019694107, z: 0.09990551}
   m_Center: {x: 0.0000001787867, y: 0.0000004800241, z: 0.035415016}
+--- !u!95 &1640395008
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1640395006}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c7939e97b34d83840bb4486bcbf128f0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &1640395009
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31981,7 +31999,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400046, guid: 457994be64978f042b0ba7991d7fa210, type: 3}
       propertyPath: m_RootOrder
-      value: 24
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 400070, guid: 457994be64978f042b0ba7991d7fa210, type: 3}
       propertyPath: m_RootOrder
@@ -35954,6 +35972,11 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!1 &2058223303 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1377945610742772, guid: 3c1133b3de18a8e4bad9a05d4058e330,
+    type: 2}
+  m_PrefabInternal: {fileID: 729266092}
 --- !u!1001 &2069470958
 Prefab:
   m_ObjectHideFlags: 0
@@ -36219,7 +36242,7 @@ Animator:
   m_GameObject: {fileID: 2080658110}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 06ed035416b303a419ee12b9dceb32df, type: 2}
+  m_Controller: {fileID: 9100000, guid: 599d29372fe5cee42b5693c74defc6c9, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
