@@ -20,21 +20,34 @@ public class Doors : MonoBehaviour {
         _animator.SetBool("open", false);
     }
 
-    public bool TryOpen()
+    public bool TryOpen(bool force)
     {
         if (locked == true)
         {
-            for (int i = 0; i < Inventory.items.Count; i++)
+            if (force)
             {
-                if (Inventory.items[i].name == this.name)
-                {
-                    _animator.SetBool("open", true);
-                    if (name.Substring(0, 4) == "Door") //cas des portes 
-                        FindObjectOfType<AudioManager>().Play("Porte");
+                _animator.SetBool("open", true);
+                if (name.Substring(0, 4) == "Door") //cas des portes 
+                    FindObjectOfType<AudioManager>().Play("Porte");
 
-                    return true;
+                return true;
+            }
+
+            else
+            {
+                for (int i = 0; i < Inventory.items.Count; i++)
+                {
+                    if (Inventory.items[i].name == this.name)
+                    {
+                        _animator.SetBool("open", true);
+                        if (name.Substring(0, 4) == "Door") //cas des portes 
+                            FindObjectOfType<AudioManager>().Play("Porte");
+
+                        return true;
+                    }
                 }
             }
+            
             return false;
         }
 

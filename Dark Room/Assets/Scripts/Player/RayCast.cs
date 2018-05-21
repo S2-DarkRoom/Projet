@@ -46,17 +46,29 @@ public class RayCast : MonoBehaviour {
                 }
             }
 
-            else if (hit.collider.tag == "interactive")
+            else if (hit.collider.tag == "button")
             {
                 displayMessage = true;
                 message = "[E] Appuyer";
-                Debug.Log("Interactive");
 
                 if (Input.GetKeyDown(KeyCode.E))
                 {
                     Debug.Log("Hit E");
                     string button = hit.collider.GetComponent<ButtonPush>().order;
                     FindObjectOfType<Shower>().OnButtonPushed(button);
+                }
+            }
+
+            else if (hit.collider.tag == "interactif")
+            {
+                displayMessage = true;
+                message = "[E] Activer";
+
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    Debug.Log("Press E");
+                    Levier levier = hit.collider.GetComponentInParent<Levier>();
+                    levier.Activated();
                 }
             }
 
@@ -91,12 +103,18 @@ public class RayCast : MonoBehaviour {
 
                     message = "[E] Ouvrir";
 
-                    if (Input.GetKeyDown(KeyCode.E))
+                    if (Input.GetKeyDown(KeyCode.Alpha1))
+                    {
+                        door.TryOpen(true);
+                        door.open = true;
+                        displayMessage = false;
+                    }
+
+                    else if (Input.GetKeyDown(KeyCode.E))
                     {
                         if (door.name.Substring(0, 4) == "Door")
                         {
-                            Debug.Log("substring");
-                            if (door.TryOpen() == false)
+                            if (door.TryOpen(false) == false)
                             {
                                 displayMessage = true;
                                 message = "Locked";
