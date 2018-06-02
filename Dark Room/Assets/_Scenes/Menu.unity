@@ -870,9 +870,9 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: French
-      m_Image: {fileID: 0}
     - m_Text: English
+      m_Image: {fileID: 0}
+    - m_Text: French
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1305,6 +1305,7 @@ MonoBehaviour:
   musicVolumeSlider: {fileID: 713380750}
   applyButton: {fileID: 1811304378}
   language: {fileID: 0}
+  FR: 0
   musicSource: {fileID: 970565172}
   gameSettings: {fileID: 0}
 --- !u!1 &249411204

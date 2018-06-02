@@ -21,19 +21,27 @@ public class TutorialManager : MonoBehaviour {
     private Tutorial currentTuto;
 
     //Gestion de l'UI
-    public Sprite[] listTutoInstructions = new Sprite[5];
-    public Sprite first;
-    public Sprite last;
-    public Sprite bien;
+    public Sprite[] listTutoInstructionsFR = new Sprite[4];
+    public Sprite[] listTutoInstructionsEN = new Sprite[4];
+
+    public Sprite firstFR;
+    public Sprite firstEN;
+    public Sprite lastFR;
+    public Sprite lastEN;
+    public Sprite goodEN;
+    public Sprite goodFR;
+
     public GameObject manager;
     public GameObject UI;
     public Image instructions;
     bool showText = true;
+    bool FR;
     
 
 	void Start ()
     {
-        instructions.sprite = first;
+        FR = FindObjectOfType<SettingsManager>().FR;
+        instructions.sprite = FR ? firstFR : firstEN;
 	}
 	
 	void Update ()
@@ -44,13 +52,13 @@ public class TutorialManager : MonoBehaviour {
             manager.SetActive(false);
         }
 
-        if (instructions.sprite == first && Input.GetKeyDown(KeyCode.X))
+        if ((instructions.sprite == firstFR || instructions.sprite == firstEN) && Input.GetKeyDown(KeyCode.X))
         {
             showText = false;
             SetNextTutorial(1);
         }
 
-        if (instructions.sprite == last && Input.GetKeyDown(KeyCode.X))
+        if ((instructions.sprite == lastFR || instructions.sprite == lastEN) && Input.GetKeyDown(KeyCode.X))
         {
             showText = false;
             UI.SetActive(false);
@@ -75,12 +83,12 @@ public class TutorialManager : MonoBehaviour {
             return;
         }
 
-        instructions.sprite = currentTuto.sprite;
+        instructions.sprite = FR ? currentTuto.spriteFR : currentTuto.spriteEN;
     }
 
     public void CompletedAllTutorials()
     {
-        instructions.sprite = last;
+        instructions.sprite = FR? lastFR : lastEN;
     }
 
     public Tutorial GetTutorialByOrder(int order)
@@ -96,11 +104,11 @@ public class TutorialManager : MonoBehaviour {
 
     void OnGUI()
     {
-        if (instructions.sprite == last)
-            GUI.Label(new Rect(Screen.height * 0.05f, Screen.width * 0.1f, 200f, 200f), "[X] Quitter");
+        if (instructions.sprite == lastFR || instructions.sprite == lastEN)
+            GUI.Label(new Rect(Screen.height * 0.05f, Screen.width * 0.1f, 200f, 200f), FR? "[X] Quitter" : "[X] Exit");
             
 
         if (showText || currentTuto.order % 2 == 0)
-            GUI.Label(new Rect(Screen.height * 0.05f, Screen.width * 0.1f, 200f, 200f), "[X] Suivant");
+            GUI.Label(new Rect(Screen.height * 0.05f, Screen.width * 0.1f, 200f, 200f), FR? "[X] Suivant" : "[X] Next");
     }
 }

@@ -5,7 +5,8 @@ using UnityEngine;
 public class Tutorial : MonoBehaviour
 {
     public int order;
-    public Sprite sprite;
+    public Sprite spriteFR;
+    public Sprite spriteEN;
 
     void Awake()
     {

@@ -12,27 +12,25 @@ public class ChangeScene : MonoBehaviour
     private int drawDepth = -1000;  // the texture's order in the draw hierarchy: a low number means it renders on top
     private float alpha = 1.0f;   // the texture's alpha value between 0 and 1
     private int fadeDir = -1;   // the direction to fade: in = -1 or out = 1
+    public float time = 3f;
 
     void Update()
     {
+        time -= Time.deltaTime;
+
         Scene sc = SceneManager.GetActiveScene();
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) || time < 0)
         {
             if (sc.name == "TitleGame")
             {
                 SceneManager.LoadScene("TitleCredit");
             }
                 
-            else if (sc.name == "TitleCredit")
+            else if (sc.name == "TitleCredit" || time < 0)
             {
                 SceneManager.LoadScene("Menu");
             }
-                
-            else if (sc.name == "Menu")
-            {
-                SceneManager.LoadScene("Game");
-            } 
         }
     }
 
