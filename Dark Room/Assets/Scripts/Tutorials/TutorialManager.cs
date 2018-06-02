@@ -84,6 +84,8 @@ public class TutorialManager : MonoBehaviour {
         }
 
         instructions.sprite = FR ? currentTuto.spriteFR : currentTuto.spriteEN;
+        if (currentTuto.GetComponent<PickupTutorial>() != null)
+            currentTuto.GetComponent<PickupTutorial>().ActivateParticle();
     }
 
     public void CompletedAllTutorials()

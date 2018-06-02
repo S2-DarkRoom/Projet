@@ -8,12 +8,18 @@ public class PickupTutorial : Tutorial
     Inventory inventory;
     InventorySlot[] slots;
     public string obj;
+    public GameObject particle;
     
     public void Start()
     {
         inventory = Inventory.instance;
 
         slots = itemsParent.GetComponentsInChildren<InventorySlot>();
+    }
+
+    public void ActivateParticle()
+    {
+        particle.SetActive(true);
     }
 
     public override void CheckIfHappening()
