@@ -79,11 +79,10 @@ public class SettingsManager : MonoBehaviour
 		SaveSettings (); 
 	}
 
-    //Changer de langue
+    //Changer de langue et appelle les scripts de changements de sprites
     public void OnLanguageChanged()
     {
         FR = language.value == 1;
-        Debug.Log(FR);
     }
 
 

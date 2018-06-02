@@ -254,6 +254,7 @@
     <Compile Include="Assets\Scripts\Inventory\Inventory.cs" />
     <Compile Include="Assets\Scripts\Inventory\InventorySlot.cs" />
     <Compile Include="Assets\Scripts\Inventory\InventoryUI.cs" />
+    <Compile Include="Assets\Scripts\Langage\CodeLanguage.cs" />
     <Compile Include="Assets\Scripts\Menus\ChangeScene.cs" />
     <Compile Include="Assets\Scripts\Menus\MenuPrincipal.cs" />
     <Compile Include="Assets\Scripts\Menus\Pausemenu.cs" />

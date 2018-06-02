@@ -14,6 +14,7 @@ public class CodeUI : MonoBehaviour
     private Animator _animator;
     bool enter = true;
     bool displayMessage = false;
+    bool FR;
 
     DigitSlot[] slots;
 
@@ -26,6 +27,8 @@ public class CodeUI : MonoBehaviour
 
     private void Update()
     {
+        FR = FindObjectOfType<SettingsManager>().FR;
+
         //Quitter l'interface
         if (Input.GetKeyDown(KeyCode.Escape))
         {
@@ -123,12 +126,12 @@ public class CodeUI : MonoBehaviour
             string message;
 
             if (enter)
-                message = "[A] Validate";
+                message = FR ? "[A] Valider" : "[A] Validate";
             else
-                message = "[A] Try Again";
+                message = FR ? "[A] Réessayer": "[A] Try Again";
 
             GUI.Label(new Rect(Screen.width / 2 - 30, Screen.height / 2 + 200, 250f, 250f), message);
-            GUI.Label(new Rect(Screen.width / 2 - 30, Screen.height / 2 + 220, 250f, 250f), "[Echap] Exit");
+            GUI.Label(new Rect(Screen.width / 2 - 30, Screen.height / 2 + 220, 250f, 250f), FR? "[Echap] Quitter" : "[Echap] Exit");
         }
     }
 
