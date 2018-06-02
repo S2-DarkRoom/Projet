@@ -7323,7 +7323,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 984991917
+  randomSeed: 963412968
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -24229,6 +24229,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.037973348, y: 0.01459026, z: 0.0017777232}
   m_Center: {x: -0.008146204, y: -0.0019830551, z: 0.0009294924}
+--- !u!114 &733955091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 733955086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0645af436bde74a41b01e395ecd93e5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
+  type: 0
 --- !u!1 &738492327
 GameObject:
   m_ObjectHideFlags: 0

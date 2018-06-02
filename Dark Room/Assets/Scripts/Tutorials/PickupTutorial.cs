@@ -19,7 +19,8 @@ public class PickupTutorial : Tutorial
 
     public void ActivateParticle()
     {
-        particle.SetActive(true);
+        if (particle != null)
+            particle.SetActive(true);
     }
 
     public override void CheckIfHappening()

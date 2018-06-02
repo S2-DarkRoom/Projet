@@ -36,6 +36,7 @@ public class TutorialManager : MonoBehaviour {
     public Image instructions;
     bool showText = true;
     bool FR;
+    bool completed = false;
     
 
 	void Start ()
@@ -91,6 +92,7 @@ public class TutorialManager : MonoBehaviour {
     public void CompletedAllTutorials()
     {
         instructions.sprite = FR? lastFR : lastEN;
+        completed = true;
     }
 
     public Tutorial GetTutorialByOrder(int order)
@@ -110,7 +112,7 @@ public class TutorialManager : MonoBehaviour {
             GUI.Label(new Rect(Screen.height * 0.05f, Screen.width * 0.1f, 200f, 200f), FR? "[X] Quitter" : "[X] Exit");
             
 
-        if (showText || currentTuto.order % 2 == 0)
+        if (!completed && (showText || currentTuto.order % 2 == 0))
             GUI.Label(new Rect(Screen.height * 0.05f, Screen.width * 0.1f, 200f, 200f), FR? "[X] Suivant" : "[X] Next");
     }
 }
