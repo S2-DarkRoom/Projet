@@ -2,18 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RayCast : MonoBehaviour {
-
-    public GameObject flashlight;
+public class RayCast : MonoBehaviour
+{
     public float distance;
     RaycastHit hit;
+
     float displayTime = 2;
     bool displayMessage = false;
     string message = "";
     bool lockedMessage = false;
+
+    public GameObject flashlight;
     bool code = false;
     public GameObject UIcode;
     bool FR;
+    public GameObject paper;
 
     void Update ()
     {
@@ -41,6 +44,12 @@ public class RayCast : MonoBehaviour {
 
                     else if (item.name == "Crowbar")
                         FindObjectOfType<AudioManager>().Play("Crowbar");
+
+                    else if (item.name == "Sheet")
+                    {
+                        paper.SetActive(true);
+                        paper.GetComponent<PapersManager>().Show(item.GetComponent<Paper>());
+                    }
 
                     Inventory.instance.Add(item);
                     displayMessage = false;

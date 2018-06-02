@@ -241,7 +241,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Paper.cs" />
     <Compile Include="Assets\Scripts\Audio\AudioManager.cs" />
     <Compile Include="Assets\Scripts\Audio\PlayAudio.cs" />
     <Compile Include="Assets\Scripts\Audio\Sound.cs" />
@@ -264,7 +263,10 @@
     <Compile Include="Assets\Scripts\Multijoueur\PlayerSetup_multi.cs" />
     <Compile Include="Assets\Scripts\Options et paramètres\GameSettings.cs" />
     <Compile Include="Assets\Scripts\Options et paramètres\SettingsManager.cs" />
-    <Compile Include="Assets\Scripts\Pickups\flashlight.cs" />
+    <Compile Include="Assets\Scripts\PapersManager.cs" />
+    <Compile Include="Assets\Scripts\Pickups\Flashlight.cs" />
+    <Compile Include="Assets\Scripts\Pickups\Paper.cs" />
+    <Compile Include="Assets\Scripts\Pickups\PapersManager.cs" />
     <Compile Include="Assets\Scripts\Pickups\Pickups.cs" />
     <Compile Include="Assets\Scripts\Player\CameraScript.cs" />
     <Compile Include="Assets\Scripts\Player\FirstPerson.cs" />

@@ -11,7 +11,8 @@ public class Paper : MonoBehaviour
     {
         GAME_INFO,
         CODE_PART,
-        CLUE
+        CLUE,
+        TEST
     };
     
 }

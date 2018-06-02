@@ -32,6 +32,8 @@ public class CodeUI : MonoBehaviour
         //Quitter l'interface
         if (Input.GetKeyDown(KeyCode.Escape))
         {
+            GameObject.Find("Player").GetComponent<PlayerController>().enabled = true;
+            GameObject.Find("Player").GetComponentInChildren<FirstPerson>().enabled = true;
             UI.SetActive(false);
             displayMessage = false;
             Reset();
@@ -148,6 +150,8 @@ public class CodeUI : MonoBehaviour
     //Appel du script
     public void Called()
     {
+        GameObject.Find("Player").GetComponent<PlayerController>().enabled = false;
+        GameObject.Find("Player").GetComponentInChildren<FirstPerson>().enabled = false;
         UI.SetActive(true);
         UIwrong.SetActive(false);
         UIenter.SetActive(true);
