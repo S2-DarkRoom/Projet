@@ -7235,7 +7235,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1006274054
+  randomSeed: -305454928
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -12464,7 +12464,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1876575324
+  randomSeed: 97941461
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -14984,7 +14984,7 @@ ParticleSystem:
       properties: 0
   LightsModule:
     enabled: 1
-    ratio: 1
+    ratio: 0.1
     light: {fileID: 108039562249423542, guid: 3b4e05338ff8d004da5b5085a599e7aa, type: 2}
     randomDistribution: 1
     color: 1
@@ -15034,7 +15034,7 @@ ParticleSystem:
     intensityCurve:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 2
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -52503,7 +52503,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1906801335
+  randomSeed: -1277441173
   InitialModule:
     serializedVersion: 3
     enabled: 1
