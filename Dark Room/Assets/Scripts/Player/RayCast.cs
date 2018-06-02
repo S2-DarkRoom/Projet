@@ -13,16 +13,19 @@ public class RayCast : MonoBehaviour {
     bool lockedMessage = false;
     bool code = false;
     public GameObject UIcode;
+    bool FR;
 
     void Update ()
     {
+        FR = FindObjectOfType<SettingsManager>().FR; //Get language
+
         Debug.DrawRay(this.transform.position, this.transform.forward * distance, Color.magenta);
         if (Physics.Raycast(this.transform.position, this.transform.forward, out hit, distance))
         {
             if (hit.collider.tag == "pickup")
             {
                 displayMessage = true;
-                message = "[E] Ramasser";
+                message = FR ? "[E] Ramasser": "[E] Pick Up";
 
                 if (Input.GetKeyDown(KeyCode.E))
                 {
@@ -49,7 +52,7 @@ public class RayCast : MonoBehaviour {
             else if (hit.collider.tag == "button")
             {
                 displayMessage = true;
-                message = "[E] Appuyer";
+                message = FR ? "[E] Appuyer" : "[E] Press";
 
                 if (Input.GetKeyDown(KeyCode.E))
                 {
@@ -62,7 +65,7 @@ public class RayCast : MonoBehaviour {
             else if (hit.collider.tag == "interactif")
             {
                 displayMessage = true;
-                message = "[E] Activer";
+                message = FR ? "[E] Activer" : "[E] Activate";
 
                 if (Input.GetKeyDown(KeyCode.E))
                 {
@@ -101,7 +104,7 @@ public class RayCast : MonoBehaviour {
                     if (UIcode.activeSelf == false)
                         displayMessage = true;
 
-                    message = "[E] Ouvrir";
+                    message = FR ? "[E] Ouvrir" : "[E] Open";
 
                     if (Input.GetKeyDown(KeyCode.Alpha1))
                     {
@@ -117,7 +120,7 @@ public class RayCast : MonoBehaviour {
                             if (door.TryOpen(false) == false)
                             {
                                 displayMessage = true;
-                                message = "Locked";
+                                message = FR ? "[E] Verrouillé" : "[E] Locked";
                                 lockedMessage = true;
                             }
 
@@ -140,7 +143,7 @@ public class RayCast : MonoBehaviour {
                 else if (name.Substring(0, 4) == "Door")
                 {
                     displayMessage = true;
-                    message = "[E] Fermer";
+                    message = FR ? "[E] Fermer" : "[E] Close";
                     if (Input.GetKeyDown(KeyCode.E))
                     {
                         door.Close();

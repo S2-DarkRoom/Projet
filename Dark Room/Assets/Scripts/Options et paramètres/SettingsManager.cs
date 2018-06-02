@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.IO;
 
-public class SettingsManager : MonoBehaviour {
+public class SettingsManager : MonoBehaviour
+{
 
 	public Toggle fullscreenToggle; 
 	public Dropdown resolutionDropdown; 
@@ -12,7 +13,9 @@ public class SettingsManager : MonoBehaviour {
 	public Dropdown antialiasingDropdown; 
 	public Dropdown vSyncDropdown; 
 	public Slider musicVolumeSlider;
-	public Button applyButton; 
+	public Button applyButton;
+    public Dropdown language; //Added language  changement 02/06
+    public bool FR = false;
 
 	public AudioSource musicSource; 
 	public Resolution[] resolutions; 
@@ -29,8 +32,9 @@ public class SettingsManager : MonoBehaviour {
 		vSyncDropdown.onValueChanged.AddListener (delegate {onVsyncChange (); });
 		musicVolumeSlider.onValueChanged.AddListener (delegate {onMusicVolumeChange (); });
 		applyButton.onClick.AddListener (delegate {OnApplyButtonClick(); });
+        language.onValueChanged.AddListener(delegate { OnLanguageChanged(); }); //Added language  changement 02/06
 
-		resolutions = Screen.resolutions;
+        resolutions = Screen.resolutions;
 		foreach (Resolution resolution in resolutions) 
 		{
 			resolutionDropdown.options.Add (new Dropdown.OptionData (resolution.ToString()));
@@ -75,7 +79,15 @@ public class SettingsManager : MonoBehaviour {
 		SaveSettings (); 
 	}
 
-	public void SaveSettings ()
+    //Changer de langue
+    public void OnLanguageChanged()
+    {
+        FR = language.value == 1;
+        Debug.Log(FR);
+    }
+
+
+    public void SaveSettings ()
 	{
 		string jsondata = JsonUtility.ToJson(gameSettings, true);
 		File.WriteAllText (Application.persistentDataPath + "/gamesettings.json", jsondata);
@@ -83,7 +95,6 @@ public class SettingsManager : MonoBehaviour {
 
 	public void LoadSettings ()
 	{
-		/*gameSettings = JsonUtility.FromJson<GameSettings> (File.ReadAllText(Application.persistentDataPath + "/gamesettings.json")); */
 
 		musicVolumeSlider.value = gameSettings.musicVolume; 
 		antialiasingDropdown.value = gameSettings.antialiasing; 
