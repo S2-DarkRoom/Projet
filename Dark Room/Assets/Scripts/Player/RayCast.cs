@@ -74,13 +74,32 @@ public class RayCast : MonoBehaviour
             else if (hit.collider.tag == "interactif")
             {
                 displayMessage = true;
-                message = FR ? "[E] Activer" : "[E] Activate";
+                switch(hit.collider.GetComponentInParent<Interactible>().name)
+                {
+                    case ("Levier"):
+                        message = FR ? "[E] Activer" : "[E] Activate";
+                        break;
+                    case ("Breaker"):
+                        message = FR ? "[E] Forcer l'ouverture" : "[E] Force opening";
+                        break;
+                    default:
+                        message = FR ? "[E] Interagir" : "[E] Interact";
+                        break;
+                }
 
                 if (Input.GetKeyDown(KeyCode.E))
                 {
-                    Debug.Log("Press E");
-                    Levier levier = hit.collider.GetComponentInParent<Levier>();
-                    levier.Activated();
+                    switch (hit.collider.GetComponentInParent<Interactible>().name)
+                    {
+                        case ("Levier"):
+                            hit.collider.GetComponentInParent<Levier>().Activated();
+                            break;
+                        case ("Breaker"):
+                            hit.collider.GetComponentInParent<Breaker>().Activated();
+                            break;
+                        default:
+                            break;
+                    }
                 }
             }
 
