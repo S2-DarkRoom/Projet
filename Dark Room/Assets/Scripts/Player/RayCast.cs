@@ -74,12 +74,13 @@ public class RayCast : MonoBehaviour
             else if (hit.collider.tag == "interactif")
             {
                 displayMessage = true;
-                switch(hit.collider.GetComponentInParent<Interactible>().name)
+                switch(hit.collider.GetComponent<Interactible>().name)
                 {
                     case ("Levier"):
+                    case("BreakerButton"):
                         message = FR ? "[E] Activer" : "[E] Activate";
                         break;
-                    case ("Breaker"):
+                    case ("BreakerDoor"):
                         message = FR ? "[E] Forcer l'ouverture" : "[E] Force opening";
                         break;
                     default:
@@ -89,13 +90,16 @@ public class RayCast : MonoBehaviour
 
                 if (Input.GetKeyDown(KeyCode.E))
                 {
-                    switch (hit.collider.GetComponentInParent<Interactible>().name)
+                    switch (hit.collider.GetComponent<Interactible>().name)
                     {
                         case ("Levier"):
                             hit.collider.GetComponentInParent<Levier>().Activated();
                             break;
-                        case ("Breaker"):
+                        case ("BreakerDoor"):
                             hit.collider.GetComponentInParent<Breaker>().Activated();
+                            break;
+                        case ("BreakerButton"):
+                            hit.collider.GetComponentInParent<Breaker>().ButtonPressed();
                             break;
                         default:
                             break;
