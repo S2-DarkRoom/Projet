@@ -241,16 +241,16 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Breaker.cs" />
-    <Compile Include="Assets\Interactible.cs" />
     <Compile Include="Assets\Scripts\Audio\AudioManager.cs" />
     <Compile Include="Assets\Scripts\Audio\PlayAudio.cs" />
     <Compile Include="Assets\Scripts\Audio\Sound.cs" />
     <Compile Include="Assets\Scripts\Cinematiques\ActivateCine.cs" />
     <Compile Include="Assets\Scripts\Cinematiques\DeleteCamera.cs" />
+    <Compile Include="Assets\Scripts\Interactives\Breaker.cs" />
     <Compile Include="Assets\Scripts\Interactives\ButtonPush.cs" />
     <Compile Include="Assets\Scripts\Interactives\Chest.cs" />
     <Compile Include="Assets\Scripts\Interactives\Doors.cs" />
+    <Compile Include="Assets\Scripts\Interactives\Interactible.cs" />
     <Compile Include="Assets\Scripts\Interactives\Levier.cs" />
     <Compile Include="Assets\Scripts\Interactives\Shower.cs" />
     <Compile Include="Assets\Scripts\Inventory\Inventory.cs" />
@@ -265,7 +265,6 @@
     <Compile Include="Assets\Scripts\Multijoueur\PlayerSetup_multi.cs" />
     <Compile Include="Assets\Scripts\Options et paramètres\GameSettings.cs" />
     <Compile Include="Assets\Scripts\Options et paramètres\SettingsManager.cs" />
-    <Compile Include="Assets\Scripts\PapersManager.cs" />
     <Compile Include="Assets\Scripts\Pickups\Flashlight.cs" />
     <Compile Include="Assets\Scripts\Pickups\Paper.cs" />
     <Compile Include="Assets\Scripts\Pickups\PapersManager.cs" />

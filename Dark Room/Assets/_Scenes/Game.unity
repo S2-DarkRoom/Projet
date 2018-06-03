@@ -2171,6 +2171,14 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 2300028, guid: 7ff5c9170f4309c40ba5ab224b9a386c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 49eaea9e3335f1947b390345c3c279b2, type: 2}
+    - target: {fileID: 2300026, guid: 7ff5c9170f4309c40ba5ab224b9a386c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 49eaea9e3335f1947b390345c3c279b2, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7ff5c9170f4309c40ba5ab224b9a386c, type: 3}
   m_IsPrefabParent: 0
@@ -23351,6 +23359,7 @@ GameObject:
   - component: {fileID: 628837217}
   - component: {fileID: 628837216}
   - component: {fileID: 628837215}
+  - component: {fileID: 628837220}
   m_Layer: 5
   m_Name: Papers
   m_TagString: Untagged
@@ -23445,6 +23454,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &628837220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 628837214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87223ca6e18a6c840bee527a7b628ba8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sheet: {fileID: 1182135490}
 --- !u!1001 &633420492
 Prefab:
   m_ObjectHideFlags: 0
