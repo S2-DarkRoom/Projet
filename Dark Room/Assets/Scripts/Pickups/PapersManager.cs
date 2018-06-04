@@ -16,7 +16,10 @@ public class PapersManager : MonoBehaviour
     public void Update()
     {
         if (Input.GetKeyDown(KeyCode.X))
+        {
+            FindObjectOfType<AudioManager>().Play("Paper");
             gameObject.SetActive(false);
+        }  
     }
 
     public void OnGUI()
