@@ -30,8 +30,12 @@ public class Doors : MonoBehaviour {
             if (force)
             {
                 _animator.SetBool("open", true);
-                if (name.Substring(0, 4) == "Door") //cas des portes 
+                if (name == "DoorElevator")
+                    FindObjectOfType<Elevator>().Activate();
+
+                else if (name.Substring(0, 4) == "Door") //cas des portes 
                     FindObjectOfType<AudioManager>().Play("Porte");
+
 
                 return true;
             }
@@ -46,7 +50,10 @@ public class Doors : MonoBehaviour {
                     {
                         
                         _animator.SetBool("open", true);
-                        if (name.Substring(0, 4) == "Door") //cas des portes 
+                        if (name == "DoorElevator")
+                            FindObjectOfType<Elevator>().Activate();
+
+                        else if (name.Substring(0, 4) == "Door") //cas des portes 
                             FindObjectOfType<AudioManager>().Play("Porte");
 
                         return true;
