@@ -87,6 +87,9 @@ public class RayCast : MonoBehaviour
                     case("BreakerButton"):
                         message = FR ? "[E] Activer" : "[E] Activate";
                         break;
+                    case ("ElevatorControls"):
+                        message = FR ? "[E] Baisser" : "[E] Lower";
+                        break;
                     case ("BreakerDoor"):
                         message = FR ? "[E] Forcer l'ouverture" : "[E] Force opening";
                         break;
@@ -107,6 +110,9 @@ public class RayCast : MonoBehaviour
                             break;
                         case ("BreakerButton"):
                             hit.collider.GetComponentInParent<Breaker>().ButtonPressed();
+                            break;
+                        case ("ElevatorControls"):
+                            hit.collider.GetComponentInParent<ElevatorControls>().Activated();
                             break;
                         default:
                             break;

@@ -21,4 +21,14 @@ public class Elevator : MonoBehaviour
     {
         anim.SetBool("open", false);
     }
+
+    public void GoDown()
+    {
+        anim.SetBool("down", true);
+    }
+
+    public void Arrived()
+    {
+        anim.SetBool("open", true);
+    }
 }
