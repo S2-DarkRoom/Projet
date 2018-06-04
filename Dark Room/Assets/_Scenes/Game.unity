@@ -7883,7 +7883,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 963412968
+  randomSeed: 840956434
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -28211,6 +28211,18 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: Battery
+    clip: {fileID: 8300000, guid: c4e4890f56dbf834889dc6371300f54a, type: 3}
+    volume: 0.43
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Paper
+    clip: {fileID: 8300000, guid: aac2d24af19be814f85bfd7631d8546a, type: 3}
+    volume: 0.43
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
 --- !u!4 &850160407
 Transform:
   m_ObjectHideFlags: 0
@@ -31523,6 +31535,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a57367bb186dc234cb8c1c3c84f2e73a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lightobj: {fileID: 1763891319}
 --- !u!136 &1039045131
 CapsuleCollider:
   m_ObjectHideFlags: 0

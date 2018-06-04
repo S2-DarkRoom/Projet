@@ -40,6 +40,7 @@ public class SettingsManager : MonoBehaviour
 			resolutionDropdown.options.Add (new Dropdown.OptionData (resolution.ToString()));
 		}
 
+        language.value = 1;
 		LoadSettings (); 
 	}
 

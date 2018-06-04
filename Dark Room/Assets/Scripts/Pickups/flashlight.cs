@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class flashlight : MonoBehaviour {
+public class Flashlight : MonoBehaviour {
 
     private bool Ison;
     public GameObject lightobj;
