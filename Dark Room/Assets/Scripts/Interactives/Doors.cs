@@ -12,7 +12,10 @@ public class Doors : MonoBehaviour {
 
     private void Start()
     {
-        _animator = GetComponent<Animator>();
+        if (name == "DoorElevator")
+            _animator = GetComponentInParent<Animator>();
+        else
+            _animator = GetComponent<Animator>();
     }
 
     public void Close()
