@@ -138,7 +138,7 @@ public class RayCast : MonoBehaviour
 
                     message = FR ? "[E] Ouvrir" : "[E] Open";
 
-                    if (Input.GetKeyDown(KeyCode.Alpha1))
+                    if (Input.GetKeyDown(KeyCode.KeypadEnter))
                     {
                         door.TryOpen(true);
                         door.open = true;

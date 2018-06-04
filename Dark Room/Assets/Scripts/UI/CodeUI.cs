@@ -46,6 +46,9 @@ public class CodeUI : MonoBehaviour
             {
                 if (entered == code)
                 {
+                    GameObject.Find("Player").GetComponent<PlayerController>().enabled = true;
+                    GameObject.Find("Player").GetComponentInChildren<FirstPerson>().enabled = true;
+
                     _animator.SetBool("open", true);
                     displayMessage = false;
                     UI.SetActive(false);
@@ -119,6 +122,7 @@ public class CodeUI : MonoBehaviour
         UIwrong.SetActive(true);
 
         enter = false;
+        Reset();
     }
 
     void OnGUI()
