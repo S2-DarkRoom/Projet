@@ -22,7 +22,7 @@ public class Doors : MonoBehaviour {
 
     public bool TryOpen(bool force)
     {
-        if (locked == true)
+        if (locked)
         {
             if (force)
             {
@@ -37,8 +37,11 @@ public class Doors : MonoBehaviour {
             {
                 for (int i = 0; i < Inventory.items.Count; i++)
                 {
+                    Debug.Log(Inventory.items[i].name);
+                    Debug.Log(this.name);
                     if (Inventory.items[i].name == this.name)
                     {
+                        
                         _animator.SetBool("open", true);
                         if (name.Substring(0, 4) == "Door") //cas des portes 
                             FindObjectOfType<AudioManager>().Play("Porte");
