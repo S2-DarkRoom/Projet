@@ -31928,6 +31928,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a57367bb186dc234cb8c1c3c84f2e73a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lightobj: {fileID: 1763891319}
 --- !u!136 &1039045131
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -46319,7 +46320,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 193672, guid: 1b6f5d3a81a4c8345a49046252843fa9, type: 2}
       propertyPath: m_TagString
-      value: interactif
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1b6f5d3a81a4c8345a49046252843fa9, type: 2}
@@ -60386,7 +60387,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1982297342630962, guid: 231a750290b4bba40b1b80b90215e854, type: 2}
       propertyPath: m_Name
-      value: Flashlight
+      value: PlayerFlashlight
       objectReference: {fileID: 0}
     - target: {fileID: 4995866686947392, guid: 231a750290b4bba40b1b80b90215e854, type: 2}
       propertyPath: m_LocalScale.x
