@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class FadeOutCamera : MonoBehaviour
 {
-    float fadeTime = 5;
+    float fadeTime = 5f;
     public Texture fadeTexture;
     public bool fadeOut = false;
     private float tempTime;
     private float time = 0.0f;
     public GameObject tuto;
+    public string cam;
 
     public void Start()
     {
+        if (cam == "main")
+            fadeTime = 3f;
+
         fadeOut = true;
     }
 
@@ -27,8 +31,9 @@ public class FadeOutCamera : MonoBehaviour
 
         if (tempTime >= 1.0f)
         {
-            Debug.Log("Yeah");
-            tuto.SetActive(true);
+            if (cam == "main")
+                tuto.SetActive(true);
+
             enabled = false;
         }
             

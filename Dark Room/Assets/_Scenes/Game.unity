@@ -2115,7 +2115,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &104866170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37177,7 +37177,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4177091181922078, guid: 4af79360864e84a4e82cc3c1997c6e80, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.17364816
       objectReference: {fileID: 0}
     - target: {fileID: 4177091181922078, guid: 4af79360864e84a4e82cc3c1997c6e80, type: 2}
       propertyPath: m_LocalRotation.z
@@ -37185,7 +37185,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4177091181922078, guid: 4af79360864e84a4e82cc3c1997c6e80, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.9848078
       objectReference: {fileID: 0}
     - target: {fileID: 4177091181922078, guid: 4af79360864e84a4e82cc3c1997c6e80, type: 2}
       propertyPath: m_RootOrder
@@ -37193,7 +37193,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4177091181922078, guid: 4af79360864e84a4e82cc3c1997c6e80, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 114980256928106264, guid: 4af79360864e84a4e82cc3c1997c6e80,
         type: 2}
@@ -37225,23 +37225,23 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4423203035691760, guid: 4af79360864e84a4e82cc3c1997c6e80, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4423203035691760, guid: 4af79360864e84a4e82cc3c1997c6e80, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0.8716348
       objectReference: {fileID: 0}
     - target: {fileID: 4423203035691760, guid: 4af79360864e84a4e82cc3c1997c6e80, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4423203035691760, guid: 4af79360864e84a4e82cc3c1997c6e80, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.49015602
       objectReference: {fileID: 0}
     - target: {fileID: 4423203035691760, guid: 4af79360864e84a4e82cc3c1997c6e80, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -121.298004
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4af79360864e84a4e82cc3c1997c6e80, type: 2}
@@ -64718,7 +64718,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeTexture: {fileID: 2800000, guid: 8f2a4f195044f094ab5422857c470f2c, type: 3}
   fadeOut: 0
-  tuto: {fileID: 1929375076}
+  tuto: {fileID: 104866169}
 --- !u!1 &1947837500
 GameObject:
   m_ObjectHideFlags: 0
