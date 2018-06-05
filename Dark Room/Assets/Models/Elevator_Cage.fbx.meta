@@ -1,7 +1,5 @@
 fileFormatVersion: 2
 guid: 12443d9c90c0611478cda4e59e00062d
-timeCreated: 1528121705
-licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
@@ -39,6 +37,7 @@ ModelImporter:
     100062: Cube.024
     100064: Cube.025
     100066: Cube.026
+    100068: Cube.027
     400000: //RootNode
     400002: Cube
     400004: Cube.001
@@ -73,6 +72,7 @@ ModelImporter:
     400062: Cube.024
     400064: Cube.025
     400066: Cube.026
+    400068: Cube.027
     2100000: No Name
     2300000: //RootNode
     2300002: Cube
@@ -108,6 +108,7 @@ ModelImporter:
     2300062: Cube.024
     2300064: Cube.025
     2300066: Cube.026
+    2300068: Cube.027
     3300000: //RootNode
     3300002: Cube
     3300004: Cube.001
@@ -142,6 +143,7 @@ ModelImporter:
     3300062: Cube.024
     3300064: Cube.025
     3300066: Cube.026
+    3300068: Cube.027
     4300000: Cube
     4300002: Cube.012
     4300004: Cube.011
@@ -175,6 +177,7 @@ ModelImporter:
     4300060: Cube.021
     4300062: Cube.026
     4300064: Cube.025
+    4300066: Cube.027
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -194,6 +197,7 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5

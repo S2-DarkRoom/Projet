@@ -4559,6 +4559,10 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2300068, guid: 12443d9c90c0611478cda4e59e00062d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c809dcf76e3306a4eb2dd4ae50210b18, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 12443d9c90c0611478cda4e59e00062d, type: 3}
   m_IsPrefabParent: 0
@@ -27611,7 +27615,7 @@ Transform:
   m_Children:
   - {fileID: 577144902}
   m_Father: {fileID: 1510627358}
-  m_RootOrder: 33
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!23 &612996314
 MeshRenderer:
