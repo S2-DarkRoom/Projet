@@ -23,10 +23,10 @@ public class AudioManager : MonoBehaviour {
 		//Play ("Theme"); 
 	} 
 
-	public void Play (string name)
+	public void Play(string name)
 	{
-		Sound s = Array.Find (sounds, Sound => Sound.name == name); 
-		s.source.Play (); 
+		Sound s = Array.Find(sounds, Sound => Sound.name == name); 
+		s.source.Play(); 
 	}
 
     public void Stop(string name) 

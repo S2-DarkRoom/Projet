@@ -2758,10 +2758,10 @@ RectTransform:
   m_Father: {fileID: 1208860788}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 278, y: -26}
+  m_SizeDelta: {x: 52, y: 52}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &126664612
 MonoBehaviour:
@@ -20755,10 +20755,10 @@ RectTransform:
   m_Father: {fileID: 1208860788}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 26, y: -26}
+  m_SizeDelta: {x: 52, y: 52}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &495491842
 MonoBehaviour:
@@ -28269,10 +28269,10 @@ RectTransform:
   m_Father: {fileID: 1208860788}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 194, y: -26}
+  m_SizeDelta: {x: 52, y: 52}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &636045289
 MonoBehaviour:
@@ -32951,69 +32951,69 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - name: Porte
-    clip: {fileID: 8300000, guid: d4c2a504ceb291c4a93186fbc2511f11, type: 3}
-    volume: 0.1
+  - name: R1
+    clip: {fileID: 8300000, guid: 71fd38948ee8d8245b2464d87f434c72, type: 3}
+    volume: 0.2
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: R2
+    clip: {fileID: 8300000, guid: 1b77a0509ed1df34fb208f4b7026510b, type: 3}
+    volume: 0.2
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: R3
+    clip: {fileID: 8300000, guid: c0137facb307e78468972a9c2986d6e6, type: 3}
+    volume: 0.2
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Paper
+    clip: {fileID: 8300000, guid: aac2d24af19be814f85bfd7631d8546a, type: 3}
+    volume: 0.818
     pitch: 1
     loop: 0
     source: {fileID: 0}
-  - name: Chest
-    clip: {fileID: 8300000, guid: ddf237e5dfa200b41aa82c656c468bf4, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: Key
-    clip: {fileID: 8300000, guid: b9929943df4072e4bb07b9f5610e8930, type: 3}
+  - name: Battery
+    clip: {fileID: 8300000, guid: c4e4890f56dbf834889dc6371300f54a, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: Flashlight
     clip: {fileID: 8300000, guid: 4b0ab9387c32ff34c9120173ee7e15a1, type: 3}
-    volume: 1
+    volume: 0.5
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: On
     clip: {fileID: 8300000, guid: 5905af7a2153eea4798e872f9fe74de9, type: 3}
-    volume: 1
+    volume: 0.5
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: Crowbar
     clip: {fileID: 8300000, guid: 46c514b8cb362d34cb716571fcd29364, type: 3}
-    volume: 0.43
+    volume: 0.4
     pitch: 1
     loop: 0
     source: {fileID: 0}
-  - name: Battery
-    clip: {fileID: 8300000, guid: c4e4890f56dbf834889dc6371300f54a, type: 3}
-    volume: 0.43
+  - name: Porte
+    clip: {fileID: 8300000, guid: d4c2a504ceb291c4a93186fbc2511f11, type: 3}
+    volume: 0.05
     pitch: 1
     loop: 0
     source: {fileID: 0}
-  - name: Paper
-    clip: {fileID: 8300000, guid: aac2d24af19be814f85bfd7631d8546a, type: 3}
-    volume: 0.43
+  - name: Key
+    clip: {fileID: 8300000, guid: b9929943df4072e4bb07b9f5610e8930, type: 3}
+    volume: 0.793
     pitch: 1
     loop: 0
     source: {fileID: 0}
-  - name: R2
-    clip: {fileID: 8300000, guid: 1b77a0509ed1df34fb208f4b7026510b, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: R3
-    clip: {fileID: 8300000, guid: c0137facb307e78468972a9c2986d6e6, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: R1
-    clip: {fileID: 8300000, guid: 71fd38948ee8d8245b2464d87f434c72, type: 3}
-    volume: 1
+  - name: Chest
+    clip: {fileID: 8300000, guid: ddf237e5dfa200b41aa82c656c468bf4, type: 3}
+    volume: 0.661
     pitch: 1
     loop: 0
     source: {fileID: 0}
@@ -54913,7 +54913,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1711909883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72025,10 +72025,10 @@ RectTransform:
   m_Father: {fileID: 1208860788}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 110, y: -26}
+  m_SizeDelta: {x: 52, y: 52}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2033602088
 MonoBehaviour:
