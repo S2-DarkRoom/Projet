@@ -104,11 +104,11 @@
     <None Include="Assets\Models\Blood decal pack\readme.txt" />
     <None Include="Assets\Models\AdventureForge\CabinetsAndShelvesReadme.txt" />
     <None Include="Assets\Models\Tim's Assets\Doors\Shader\BloodyDoor.shader" />
-    <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>D:/Documents/GIT/Projet/Dark Room/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>D:/Documents/GIT/Projet/Dark Room/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PackageManagerUI.Editor">
+      <HintPath>D:/Documents/GIT/Projet/Dark Room/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

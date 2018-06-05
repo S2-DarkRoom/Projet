@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PapersManager : MonoBehaviour
+public class PapersManager : MonoBehaviour                      
 {
     bool FR;
     public Image sheet;
