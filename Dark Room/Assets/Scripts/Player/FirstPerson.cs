@@ -14,7 +14,7 @@ public class FirstPerson : MonoBehaviour {
 	void Start ()
     {
         character = this.transform.parent.gameObject;
-        mouse.y = 0f;
+        mouse.y = -10f;
         mouse.x = -100f;
 	}
 	
