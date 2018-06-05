@@ -48883,6 +48883,7 @@ GameObject:
   - component: {fileID: 1437976101}
   - component: {fileID: 1437976102}
   - component: {fileID: 1437976103}
+  - component: {fileID: 1437976104}
   m_Layer: 0
   m_Name: Camera_Intro
   m_TagString: Untagged
@@ -48983,8 +48984,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 913804684}
-  manager: {fileID: 104866169}
-  UI: {fileID: 1929375076}
   name: Intro
 --- !u!82 &1437976102
 AudioSource:
@@ -49092,6 +49091,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3f3edd92b623244c84ccfd8d7cc96d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1437976104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1437976095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f82d8ecd31ecdbd4fb30adf1e2dae8e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeTexture: {fileID: 2800000, guid: 8f2a4f195044f094ab5422857c470f2c, type: 3}
+  fadeOut: 0
+  cam: Intro
+  tuto: {fileID: 0}
+  tutomana: {fileID: 0}
 --- !u!1 &1446441820
 GameObject:
   m_ObjectHideFlags: 0
@@ -51408,8 +51423,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 913804684}
-  manager: {fileID: 104866169}
-  UI: {fileID: 1929375076}
   name: Room3
 --- !u!1 &1600875503
 GameObject:
@@ -64718,7 +64731,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeTexture: {fileID: 2800000, guid: 8f2a4f195044f094ab5422857c470f2c, type: 3}
   fadeOut: 0
-  tuto: {fileID: 104866169}
+  cam: main
+  tuto: {fileID: 1929375076}
+  tutomana: {fileID: 104866169}
 --- !u!1 &1947837500
 GameObject:
   m_ObjectHideFlags: 0
@@ -64752,8 +64767,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 913804684}
-  manager: {fileID: 104866169}
-  UI: {fileID: 1929375076}
   name: Room2
 --- !u!95 &1947837502
 Animator:

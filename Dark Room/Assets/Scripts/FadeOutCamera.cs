@@ -9,8 +9,10 @@ public class FadeOutCamera : MonoBehaviour
     public bool fadeOut = false;
     private float tempTime;
     private float time = 0.0f;
-    public GameObject tuto;
     public string cam;
+
+    public GameObject tuto;
+    public GameObject tutomana;
 
     public void Start()
     {
@@ -32,7 +34,10 @@ public class FadeOutCamera : MonoBehaviour
         if (tempTime >= 1.0f)
         {
             if (cam == "main")
+            {
                 tuto.SetActive(true);
+                tutomana.SetActive(true);
+            }
 
             enabled = false;
         }
