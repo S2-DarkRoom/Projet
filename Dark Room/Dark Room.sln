@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
+# Visual Studio 2017
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dark Room.Plugins", "Dark Room.Plugins.csproj", "{EF014E80-4E8C-E2DD-302B-4485BC4A9C11}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dark Room", "Dark Room.csproj", "{6716B7CE-09E1-83BB-7D3A-60BA9294C632}"

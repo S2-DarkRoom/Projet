@@ -9,4 +9,10 @@ public class PlayAudio : MonoBehaviour {
         AudioSource audio = GetComponent<AudioSource>();
         audio.Play();
     }
+
+    void Stop() 
+    {
+        AudioSource audio = null;
+        audio.Stop();
+    }
 }

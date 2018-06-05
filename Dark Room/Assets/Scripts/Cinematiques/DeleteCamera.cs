@@ -39,8 +39,19 @@ public class DeleteCamera : MonoBehaviour
     {
         if (name == "Intro")
         {
+            FindObjectOfType<AudioManager>().Play("R1"); 
             manager.SetActive(true);
             UI.SetActive(true);
+        }
+        if (name == "Room2")
+        {
+            FindObjectOfType<AudioManager>().Stop("R1"); 
+            FindObjectOfType<AudioManager>().Play("R2");
+        }
+        if (name == "Room3")
+        {
+            FindObjectOfType<AudioManager>().Stop("R2"); 
+            FindObjectOfType<AudioManager>().Play("R3");
         }
 
         player.SetActive(true);
