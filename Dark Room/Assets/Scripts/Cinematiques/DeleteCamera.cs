@@ -5,16 +5,12 @@ using UnityEngine;
 public class DeleteCamera : MonoBehaviour
 {
     public GameObject player;
-    public GameObject manager;
-    public GameObject UI;
     public new string name;
     bool FR;
 
     void Start()
     {
-        manager.SetActive(false);
         player.SetActive(false);
-        UI.SetActive(false);
     }
 
     void PlayerOff()
@@ -40,8 +36,6 @@ public class DeleteCamera : MonoBehaviour
         if (name == "Intro")
         {
             FindObjectOfType<AudioManager>().Play("R1"); 
-            manager.SetActive(true);
-            UI.SetActive(true);
         }
         if (name == "Room2")
         {
@@ -53,8 +47,9 @@ public class DeleteCamera : MonoBehaviour
             FindObjectOfType<AudioManager>().Stop("R2"); 
             FindObjectOfType<AudioManager>().Play("R3");
         }
-
+        
         player.SetActive(true);
+
         Destroy(gameObject);
 	}
 }

@@ -26,13 +26,23 @@ public class InventoryUI : MonoBehaviour {
 
     void UpdateUI()
     {
-        for (int i = 0; i < slots.Length; i++)
-        {
-            if (i < Inventory.items.Count)
+       int i = 0, j = 0;
+
+       while (i < slots.Length)
+       {
+            if (j < Inventory.items.Count)
             {
-                if (Inventory.items[i].name != "Battery")
-                    slots[i].AddItem(Inventory.items[i]);
+
+                if (Inventory.items[j].name == "Battery")
+                    i--;
+                    
+
+                else
+                    slots[i].AddItem(Inventory.items[j]);
             }
+
+            j++;
+            i++;
         }
 
     }

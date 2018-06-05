@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2017
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dark Room.Plugins", "Dark Room.Plugins.csproj", "{EF014E80-4E8C-E2DD-302B-4485BC4A9C11}"
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dark Room", "Assembly-CSharp-firstpass.csproj", "{CAEA64BD-509F-DAD1-0D41-6BF8AC04FCF9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dark Room", "Dark Room.csproj", "{6716B7CE-09E1-83BB-7D3A-60BA9294C632}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dark Room", "Assembly-CSharp.csproj", "{3E8C360C-5E7A-498B-2132-DC030F401F3C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dark Room.Editor.Plugins", "Dark Room.Editor.Plugins.csproj", "{ACB36E2F-3C79-777C-144F-324AF3E68DE3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dark Room", "Assembly-CSharp-Editor-firstpass.csproj", "{2C0317F9-1347-EF93-9DB2-A2CDC680BC62}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,18 +13,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{EF014E80-4E8C-E2DD-302B-4485BC4A9C11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EF014E80-4E8C-E2DD-302B-4485BC4A9C11}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EF014E80-4E8C-E2DD-302B-4485BC4A9C11}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EF014E80-4E8C-E2DD-302B-4485BC4A9C11}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6716B7CE-09E1-83BB-7D3A-60BA9294C632}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6716B7CE-09E1-83BB-7D3A-60BA9294C632}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6716B7CE-09E1-83BB-7D3A-60BA9294C632}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6716B7CE-09E1-83BB-7D3A-60BA9294C632}.Release|Any CPU.Build.0 = Release|Any CPU
-		{ACB36E2F-3C79-777C-144F-324AF3E68DE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ACB36E2F-3C79-777C-144F-324AF3E68DE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ACB36E2F-3C79-777C-144F-324AF3E68DE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ACB36E2F-3C79-777C-144F-324AF3E68DE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAEA64BD-509F-DAD1-0D41-6BF8AC04FCF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAEA64BD-509F-DAD1-0D41-6BF8AC04FCF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAEA64BD-509F-DAD1-0D41-6BF8AC04FCF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAEA64BD-509F-DAD1-0D41-6BF8AC04FCF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E8C360C-5E7A-498B-2132-DC030F401F3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E8C360C-5E7A-498B-2132-DC030F401F3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E8C360C-5E7A-498B-2132-DC030F401F3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E8C360C-5E7A-498B-2132-DC030F401F3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C0317F9-1347-EF93-9DB2-A2CDC680BC62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C0317F9-1347-EF93-9DB2-A2CDC680BC62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C0317F9-1347-EF93-9DB2-A2CDC680BC62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C0317F9-1347-EF93-9DB2-A2CDC680BC62}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
