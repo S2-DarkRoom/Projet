@@ -47,8 +47,9 @@ public class DeleteCamera : MonoBehaviour
             FindObjectOfType<AudioManager>().Stop("R2"); 
             FindObjectOfType<AudioManager>().Play("R3");
         }
-
+        
         player.SetActive(true);
+
         Destroy(gameObject);
 	}
 }
