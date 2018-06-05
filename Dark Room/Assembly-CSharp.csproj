@@ -59,13 +59,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Elevator.cs" />
-    <Compile Include="Assets\ElevatorControls.cs" />
     <Compile Include="Assets\Scripts\Audio\AudioManager.cs" />
     <Compile Include="Assets\Scripts\Audio\PlayAudio.cs" />
     <Compile Include="Assets\Scripts\Audio\Sound.cs" />
     <Compile Include="Assets\Scripts\Cinematiques\ActivateCine.cs" />
     <Compile Include="Assets\Scripts\Cinematiques\DeleteCamera.cs" />
+    <Compile Include="Assets\Scripts\Elevator.cs" />
+    <Compile Include="Assets\Scripts\ElevatorControls.cs" />
+    <Compile Include="Assets\Scripts\FadeOutCamera.cs" />
     <Compile Include="Assets\Scripts\Interactives\Breaker.cs" />
     <Compile Include="Assets\Scripts\Interactives\ButtonPush.cs" />
     <Compile Include="Assets\Scripts\Interactives\Chest.cs" />

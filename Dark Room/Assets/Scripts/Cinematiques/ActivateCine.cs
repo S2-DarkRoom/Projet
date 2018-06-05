@@ -6,7 +6,6 @@ public class ActivateCine : MonoBehaviour
 {
     public GameObject cam;
     bool entered = false;
-    public int number;
 
     private void Start()
     {
@@ -18,11 +17,5 @@ public class ActivateCine : MonoBehaviour
         if (!entered)
             cam.SetActive(true);
         entered = true;
-
-        /*if (number == 2)
-         * Jouer musique chambre 2
-         else
-            Jouer musique chambre 3
-            */
     }
 }
