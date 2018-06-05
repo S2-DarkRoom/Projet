@@ -87,6 +87,9 @@ public class RayCast : MonoBehaviour
                     case("BreakerButton"):
                         message = FR ? "[E] Activer" : "[E] Activate";
                         break;
+                    case ("Mirror"):
+                        message = hit.collider.GetComponentInParent<BreakMirror>().Check(false) ? FR ? "[E] Casser" : "[E] Break" : "";
+                        break;
                     case ("ElevatorControls"):
                         message = FR ? "[E] Baisser" : "[E] Lower";
                         break;
@@ -104,6 +107,10 @@ public class RayCast : MonoBehaviour
                     {
                         case ("Levier"):
                             hit.collider.GetComponentInParent<Levier>().Activated();
+                            break;
+                        case ("Mirror"):
+                            //hit.collider.GetComponentInParent<BreakMirror>().Check(true);
+                            hit.collider.GetComponentInParent<BreakMirror>().Break();
                             break;
                         case ("BreakerDoor"):
                             hit.collider.GetComponentInParent<Breaker>().Activated();
