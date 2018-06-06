@@ -13,12 +13,12 @@ public class Elevator : MonoBehaviour
 
     public void Activate()
     {
-        Debug.Log("Activated");
         anim.SetBool("open", true);
     }
 
     public void OnTriggerEnter(Collider other)
     {
+        Debug.Log("Entered");
         anim.SetBool("open", false);
     }
 
