@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\Interactives\Breaker.cs" />
     <Compile Include="Assets\Scripts\Interactives\BreakMirror.cs" />
     <Compile Include="Assets\Scripts\Interactives\ButtonPush.cs" />
+    <Compile Include="Assets\Scripts\Interactives\Cabinet.cs" />
     <Compile Include="Assets\Scripts\Interactives\Chest.cs" />
     <Compile Include="Assets\Scripts\Interactives\Doors.cs" />
     <Compile Include="Assets\Scripts\Interactives\Elevator.cs" />

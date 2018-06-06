@@ -102,6 +102,9 @@ public class RayCast : MonoBehaviour
                     case ("ElevatorControls"):
                         message = FR ? "[E] Baisser" : "[E] Lower";
                         break;
+                    case ("Cabinet"):
+                        message = !hit.collider.GetComponentInParent<Cabinet>().opened ? FR ? "[E] Ouvrir" : "[E] Open" : "";
+                        break;
                     case ("BreakerDoor"):
                         message = FR ? "[E] Forcer l'ouverture" : "[E] Force opening";
                         break;
@@ -116,6 +119,9 @@ public class RayCast : MonoBehaviour
                     {
                         case ("Levier"):
                             hit.collider.GetComponentInParent<Levier>().Activated();
+                            break;
+                        case ("Cabinet"):
+                            hit.collider.GetComponentInParent<Cabinet>().TryOpen();
                             break;
                         case ("Mirror"):
                             hit.collider.GetComponentInParent<BreakMirror>().Check(true);
