@@ -57791,6 +57791,49 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1507586759 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1514989742435176, guid: 9dbe092039c67734d896f3d05545c70f,
+    type: 2}
+  m_PrefabInternal: {fileID: 87265352}
+--- !u!114 &1507586762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1507586759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0645af436bde74a41b01e395ecd93e5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: c6a753160c6ab9444a5f69ac98cd2709, type: 3}
+  type: 1
+--- !u!114 &1507586763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1507586759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40723e1c430aea64f8c6c282ff382c28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Sheet
+  icon: {fileID: 21300000, guid: 2a3bb2eb0ec39bb47b216bf9854c06c6, type: 3}
+--- !u!65 &1507586764
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1507586759}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.019513903, y: 0.02370911, z: 0.0011618584}
+  m_Center: {x: 0.0064007537, y: 0.0014702443, z: 0.0014112564}
 --- !u!1001 &1508865803
 Prefab:
   m_ObjectHideFlags: 0
