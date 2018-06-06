@@ -37005,8 +37005,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40723e1c430aea64f8c6c282ff382c28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Bone
+  name: Sheet
   icon: {fileID: 21300000, guid: 51aa48d45eda4934da09ad8fdd1014c1, type: 3}
+--- !u!114 &833949145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 833949142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0645af436bde74a41b01e395ecd93e5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: 9e0aa74b14dcec8468df965d967b1c6b, type: 3}
+  type: 1
 --- !u!1 &834087045
 GameObject:
   m_ObjectHideFlags: 0
