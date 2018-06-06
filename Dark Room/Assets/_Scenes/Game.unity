@@ -25802,7 +25802,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 9bdd3c3bb5fe59642a4d91d3a3ac31ef, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -25819,6 +25819,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b09104eba993ce4f9e1e6cfb8491ee1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  elevator: {fileID: 1510627357}
 --- !u!65 &576947655
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -63414,24 +63415,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 14.862696, y: 0.5011079, z: 1.8144262}
   m_Center: {x: -0.15492564, y: 1.7621413, z: 4.4680624}
---- !u!95 &1510627362
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1510627357}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d9b060696adcae040b191935d016f1a0, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!65 &1510627364
 BoxCollider:
   m_ObjectHideFlags: 0

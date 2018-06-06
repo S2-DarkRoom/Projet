@@ -5,6 +5,7 @@ using UnityEngine;
 public class Elevator : MonoBehaviour
 {
     Animator anim;
+    public GameObject elevator;
 
     public void Start()
     {
@@ -29,6 +30,7 @@ public class Elevator : MonoBehaviour
 
     public void Arrived()
     {
+        elevator.transform.position = new Vector3(elevator.transform.position.x, -10.5f, elevator.transform.position.z);
         anim.SetBool("open", true);
     }
 }
