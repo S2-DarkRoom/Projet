@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BreakMirror : MonoBehaviour
 {
-    public Transform brokenMirror;
+    public GameObject brokenMirror;
     public GameObject intactMirror;
     public float magnitude;
     public float radius;
@@ -26,8 +26,7 @@ public class BreakMirror : MonoBehaviour
     {
         broken = true;
         Destroy(intactMirror);
-        Instantiate(brokenMirror, transform.position, transform.rotation);
-        brokenMirror.localScale = transform.localScale;
+        brokenMirror.SetActive(true);
         Vector3 explPos = transform.position;
         Collider[] colliders = Physics.OverlapSphere(explPos, radius);
 
