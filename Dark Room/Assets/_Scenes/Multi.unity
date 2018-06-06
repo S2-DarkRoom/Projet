@@ -7521,7 +7521,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2da741e48bd08347bd6728c4866bff5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  codeUI: {fileID: 0}
   pauseMenuUI: {fileID: 149282050}
+  tutoUI: {fileID: 0}
 --- !u!1 &556030315
 GameObject:
   m_ObjectHideFlags: 0
@@ -9618,7 +9620,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 696083003}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72b056e127ad1884483f9f61750d0139, type: 3}
+  m_Script: {fileID: 11500000, guid: 8595e83630f9b7c4f8e87620fe106340, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   itemsParent: {fileID: 2087647360}
@@ -14478,6 +14480,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monColliderAsupprimer: {fileID: 1145940313}
+  UICode: {fileID: 0}
 --- !u!114 &1145940315
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14489,8 +14492,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4bcfc8c16f955545858c12010feaea1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  codeLock: 1337
-  input: {fileID: 0}
 --- !u!95 &1145940316 stripped
 Animator:
   m_PrefabParentObject: {fileID: 9575536, guid: c7ba8aacb1d261048bab2170e7576836,
@@ -17759,6 +17760,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  name: 
 --- !u!1 &1446441820
 GameObject:
   m_ObjectHideFlags: 0
@@ -18411,6 +18413,8 @@ MonoBehaviour:
   vSyncDropdown: {fileID: 0}
   musicVolumeSlider: {fileID: 0}
   applyButton: {fileID: 0}
+  language: {fileID: 0}
+  FR: 0
   musicSource: {fileID: 0}
   gameSettings: {fileID: 0}
 --- !u!224 &1521268518
