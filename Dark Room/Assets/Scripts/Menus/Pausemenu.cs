@@ -21,7 +21,7 @@ public class Pausemenu : MonoBehaviour
 
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && codeUI.activeSelf == false && tutoUI.activeSelf == false)
+        if (Input.GetKeyDown(KeyCode.Escape) && !codeUI.activeSelf && !tutoUI.activeSelf)
         {
             if (paused)
                 Resume();
