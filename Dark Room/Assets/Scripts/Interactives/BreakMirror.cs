@@ -18,13 +18,13 @@ public class BreakMirror : MonoBehaviour
         if (!broken && br && FindObjectOfType<Inventory>().CheckForObject("Hammer"))
             Break();
 
-        //return FindObjectOfType<Inventory>().CheckForObject("Hammer");
-        return !broken;
+        return !broken && FindObjectOfType<Inventory>().CheckForObject("Hammer");
     }
 
     public void Break()
     {
         broken = true;
+        FindObjectOfType<AudioManager>().Play("Mirror");
         Destroy(intactMirror);
         brokenMirror.SetActive(true);
         Vector3 explPos = transform.position;
