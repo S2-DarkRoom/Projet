@@ -37005,7 +37005,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40723e1c430aea64f8c6c282ff382c28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Sheet
+  name: Bone
   icon: {fileID: 21300000, guid: 51aa48d45eda4934da09ad8fdd1014c1, type: 3}
 --- !u!114 &833949145
 MonoBehaviour:
@@ -62580,8 +62580,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 14.189286, y: 0.8305512, z: 11.743956}
-  m_Center: {x: -0.10668227, y: -0.2846561, z: 0.40023765}
+  m_Size: {x: 14.189286, y: 0.8305512, z: 12.35275}
+  m_Center: {x: -0.10668227, y: -0.2846561, z: 0.70463604}
 --- !u!65 &1510627360
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -62592,8 +62592,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 10.205639, y: 3.2398224, z: 3.8214517}
-  m_Center: {x: 0.071882576, y: 1.0812727, z: 0.5341925}
+  m_Size: {x: 13.856863, y: 7.8831553, z: 3.8214517}
+  m_Center: {x: -0.061946165, y: 3.4029405, z: 0.5341925}
 --- !u!65 &1510627361
 BoxCollider:
   m_ObjectHideFlags: 0
