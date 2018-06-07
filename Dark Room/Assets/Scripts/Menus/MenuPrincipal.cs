@@ -1,23 +1,42 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEngine; 
+using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class MenuPrincipal : MonoBehaviour
 {
+    public Sprite loading;
+    public Image background;
+    public GameObject menu;
+
     public void Play()
     {
+        Cursor.visible = false;
+        //background.color = Color.white;
+        menu.SetActive(false);
+        background.sprite = loading;
+        
         SceneManager.LoadScene("Game");
     }
 
 	public void PlayMulti()
 	{
-		SceneManager.LoadScene("Multi");
+        menu.SetActive(false);
+        background.sprite = loading;
+        Cursor.visible = false;
+
+        SceneManager.LoadScene("Multi");
 	}
 
 	public void PlayExplorer()
 	{
-		SceneManager.LoadScene("Game 1");
+        menu.SetActive(false);
+        background.sprite = loading;
+        Cursor.visible = false;
+
+
+        SceneManager.LoadScene("Game 1");
 	}
 
     public void Exit()

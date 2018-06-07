@@ -25,6 +25,7 @@ ModelImporter:
     100034: DoorFrame_002
     100036: DoorFrame_004
     100038: Floor
+    100040: Cube_000
     400000: Cube_001
     400002: Cube_002
     400004: Cube_003
@@ -45,6 +46,7 @@ ModelImporter:
     400034: DoorFrame_002
     400036: DoorFrame_004
     400038: Floor
+    400040: Cube_000
     2100000: unnamed
     2100002: Material
     2100004: Material_001
@@ -67,6 +69,7 @@ ModelImporter:
     2300032: DoorFrame_002
     2300034: DoorFrame_004
     2300036: Floor
+    2300038: Cube_000
     3300000: Cube_001
     3300002: Cube_002
     3300004: Cube_003
@@ -86,6 +89,7 @@ ModelImporter:
     3300032: DoorFrame_002
     3300034: DoorFrame_004
     3300036: Floor
+    3300038: Cube_000
     4300000: DoorFrame
     4300002: Floor
     4300004: Door
@@ -105,6 +109,7 @@ ModelImporter:
     4300032: DoorFrame_004
     4300034: Door_006
     4300036: Door_007
+    4300038: Cube_000
     7400000: Default Take
     9500000: //RootNode
   externalObjects: {}

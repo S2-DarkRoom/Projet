@@ -48,15 +48,21 @@ public class RayCast : MonoBehaviour
                     else if (item.name == "Battery")
                         FindObjectOfType<AudioManager>().Play("Battery");
 
-                    else if (item.name == "Bone")
-                        FindObjectOfType<AudioManager>().Play("Flashlight");
-
                     else if (item.name == "Hammer")
                         FindObjectOfType<AudioManager>().Play("Hammer");
 
-                    else if (item.name == "Sheet")
+                    else if (item.name == "Sheet" || item.name == "Bone")
                     {
-                        FindObjectOfType<AudioManager>().Play("Paper");
+                        switch (item.name)
+                        {
+                            case ("Sheet"):
+                                FindObjectOfType<AudioManager>().Play("Paper");
+                                break;
+                            case ("Bone"):
+                                FindObjectOfType<AudioManager>().Play("Flashlight");
+                                break;
+                        }
+                            
                         paper.SetActive(true);
                         paper.GetComponent<PapersManager>().Show(item.GetComponent<Paper>());
                     }
@@ -113,7 +119,6 @@ public class RayCast : MonoBehaviour
                             break;
                         case ("Mirror"):
                             hit.collider.GetComponentInParent<BreakMirror>().Check(true);
-                            //hit.collider.GetComponentInParent<BreakMirror>().Break();
                             break;
                         case ("BreakerDoor"):
                             hit.collider.GetComponentInParent<Breaker>().Activated();

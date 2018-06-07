@@ -8,6 +8,7 @@ TagManager:
   - doors
   - furniture
   - interactif
+  - button
   layers:
   - Default
   - TransparentFX
