@@ -104,10 +104,18 @@
     <Compile Include="Assets\Scripts\Tutorials\TutorialManager.cs" />
     <Compile Include="Assets\Scripts\UI\CodeUI.cs" />
     <Compile Include="Assets\Scripts\UI\DigitSlot.cs" />
+    <Compile Include="Assets\VolumetricLight\Scripts\VolumetricLight.cs" />
+    <Compile Include="Assets\VolumetricLight\Scripts\VolumetricLightRenderer.cs" />
+    <Compile Include="Assets\VolumetricLight\Standard Assets\Effects\ImageEffects\Scripts\PostEffectsBase.cs" />
+    <Compile Include="Assets\VolumetricLight\Standard Assets\Effects\ImageEffects\Scripts\Tonemapping.cs" />
     <None Include="Assets\Models\plants\dd\AlphaTest-Bumped.shader" />
+    <None Include="Assets\VolumetricLight\Shaders\BilateralBlur.shader" />
+    <None Include="Assets\VolumetricLight\Shaders\BlitAdd.shader" />
     <None Include="Assets\Models\Blood decal pack\readme.txt" />
     <None Include="Assets\Models\AdventureForge\CabinetsAndShelvesReadme.txt" />
+    <None Include="Assets\VolumetricLight\Shaders\VolumetricLight.shader" />
     <None Include="Assets\Models\Tim's Assets\Doors\Shader\BloodyDoor.shader" />
+    <None Include="Assets\VolumetricLight\Standard Assets\Effects\ImageEffects\Shaders\Tonemapper.shader" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>D:/Documents/GIT/Projet/Dark Room/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
