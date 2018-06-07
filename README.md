@@ -9,4 +9,5 @@ Dans "Projects" → Allez voir et compléter la Todo List au fur et a mesure de 
 ## Links
 
 - [Plan du manuel de jeu](https://hackmd.io/aq1VjwUqTFOlhb81vDtj1A)
-- [Plan de soutenance](https://hackmd.io/EAw_l7FoT0WusuXb4EdEFA)
+- [Plan de soutenance FR](https://hackmd.io/EAw_l7FoT0WusuXb4EdEFA)
+- [Plan de soutenance EN](https://hackmd.io/qT8z5kXDTJyrc_299MCrPw)
