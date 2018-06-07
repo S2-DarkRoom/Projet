@@ -64,13 +64,14 @@
     <Compile Include="Assets\Scripts\Audio\Sound.cs" />
     <Compile Include="Assets\Scripts\Cinematiques\ActivateCine.cs" />
     <Compile Include="Assets\Scripts\Cinematiques\DeleteCamera.cs" />
-    <Compile Include="Assets\Scripts\Elevator.cs" />
-    <Compile Include="Assets\Scripts\ElevatorControls.cs" />
-    <Compile Include="Assets\Scripts\FadeOutCamera.cs" />
     <Compile Include="Assets\Scripts\Interactives\Breaker.cs" />
+    <Compile Include="Assets\Scripts\Interactives\BreakMirror.cs" />
     <Compile Include="Assets\Scripts\Interactives\ButtonPush.cs" />
+    <Compile Include="Assets\Scripts\Interactives\Cabinet.cs" />
     <Compile Include="Assets\Scripts\Interactives\Chest.cs" />
     <Compile Include="Assets\Scripts\Interactives\Doors.cs" />
+    <Compile Include="Assets\Scripts\Interactives\Elevator.cs" />
+    <Compile Include="Assets\Scripts\Interactives\ElevatorControls.cs" />
     <Compile Include="Assets\Scripts\Interactives\Interactible.cs" />
     <Compile Include="Assets\Scripts\Interactives\Levier.cs" />
     <Compile Include="Assets\Scripts\Interactives\Shower.cs" />
@@ -91,6 +92,7 @@
     <Compile Include="Assets\Scripts\Pickups\PapersManager.cs" />
     <Compile Include="Assets\Scripts\Pickups\Pickups.cs" />
     <Compile Include="Assets\Scripts\Player\CameraScript.cs" />
+    <Compile Include="Assets\Scripts\Player\FadeOutCamera.cs" />
     <Compile Include="Assets\Scripts\Player\FirstPerson.cs" />
     <Compile Include="Assets\Scripts\Player\Minuteur.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerController.cs" />

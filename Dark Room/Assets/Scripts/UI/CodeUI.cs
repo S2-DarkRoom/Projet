@@ -20,7 +20,7 @@ public class CodeUI : MonoBehaviour
 
     private void Start()
     {
-        UI.SetActive(false);
+        //UI.SetActive(false);
         slots = digitsParent.GetComponentsInChildren<DigitSlot>();
         _animator = GetComponent<Animator>();
     }

@@ -14,7 +14,7 @@ public class FirstPerson : MonoBehaviour {
 	void Start ()
     {
         character = this.transform.parent.gameObject;
-        mouse.y = 0f;
+        mouse.y = -10f;
         mouse.x = -100f;
 	}
 	
@@ -31,7 +31,6 @@ public class FirstPerson : MonoBehaviour {
 
             mouse.y = Mathf.Clamp(mouse.y, -90f, 90f);
             transform.localRotation = Quaternion.AngleAxis(-mouse.y, Vector3.right);
-            Debug.Log(mouse.y);
             character.transform.localRotation = Quaternion.AngleAxis(mouse.x, character.transform.up);
         }
     }

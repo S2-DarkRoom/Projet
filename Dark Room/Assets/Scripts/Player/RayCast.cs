@@ -48,12 +48,21 @@ public class RayCast : MonoBehaviour
                     else if (item.name == "Battery")
                         FindObjectOfType<AudioManager>().Play("Battery");
 
-                    else if (item.name == "Bone")
-                        FindObjectOfType<AudioManager>().Play("Flashlight");
+                    else if (item.name == "Hammer")
+                        FindObjectOfType<AudioManager>().Play("Hammer");
 
-                    else if (item.name == "Sheet")
+                    else if (item.name == "Sheet" || item.name == "Bone")
                     {
-                        FindObjectOfType<AudioManager>().Play("Paper");
+                        switch (item.name)
+                        {
+                            case ("Sheet"):
+                                FindObjectOfType<AudioManager>().Play("Paper");
+                                break;
+                            case ("Bone"):
+                                FindObjectOfType<AudioManager>().Play("Flashlight");
+                                break;
+                        }
+                            
                         paper.SetActive(true);
                         paper.GetComponent<PapersManager>().Show(item.GetComponent<Paper>());
                     }
@@ -87,8 +96,14 @@ public class RayCast : MonoBehaviour
                     case("BreakerButton"):
                         message = FR ? "[E] Activer" : "[E] Activate";
                         break;
+                    case ("Mirror"):
+                        message = hit.collider.GetComponentInParent<BreakMirror>().Check(false) ? FR ? "[E] Casser" : "[E] Break" : "";
+                        break;
                     case ("ElevatorControls"):
-                        message = FR ? "[E] Baisser" : "[E] Lower";
+                        message = !hit.collider.GetComponentInParent<ElevatorControls>().low ? FR ? "[E] Baisser" : "[E] Lower" : "";
+                        break;
+                    case ("Cabinet"):
+                        message = !hit.collider.GetComponentInParent<Cabinet>().opened ? FR ? "[E] Ouvrir" : "[E] Open" : "";
                         break;
                     case ("BreakerDoor"):
                         message = FR ? "[E] Forcer l'ouverture" : "[E] Force opening";
@@ -104,6 +119,12 @@ public class RayCast : MonoBehaviour
                     {
                         case ("Levier"):
                             hit.collider.GetComponentInParent<Levier>().Activated();
+                            break;
+                        case ("Cabinet"):
+                            hit.collider.GetComponentInParent<Cabinet>().TryOpen();
+                            break;
+                        case ("Mirror"):
+                            hit.collider.GetComponentInParent<BreakMirror>().Check(true);
                             break;
                         case ("BreakerDoor"):
                             hit.collider.GetComponentInParent<Breaker>().Activated();
