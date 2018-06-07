@@ -75,6 +75,7 @@
     <Compile Include="Assets\Scripts\Interactives\Interactible.cs" />
     <Compile Include="Assets\Scripts\Interactives\Levier.cs" />
     <Compile Include="Assets\Scripts\Interactives\Shower.cs" />
+    <Compile Include="Assets\Scripts\Interactives\TV.cs" />
     <Compile Include="Assets\Scripts\Inventory\Inventory.cs" />
     <Compile Include="Assets\Scripts\Inventory\InventorySlot.cs" />
     <Compile Include="Assets\Scripts\Inventory\InventoryUI.cs" />
