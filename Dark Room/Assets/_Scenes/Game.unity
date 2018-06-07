@@ -58738,7 +58738,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4177091181922078, guid: 4af79360864e84a4e82cc3c1997c6e80, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 16.95
+      value: 19.81
       objectReference: {fileID: 0}
     - target: {fileID: 4177091181922078, guid: 4af79360864e84a4e82cc3c1997c6e80, type: 2}
       propertyPath: m_LocalPosition.y
@@ -58746,7 +58746,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4177091181922078, guid: 4af79360864e84a4e82cc3c1997c6e80, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -9.87
+      value: -6.896
       objectReference: {fileID: 0}
     - target: {fileID: 4177091181922078, guid: 4af79360864e84a4e82cc3c1997c6e80, type: 2}
       propertyPath: m_LocalRotation.x
@@ -58824,6 +58824,11 @@ Prefab:
         type: 2}
       propertyPath: m_RenderingPath
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 20531443053969098, guid: 4af79360864e84a4e82cc3c1997c6e80,
+        type: 2}
+      propertyPath: m_AllowMSAA
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4af79360864e84a4e82cc3c1997c6e80, type: 2}
@@ -81772,7 +81777,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  profile: {fileID: 0}
+  profile: {fileID: 11400000, guid: c59653b17f163984090f59cae0d60aa8, type: 2}
 --- !u!1 &1441006178
 GameObject:
   m_ObjectHideFlags: 0
@@ -89384,7 +89389,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  profile: {fileID: 0}
+  profile: {fileID: 11400000, guid: c59653b17f163984090f59cae0d60aa8, type: 2}
 --- !u!1 &1600875503
 GameObject:
   m_ObjectHideFlags: 0
@@ -109827,7 +109832,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  profile: {fileID: 0}
+  profile: {fileID: 11400000, guid: c59653b17f163984090f59cae0d60aa8, type: 2}
 --- !u!114 &1942774305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -109871,6 +109876,7 @@ GameObject:
   - component: {fileID: 1947837503}
   - component: {fileID: 1947837502}
   - component: {fileID: 1947837501}
+  - component: {fileID: 1947837508}
   m_Layer: 0
   m_Name: Camera_Cine2
   m_TagString: Untagged
@@ -109979,6 +109985,18 @@ Transform:
   m_Father: {fileID: 1123238444}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -50, z: 0}
+--- !u!114 &1947837508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1947837500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  profile: {fileID: 11400000, guid: c59653b17f163984090f59cae0d60aa8, type: 2}
 --- !u!1 &1950271653
 GameObject:
   m_ObjectHideFlags: 0
