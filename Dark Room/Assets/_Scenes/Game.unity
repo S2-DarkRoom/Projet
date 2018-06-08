@@ -28989,7 +28989,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100038, guid: b033e40bb3c380f41b6871ad2344c7c9, type: 3}
       propertyPath: m_TagString
-      value: interactif
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 100026, guid: b033e40bb3c380f41b6871ad2344c7c9, type: 3}
       propertyPath: m_TagString
@@ -28998,6 +28998,10 @@ Prefab:
     - target: {fileID: 100026, guid: b033e40bb3c380f41b6871ad2344c7c9, type: 3}
       propertyPath: m_Name
       value: Button
+      objectReference: {fileID: 0}
+    - target: {fileID: 100018, guid: b033e40bb3c380f41b6871ad2344c7c9, type: 3}
+      propertyPath: m_TagString
+      value: interactif
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b033e40bb3c380f41b6871ad2344c7c9, type: 3}
@@ -29040,6 +29044,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 1124902017}
+  opened: 0
+  pressed: 0
 --- !u!65 &478997222
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29052,18 +29058,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.46989, y: 0.38775998, z: 4.934069}
   m_Center: {x: 0.23494491, y: 0.5600043, z: -0.97847617}
---- !u!114 &478997223
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 478997218}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d03fd69485a5c4841ae4a930837e002b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: Breaker
 --- !u!1 &480689088
 GameObject:
   m_ObjectHideFlags: 0
@@ -29639,34 +29633,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Cardboard
---- !u!1 &492749318 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 100038, guid: b033e40bb3c380f41b6871ad2344c7c9, type: 3}
-  m_PrefabInternal: {fileID: 478997217}
---- !u!65 &492749322
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 492749318}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.0031316755, y: 0.0026114099, z: 0.010376407}
-  m_Center: {x: 0.0018777528, y: 0.040877428, z: -0.00028510936}
---- !u!114 &492749323
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 492749318}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d03fd69485a5c4841ae4a930837e002b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: BreakerDoor
 --- !u!1001 &494586933
 Prefab:
   m_ObjectHideFlags: 0
@@ -46589,6 +46555,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.0010992667, y: 0.0463859, z: 0.05956809}
   m_Center: {x: 0.0005596474, y: 0.02315956, z: -0.00029005666}
+--- !u!114 &775746114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 775746109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d03fd69485a5c4841ae4a930837e002b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: BreakerDoor
 --- !u!1 &776112351
 GameObject:
   m_ObjectHideFlags: 0

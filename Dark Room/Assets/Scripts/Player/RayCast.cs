@@ -112,7 +112,7 @@ public class RayCast : MonoBehaviour
                         message = !hit.collider.GetComponentInParent<Cabinet>().opened ? FR ? "[E] Ouvrir" : "[E] Open" : "";
                         break;
                     case ("BreakerDoor"):
-                        message = FR ? "[E] Forcer l'ouverture" : "[E] Force opening";
+                        message = hit.collider.GetComponentInParent<Breaker>().CanOpen() ? FR ? "[E] Forcer l'ouverture" : "[E] Force opening" : "";
                         break;
                     default:
                         message = FR ? "[E] Interagir" : "[E] Interact";
@@ -139,7 +139,8 @@ public class RayCast : MonoBehaviour
                             hit.collider.GetComponentInParent<BreakMirror>().Check(true);
                             break;
                         case ("BreakerDoor"):
-                            hit.collider.GetComponentInParent<Breaker>().Activated();
+                            if (hit.collider.GetComponentInParent<Breaker>().CanOpen())
+                                hit.collider.GetComponentInParent<Breaker>().Activated();
                             break;
                         case ("BreakerButton"):
                             hit.collider.GetComponentInParent<Breaker>().ButtonPressed();
