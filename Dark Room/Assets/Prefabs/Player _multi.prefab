@@ -134,8 +134,8 @@ GameObject:
   - component: {fileID: 20556707477191504}
   - component: {fileID: 124010664544106516}
   - component: {fileID: 81665310952240166}
-  - component: {fileID: 114297284318814020}
-  - component: {fileID: 114497154272936342}
+  - component: {fileID: 114613743296905088}
+  - component: {fileID: 114025019768551548}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -663,6 +663,38 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &114025019768551548
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1581944835878562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 0
+    i1: 87
+    i2: 210
+    i3: 224
+    i4: 33
+    i5: 247
+    i6: 17
+    i7: 36
+    i8: 248
+    i9: 229
+    i10: 231
+    i11: 132
+    i12: 91
+    i13: 166
+    i14: 88
+    i15: 239
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 1
 --- !u!114 &114101511991278960
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -695,21 +727,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f9069c95478efe469ab336844c301b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114297284318814020
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1581944835878562}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3906a386ed262de43b7ceb412b0a7def, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  distance: 0
-  flashlight: {fileID: 1277074845241942, guid: 603e7da5d6663b440938ec76c5897f56, type: 2}
-  UIcode: {fileID: 0}
-  paper: {fileID: 0}
 --- !u!114 &114309804803039446
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -726,6 +743,7 @@ MonoBehaviour:
   - {fileID: 114624659922952218}
   - {fileID: 20556707477191504}
   - {fileID: 81665310952240166}
+  - {fileID: 114613743296905088}
 --- !u!114 &114383697262498058
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -758,22 +776,6 @@ MonoBehaviour:
     i15: 239
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 1
---- !u!114 &114497154272936342
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1581944835878562}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f82d8ecd31ecdbd4fb30adf1e2dae8e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fadeTexture: {fileID: 2800000, guid: 8f2a4f195044f094ab5422857c470f2c, type: 3}
-  fadeOut: 0
-  cam: main
-  tuto: {fileID: 0}
-  tutomana: {fileID: 0}
 --- !u!114 &114536241529043120
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -787,6 +789,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: FlashlightPlayer
   icon: {fileID: 21300000, guid: fc7cb9d2dc1d8b94fbfc810c01ce0470, type: 3}
+--- !u!114 &114613743296905088
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1581944835878562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7588125d56d439429a4e277993e6190, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distance: 3
+  flashlight: {fileID: 1277074845241942, guid: 603e7da5d6663b440938ec76c5897f56, type: 2}
+  UIcode: {fileID: 1876523294589166, guid: 7ec393431a5834a408820da428744dc9, type: 2}
+  paper: {fileID: 1225120944893184, guid: 42941eac29a65dd42b36c624cf7455cc, type: 2}
 --- !u!114 &114624659922952218
 MonoBehaviour:
   m_ObjectHideFlags: 1
