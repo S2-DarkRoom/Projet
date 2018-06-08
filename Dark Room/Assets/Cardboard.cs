@@ -17,4 +17,9 @@ public class Cardboard : MonoBehaviour
         anim.SetBool("open", true);
         opened = true;
     }
+
+    public bool CanOpen()
+    {
+        return !opened && FindObjectOfType<Inventory>().CheckForObject("Knife");
+    }
 }

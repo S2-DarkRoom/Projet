@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4093285715386300}
   - component: {fileID: 95926847064105826}
   - component: {fileID: 54871435644930562}
+  - component: {fileID: 114207970036031064}
   m_Layer: 0
   m_Name: Cardboard
   m_TagString: Untagged
@@ -56,6 +57,7 @@ GameObject:
   - component: {fileID: 33954116541228290}
   - component: {fileID: 23789941745677710}
   - component: {fileID: 65175451879231988}
+  - component: {fileID: 114990474220009350}
   m_Layer: 0
   m_Name: Cube.002
   m_TagString: interactif
@@ -74,6 +76,7 @@ GameObject:
   - component: {fileID: 33234857741574982}
   - component: {fileID: 23077492609292190}
   - component: {fileID: 65528590537811864}
+  - component: {fileID: 114757221027535410}
   m_Layer: 0
   m_Name: Cube.001
   m_TagString: interactif
@@ -129,13 +132,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1732527848134554}
-  m_LocalRotation: {x: -0.5, y: -0.5, z: -0.5, w: 0.5}
+  m_LocalRotation: {x: -0.4999999, y: -0.5000001, z: -0.5000001, w: 0.4999999}
   m_LocalPosition: {x: 0.0022086378, y: 2.054039, z: -0.9999571}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 4093285715386300}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: -90}
+  m_LocalEulerAnglesHint: {x: -90, y: -0.000015258789, z: -90}
 --- !u!23 &23077492609292190
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -287,8 +290,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.009976474, y: 0.019999996, z: 0.00010000079}
-  m_Center: {x: -0.0049878075, y: 0.000022118447, z: 0.00006697282}
+  m_Size: {x: 0.0099764755, y: 0.014283659, z: 0.00010000078}
+  m_Center: {x: -0.004987807, y: 0.000029448527, z: 0.000066972825}
 --- !u!65 &65528590537811864
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -299,8 +302,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.009964155, y: 0.02, z: 0.000099999896}
-  m_Center: {x: 0.0049816743, y: -0.000022091437, z: 0.00006697296}
+  m_Size: {x: 0.009964154, y: 0.0131469015, z: 0.0000999999}
+  m_Center: {x: 0.004981677, y: 0.00074779574, z: 0.00006697298}
 --- !u!95 &95926847064105826
 Animator:
   serializedVersion: 3
@@ -319,3 +322,39 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114207970036031064
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1303611680315134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cb04b02b2017784e88ddc70c12ace8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opened: 0
+--- !u!114 &114757221027535410
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1732527848134554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d03fd69485a5c4841ae4a930837e002b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Cardboard
+--- !u!114 &114990474220009350
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1641317456832702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d03fd69485a5c4841ae4a930837e002b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Cardboard
