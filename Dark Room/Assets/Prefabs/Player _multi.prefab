@@ -603,7 +603,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!54 &54714430202474256
 Rigidbody:
@@ -726,7 +726,6 @@ MonoBehaviour:
   - {fileID: 114624659922952218}
   - {fileID: 20556707477191504}
   - {fileID: 81665310952240166}
-  - {fileID: 114726755296659240}
 --- !u!114 &114383697262498058
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -765,7 +764,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1581944835878562}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f82d8ecd31ecdbd4fb30adf1e2dae8e8, type: 3}
   m_Name: 
@@ -823,7 +822,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a38b55d68817c0f4c920910702b6056b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 4
   lookSensitivity: 3
 --- !u!114 &114726755296659240
 MonoBehaviour:

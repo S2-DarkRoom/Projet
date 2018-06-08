@@ -9,7 +9,7 @@ public class Minuteur_multi : NetworkBehaviour
 {
     [SyncVar] public float gameTime = 3600.0f; //The length of a game, in seconds.
     [SyncVar] public float timer; //How long the game has been running. -1=waiting for players, -2=game is done
-    [SyncVar] public int minPlayers = 2; //Number of players required for the game to start
+    [SyncVar] public int minPlayers; //Number of players required for the game to start
     [SyncVar] public bool masterTimer = false; //Is this the master timer?
                                                //public ServerTimer timerObj;
 
@@ -85,8 +85,8 @@ public class Minuteur_multi : NetworkBehaviour
         }
     }
 
-    void OnGUI()
+    public void OnGUI()
     {
-        GUI.Box(new Rect(20, 20, 75, 20), "0 : " + ((gameTime / 60) % 60 - 1).ToString("0") + " : " + (gameTime % 60).ToString("0"));
+        GUI.Box(new Rect(20, 20, 75, 20), "0 : " + (timer / 60).ToString("0") + " : " + (timer % 60).ToString("0"));
     }
 }
