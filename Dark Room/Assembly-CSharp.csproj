@@ -61,6 +61,7 @@
   <ItemGroup>
     <Compile Include="Assets\Bat.cs" />
     <Compile Include="Assets\Cardboard.cs" />
+    <Compile Include="Assets\Pharmacy.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
