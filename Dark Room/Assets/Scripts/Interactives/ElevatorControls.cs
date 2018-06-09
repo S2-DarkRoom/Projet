@@ -5,6 +5,7 @@ using UnityEngine;
 public class ElevatorControls : MonoBehaviour
 {
     Animator anim;
+    public bool low = false;
 
     public void Start()
     {
@@ -13,6 +14,7 @@ public class ElevatorControls : MonoBehaviour
 
     public void Activated()
     {
+        low = true;
         anim.SetBool("low", true);
         GetComponentInParent<Elevator>().GoDown();
     }

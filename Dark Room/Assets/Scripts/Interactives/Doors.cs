@@ -33,7 +33,7 @@ public class Doors : MonoBehaviour {
                 if (name == "DoorElevator")
                     FindObjectOfType<Elevator>().Activate();
 
-                else if (name.Substring(0, 4) == "Door") //cas des portes 
+                else if (name.Substring(0, 4) == "Door" || name == "Secret") //cas des portes 
                     FindObjectOfType<AudioManager>().Play("Porte");
 
 
@@ -42,21 +42,29 @@ public class Doors : MonoBehaviour {
 
             else
             {
-                for (int i = 0; i < Inventory.items.Count; i++)
+                if (name == "DoorElevator" && FindObjectOfType<Breaker>().pressed)
                 {
-                    Debug.Log(Inventory.items[i].name);
-                    Debug.Log(this.name);
-                    if (Inventory.items[i].name == this.name)
+                    _animator.SetBool("open", true);
+                    FindObjectOfType<AudioManager>().Play("Porte");
+                    FindObjectOfType<Elevator>().Activate();
+                    return true;
+                }
+
+                else
+                {
+                    for (int i = 0; i < Inventory.items.Count; i++)
                     {
-                        
-                        _animator.SetBool("open", true);
-                        if (name == "DoorElevator")
-                            FindObjectOfType<Elevator>().Activate();
+                        Debug.Log(Inventory.items[i].name);
+                        Debug.Log(this.name);
+                        if (Inventory.items[i].name == this.name)
+                        {
+                            _animator.SetBool("open", true);
 
-                        else if (name.Substring(0, 4) == "Door") //cas des portes 
-                            FindObjectOfType<AudioManager>().Play("Porte");
+                            if (name.Substring(0, 4) == "Door") //cas des portes 
+                                FindObjectOfType<AudioManager>().Play("Porte");
 
-                        return true;
+                            return true;
+                        }
                     }
                 }
             }

@@ -5,6 +5,7 @@ using UnityEngine;
 public class Elevator : MonoBehaviour
 {
     Animator anim;
+    public GameObject elevator;
 
     public void Start()
     {
@@ -13,22 +14,17 @@ public class Elevator : MonoBehaviour
 
     public void Activate()
     {
-        Debug.Log("Activated");
         anim.SetBool("open", true);
     }
 
     public void OnTriggerEnter(Collider other)
     {
+        Debug.Log("Entered");
         anim.SetBool("open", false);
     }
 
     public void GoDown()
     {
         anim.SetBool("down", true);
-    }
-
-    public void Arrived()
-    {
-        anim.SetBool("open", true);
     }
 }
