@@ -101,7 +101,6 @@ public class RayCast : MonoBehaviour
                         message = FR ? "[E] Activer" : "[E] Activate";
                         break;
                     case ("Cardboard"):
-                        
                         message = hit.collider.GetComponentInParent<Cardboard>().CanOpen() ? FR ? "[E] Ouvrir" : "[E] Open" : "";
                         break;
                     case ("Screen"):
@@ -132,7 +131,8 @@ public class RayCast : MonoBehaviour
                             hit.collider.GetComponentInParent<Levier>().Activated();
                             break;
                         case ("Cardboard"):
-                            hit.collider.GetComponentInParent<Cardboard>().Open();
+                            if (hit.collider.GetComponentInParent<Cardboard>().CanOpen())
+                                hit.collider.GetComponentInParent<Cardboard>().Open();
                             break;
                         case ("Screen"):
                             hit.collider.GetComponentInParent<TV>().Push();
