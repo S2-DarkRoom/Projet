@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class MenuLangage : MonoBehaviour
+public class PauseMenuLanguage : MonoBehaviour
 {
-    public Text solo, explore, quit, options, multi;
+    public Text resume, menu, options, quit;
     public Text anti, lang, texture, full, apply, back, opt;
     public GameObject Lfr, Len, Qfr, Qen, Afr, Aen, Vfr, Ven;
     bool FR = true, n = true;
@@ -23,11 +23,10 @@ public class MenuLangage : MonoBehaviour
 
         if (FR)
         {
-            solo.text = "Jouer";
-            explore.text = "Explorer";
+            resume.text = "Reprendre";
+            menu.text = "Menu Principal";
             quit.text = "Quitter le jeu";
             options.text = "Options";
-            multi.text = "Multijoueur";
 
             anti.text = "Anticrenelage";
             texture.text = "Qualite des texture";
@@ -50,11 +49,10 @@ public class MenuLangage : MonoBehaviour
 
         else
         {
-            solo.text = "Play";
-            explore.text = "Explore";
+            resume.text = "Reprendre";
+            menu.text = "Main menu";
             quit.text = "Quit game";
             options.text = "Settings";
-            multi.text = "Multiplayer";
 
             anti.text = "Anialiasing";
             texture.text = "Texture Quality";
