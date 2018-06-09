@@ -42,18 +42,23 @@ public class Doors : MonoBehaviour {
 
             else
             {
+                if (name == "DoorElevator" && FindObjectOfType<Breaker>().pressed)
+                {
+                    _animator.SetBool("open", true);
+                    FindObjectOfType<AudioManager>().Play("Porte");
+                    FindObjectOfType<Elevator>().Activate();
+                    return true;
+                }
+
                 for (int i = 0; i < Inventory.items.Count; i++)
                 {
                     Debug.Log(Inventory.items[i].name);
                     Debug.Log(this.name);
                     if (Inventory.items[i].name == this.name)
                     {
-                        
                         _animator.SetBool("open", true);
-                        if (name == "DoorElevator")
-                            FindObjectOfType<Elevator>().Activate();
 
-                        else if (name.Substring(0, 4) == "Door") //cas des portes 
+                        if (name.Substring(0, 4) == "Door") //cas des portes 
                             FindObjectOfType<AudioManager>().Play("Porte");
 
                         return true;

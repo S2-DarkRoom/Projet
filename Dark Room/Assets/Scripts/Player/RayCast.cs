@@ -96,6 +96,12 @@ public class RayCast : MonoBehaviour
                     case("BreakerButton"):
                         message = FR ? "[E] Activer" : "[E] Activate";
                         break;
+                    case ("Cardboard"):
+                        message = hit.collider.GetComponentInParent<Cardboard>().CanOpen() ? FR ? "[E] Ouvrir" : "[E] Open" : "";
+                        break;
+                    case ("Screen"):
+                        message = !hit.collider.GetComponentInParent<TV>().pushed ? FR ? "[E] Appuyer" : "[E] Press" : "";
+                        break;
                     case ("Mirror"):
                         message = hit.collider.GetComponentInParent<BreakMirror>().Check(false) ? FR ? "[E] Casser" : "[E] Break" : "";
                         break;
@@ -106,7 +112,7 @@ public class RayCast : MonoBehaviour
                         message = !hit.collider.GetComponentInParent<Cabinet>().opened ? FR ? "[E] Ouvrir" : "[E] Open" : "";
                         break;
                     case ("BreakerDoor"):
-                        message = FR ? "[E] Forcer l'ouverture" : "[E] Force opening";
+                        message = hit.collider.GetComponentInParent<Breaker>().CanOpen() ? FR ? "[E] Forcer l'ouverture" : "[E] Force opening" : "";
                         break;
                     default:
                         message = FR ? "[E] Interagir" : "[E] Interact";
@@ -120,6 +126,12 @@ public class RayCast : MonoBehaviour
                         case ("Levier"):
                             hit.collider.GetComponentInParent<Levier>().Activated();
                             break;
+                        case ("Cardboard"):
+                            hit.collider.GetComponentInParent<Cardboard>().Open();
+                            break;
+                        case ("Screen"):
+                            hit.collider.GetComponentInParent<TV>().Push();
+                            break;
                         case ("Cabinet"):
                             hit.collider.GetComponentInParent<Cabinet>().TryOpen();
                             break;
@@ -127,7 +139,8 @@ public class RayCast : MonoBehaviour
                             hit.collider.GetComponentInParent<BreakMirror>().Check(true);
                             break;
                         case ("BreakerDoor"):
-                            hit.collider.GetComponentInParent<Breaker>().Activated();
+                            if (hit.collider.GetComponentInParent<Breaker>().CanOpen())
+                                hit.collider.GetComponentInParent<Breaker>().Activated();
                             break;
                         case ("BreakerButton"):
                             hit.collider.GetComponentInParent<Breaker>().ButtonPressed();
