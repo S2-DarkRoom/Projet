@@ -39,7 +39,7 @@ public class RayCast : MonoBehaviour
                         flashlight.GetComponent<Flashlight>().Enabled();
                     }
 
-                    else if (item.name.Substring(0, 4) == "Door" || item.name == "Chest")
+                    else if (item.name.Substring(0, 3) == "Doo" || item.name == "Chest")
                         FindObjectOfType<AudioManager>().Play("Key");
 
                     else if (item.name == "Crowbar")
@@ -54,7 +54,7 @@ public class RayCast : MonoBehaviour
                     else if (item.name == "Hammer")
                         FindObjectOfType<AudioManager>().Play("Hammer");
 
-                    else if (item.name == "Sheet" || item.name == "Bone")
+                    else if (item.name == "Sheet" || item.name == "Bone" || item.name == "Rib")
                     {
                         switch (item.name)
                         {
@@ -62,6 +62,7 @@ public class RayCast : MonoBehaviour
                                 FindObjectOfType<AudioManager>().Play("Paper");
                                 break;
                             case ("Bone"):
+                            case ("Rib"):
                                 FindObjectOfType<AudioManager>().Play("Flashlight");
                                 break;
                         }
