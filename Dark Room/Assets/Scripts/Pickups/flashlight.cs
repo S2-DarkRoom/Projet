@@ -8,22 +8,30 @@ public class Flashlight : MonoBehaviour {
     public GameObject lightobj;
 
     private bool lightInHand = false;
+    private float time;
 
+    /*
     private float maxnrj;
     private float currentnrj;
     private float usednrj;
-
-    private int batteries = 3;
+    private int batteries = 1;
     private GameObject batteryPickedUp;
+    */
 
-    InventorySlot[] slots;
+    //InventorySlot[] slots;
 
     void Start ()
     {
+        time = 30f;
+        gameObject.SetActive(false);
+        lightobj.SetActive(false);
+
+        /*
         maxnrj = 50 * batteries;
         currentnrj = maxnrj;
         this.gameObject.SetActive(false);
         lightobj.SetActive(false);
+        */
     }
 
     public void Enabled()
@@ -31,11 +39,13 @@ public class Flashlight : MonoBehaviour {
         gameObject.SetActive(true);
         lightInHand = true;
     }
-	
-	void Update ()
+
+    void Update()
     {
+        /*
         maxnrj = 50 * batteries;
         currentnrj = maxnrj;
+        */
 
         if (lightInHand)
         {
@@ -47,43 +57,48 @@ public class Flashlight : MonoBehaviour {
 
             if (Ison)
             {
+                time -= Time.deltaTime;
+
                 lightobj.SetActive(true);
 
-                if (currentnrj <= 0)
+                if (time <= 0)
                 {
-                    lightobj.SetActive(false);
-                    batteries = 0;
+                    Ison = !Ison;
+                    time = 0;
                 }
+
+                /*
                 if (currentnrj > 0)
                 {
                     lightobj.SetActive(true);
                     currentnrj -= 0.5f * Time.deltaTime;
                     usednrj += 10f * Time.deltaTime;
                 }
+                */
 
+                /*
                 if (usednrj > 50)
                 {
                     batteries -= 1;
                     usednrj = 0;
                 }
+                */
             }
 
             else
                 lightobj.SetActive(false);
         }
-
-        /* pour la batterie
-        public void OnTriggerEnter(Collider other)
-        {
-               if (other.tag = "Battery")
-               {
-                   batteryPickedUp = other.gameObjetc;.
-                   batteries++;
-                   Destroy(batteryPickedUp);
-               }
-         }
-         */
+    }
 
 
+    public void AddBattery()
+    {
+        time += 30f;
+    }
+
+    public void OnGUI()
+    {
+        GUI.color = Color.yellow;
+        GUI.Button(new Rect(Screen.width * 0.90f, Screen.height * 0.95f, 100, 20), time.ToString("0") + "s restantes");
     }
 }

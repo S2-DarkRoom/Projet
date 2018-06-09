@@ -46,7 +46,10 @@ public class RayCast : MonoBehaviour
                         FindObjectOfType<AudioManager>().Play("Crowbar");
 
                     else if (item.name == "Battery")
+                    {
                         FindObjectOfType<AudioManager>().Play("Battery");
+                        FindObjectOfType<Flashlight>().AddBattery();
+                    }
 
                     else if (item.name == "Hammer")
                         FindObjectOfType<AudioManager>().Play("Hammer");
