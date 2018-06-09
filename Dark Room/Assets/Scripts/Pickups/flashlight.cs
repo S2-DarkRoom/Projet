@@ -9,6 +9,7 @@ public class Flashlight : MonoBehaviour {
 
     private bool lightInHand = false;
     private float time;
+    public bool FR;
 
     /*
     private float maxnrj;
@@ -42,6 +43,7 @@ public class Flashlight : MonoBehaviour {
 
     void Update()
     {
+        FR = FR = FindObjectOfType<SettingsManager>().FR;
         /*
         maxnrj = 50 * batteries;
         currentnrj = maxnrj;
@@ -98,7 +100,10 @@ public class Flashlight : MonoBehaviour {
 
     public void OnGUI()
     {
-        GUI.color = Color.yellow;
-        GUI.Button(new Rect(Screen.width * 0.90f, Screen.height * 0.95f, 100, 20), time.ToString("0") + "s restantes");
+        GUI.color = new Color(1, 0.5f, 0.5f) ;
+        if (FR)
+            GUI.Button(new Rect(Screen.width * 0.90f, Screen.height * 0.95f, 100, 20), time.ToString("0") + "s restantes");
+        else
+            GUI.Button(new Rect(Screen.width * 0.90f, Screen.height * 0.95f, 80, 20), time.ToString("0") + "s left");
     }
 }
