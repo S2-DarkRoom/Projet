@@ -101,9 +101,6 @@ public class Flashlight : MonoBehaviour {
     public void OnGUI()
     {
         GUI.color = new Color(1, 0.5f, 0.5f) ;
-        if (FR)
-            GUI.Button(new Rect(Screen.width * 0.90f, Screen.height * 0.95f, 100, 20), time.ToString("0") + "s restantes");
-        else
-            GUI.Button(new Rect(Screen.width * 0.90f, Screen.height * 0.95f, 80, 20), time.ToString("0") + "s left");
+        GUI.Button(new Rect(Screen.width * 0.90f, Screen.height * 0.95f, 100, 20), FR? time.ToString("0") + "s restantes" : time.ToString("0") + "s left");
     }
 }
