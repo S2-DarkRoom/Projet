@@ -146,12 +146,12 @@
     <Compile Include="Assets\Scripts\Player\Minuteur.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Player\RayCast.cs" />
-    <Compile Include="Assets\Scripts\Tutorials\KeyTutorial.cs" />
-    <Compile Include="Assets\Scripts\Tutorials\PickupTutorial.cs" />
-    <Compile Include="Assets\Scripts\Tutorials\Tutorial.cs" />
-    <Compile Include="Assets\Scripts\Tutorials\TutorialManager.cs" />
     <Compile Include="Assets\Scripts\UI\CodeUI.cs" />
     <Compile Include="Assets\Scripts\UI\DigitSlot.cs" />
+    <Compile Include="Assets\Scripts\UI\Tutorials\KeyTutorial.cs" />
+    <Compile Include="Assets\Scripts\UI\Tutorials\PickupTutorial.cs" />
+    <Compile Include="Assets\Scripts\UI\Tutorials\Tutorial.cs" />
+    <Compile Include="Assets\Scripts\UI\Tutorials\TutorialManager.cs" />
     <Compile Include="Assets\VolumetricLight\Scripts\VolumetricLight.cs" />
     <Compile Include="Assets\VolumetricLight\Scripts\VolumetricLightRenderer.cs" />
     <Compile Include="Assets\VolumetricLight\Standard Assets\Effects\ImageEffects\Scripts\PostEffectsBase.cs" />

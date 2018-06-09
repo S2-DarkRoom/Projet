@@ -49,6 +49,7 @@ public class TutorialManager : MonoBehaviour {
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
+            Cursor.visible = false;
             UI.SetActive(false);
             manager.SetActive(false);
         }
