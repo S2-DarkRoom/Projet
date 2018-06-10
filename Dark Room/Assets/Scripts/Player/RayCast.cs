@@ -100,6 +100,9 @@ public class RayCast : MonoBehaviour
                     case("BreakerButton"):
                         message = FR ? "[E] Activer" : "[E] Activate";
                         break;
+                    case ("Door3"):
+                        message = !hit.collider.GetComponent<ChooseKeyUI>().on ? FR ? "[E] Ouvrir" : "[E] Open" : "";
+                        break;
                     case ("Cardboard"):
                         message = hit.collider.GetComponentInParent<Cardboard>().CanOpen() ? FR ? "[E] Ouvrir" : "[E] Open" : "";
                         break;
@@ -129,6 +132,9 @@ public class RayCast : MonoBehaviour
                     {
                         case ("Levier"):
                             hit.collider.GetComponentInParent<Levier>().Activated();
+                            break;
+                        case ("Door3"):
+                            hit.collider.GetComponent<ChooseKeyUI>().Activate();
                             break;
                         case ("Cardboard"):
                             if (hit.collider.GetComponentInParent<Cardboard>().CanOpen())

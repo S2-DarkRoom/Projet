@@ -59,11 +59,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Bat.cs" />
-    <Compile Include="Assets\Cardboard.cs" />
-    <Compile Include="Assets\MenuLangage.cs" />
-    <Compile Include="Assets\PauseMenuLanguage.cs" />
-    <Compile Include="Assets\Pharmacy.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
@@ -112,6 +107,9 @@
     <Compile Include="Assets\Scripts\Audio\AudioManager.cs" />
     <Compile Include="Assets\Scripts\Audio\PlayAudio.cs" />
     <Compile Include="Assets\Scripts\Audio\Sound.cs" />
+    <Compile Include="Assets\Scripts\Bat.cs" />
+    <Compile Include="Assets\Scripts\Cardboard.cs" />
+    <Compile Include="Assets\Scripts\ChooseKeyUI.cs" />
     <Compile Include="Assets\Scripts\Cinematiques\ActivateCine.cs" />
     <Compile Include="Assets\Scripts\Cinematiques\DeleteCamera.cs" />
     <Compile Include="Assets\Scripts\Interactives\Breaker.cs" />
@@ -130,6 +128,7 @@
     <Compile Include="Assets\Scripts\Inventory\InventorySlot.cs" />
     <Compile Include="Assets\Scripts\Inventory\InventoryUI.cs" />
     <Compile Include="Assets\Scripts\Langage\CodeLanguage.cs" />
+    <Compile Include="Assets\Scripts\MenuLangage.cs" />
     <Compile Include="Assets\Scripts\Menus\ChangeScene.cs" />
     <Compile Include="Assets\Scripts\Menus\MenuPrincipal.cs" />
     <Compile Include="Assets\Scripts\Menus\Pausemenu.cs" />
@@ -138,6 +137,8 @@
     <Compile Include="Assets\Scripts\Multijoueur\PlayerSetup_multi.cs" />
     <Compile Include="Assets\Scripts\Options et paramètres\GameSettings.cs" />
     <Compile Include="Assets\Scripts\Options et paramètres\SettingsManager.cs" />
+    <Compile Include="Assets\Scripts\PauseMenuLanguage.cs" />
+    <Compile Include="Assets\Scripts\Pharmacy.cs" />
     <Compile Include="Assets\Scripts\Pickups\Flashlight.cs" />
     <Compile Include="Assets\Scripts\Pickups\Paper.cs" />
     <Compile Include="Assets\Scripts\Pickups\PapersManager.cs" />
