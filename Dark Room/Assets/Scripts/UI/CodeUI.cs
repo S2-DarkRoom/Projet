@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,7 +8,7 @@ public class CodeUI : MonoBehaviour
     public GameObject UI;
     public GameObject UIwrong;
     public GameObject UIenter;
-    public string code;
+    public string code = "";
     string entered = "";
     int curr;
     public Transform digitsParent;
@@ -16,11 +17,23 @@ public class CodeUI : MonoBehaviour
     bool displayMessage = false;
     bool FR;
 
+    int n = 0;
+    System.Random rnd = new System.Random();
+    public GameObject[] codes = new GameObject[4];
+    public Sprite[] sprites = new Sprite[10];
+
+
     DigitSlot[] slots;
 
     private void Start()
     {
-        //UI.SetActive(false);
+        for(int i = 0; i < 4; i++)
+        {
+            n = rnd.Next(10);
+            codes[i].GetComponent<SpriteRenderer>().sprite = sprites[n];
+            code += n;
+        }
+
         slots = digitsParent.GetComponentsInChildren<DigitSlot>();
         _animator = GetComponent<Animator>();
     }

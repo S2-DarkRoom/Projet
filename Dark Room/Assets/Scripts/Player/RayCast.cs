@@ -39,19 +39,22 @@ public class RayCast : MonoBehaviour
                         flashlight.GetComponent<Flashlight>().Enabled();
                     }
 
-                    else if (item.name.Substring(0, 4) == "Door" || item.name == "Chest")
+                    else if (item.name.Substring(0, 3) == "Doo" || item.name == "Chest")
                         FindObjectOfType<AudioManager>().Play("Key");
 
                     else if (item.name == "Crowbar")
                         FindObjectOfType<AudioManager>().Play("Crowbar");
 
                     else if (item.name == "Battery")
+                    {
                         FindObjectOfType<AudioManager>().Play("Battery");
+                        FindObjectOfType<Flashlight>().AddBattery();
+                    }
 
                     else if (item.name == "Hammer")
                         FindObjectOfType<AudioManager>().Play("Hammer");
 
-                    else if (item.name == "Sheet" || item.name == "Bone")
+                    else if (item.name == "Sheet" || item.name == "Bone" || item.name == "Rib")
                     {
                         switch (item.name)
                         {
@@ -59,6 +62,7 @@ public class RayCast : MonoBehaviour
                                 FindObjectOfType<AudioManager>().Play("Paper");
                                 break;
                             case ("Bone"):
+                            case ("Rib"):
                                 FindObjectOfType<AudioManager>().Play("Flashlight");
                                 break;
                         }
@@ -127,7 +131,8 @@ public class RayCast : MonoBehaviour
                             hit.collider.GetComponentInParent<Levier>().Activated();
                             break;
                         case ("Cardboard"):
-                            hit.collider.GetComponentInParent<Cardboard>().Open();
+                            if (hit.collider.GetComponentInParent<Cardboard>().CanOpen())
+                                hit.collider.GetComponentInParent<Cardboard>().Open();
                             break;
                         case ("Screen"):
                             hit.collider.GetComponentInParent<TV>().Push();
