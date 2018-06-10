@@ -40542,6 +40542,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 913804684}
+  crosshair: {fileID: 0}
   name: End
   m_MyAudioSource: {fileID: 1700101775}
   subtitles: {fileID: 0}
@@ -87530,6 +87531,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 913804684}
+  crosshair: {fileID: 2041918050}
   name: Intro
   m_MyAudioSource: {fileID: 1700101775}
   subtitles: {fileID: 623203374}
@@ -95723,6 +95725,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 913804684}
+  crosshair: {fileID: 0}
   name: Room3
   m_MyAudioSource: {fileID: 1700101775}
   subtitles: {fileID: 0}
@@ -117032,6 +117035,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 913804684}
+  crosshair: {fileID: 0}
   name: Room2
   m_MyAudioSource: {fileID: 1700101775}
   subtitles: {fileID: 0}
