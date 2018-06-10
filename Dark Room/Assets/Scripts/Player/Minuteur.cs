@@ -7,9 +7,10 @@ using UnityEngine.UI;
 
 public class Minuteur : MonoBehaviour
 {
+    public GameObject mainCam, endCam;
+    public GameObject UIend;
 
     private float time = 3600.0f;
-
 
     void Update ()
     {
@@ -23,10 +24,10 @@ public class Minuteur : MonoBehaviour
 
     public void EndGame()
     {
-        //FIXME
-        /*time = 0;
-        SceneManager.LoadScene("Menu");*/
-        Debug.Log("Fin");
+        mainCam.SetActive(false);
+        endCam.SetActive(true);
+        endCam.GetComponent<Animator>().SetBool("end", true);
+        UIend.SetActive(true);
     }
 
     void OnGUI()
