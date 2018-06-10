@@ -33,6 +33,7 @@ public class MenuPrincipal : MonoBehaviour
 	{
         menu.SetActive(false);
         background.sprite = loading;
+        background.color = Color.white;
         Cursor.visible = false;
 
 
