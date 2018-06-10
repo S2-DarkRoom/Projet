@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Paper : MonoBehaviour
 {
-    public Sprite sprite;
+    public Sprite spriteFR, spriteEN;
     public PaperType type;
 
     public enum PaperType
