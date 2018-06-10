@@ -13,7 +13,7 @@ public class Minuteur : MonoBehaviour
 
     void Update ()
     {
-        time -= Time.deltaTime * 15; 
+        time -= Time.deltaTime; 
 
 		if (time <= 0) 
 		{
@@ -24,8 +24,9 @@ public class Minuteur : MonoBehaviour
     public void EndGame()
     {
         //FIXME
-        time = 0;
-        SceneManager.LoadScene("Menu");
+        /*time = 0;
+        SceneManager.LoadScene("Menu");*/
+        Debug.Log("Fin");
     }
 
     void OnGUI()
