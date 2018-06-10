@@ -12,7 +12,7 @@ public class MenuLangage : MonoBehaviour
 
     public void Update()
     {
-        FR = GetComponent<SettingsManager>().FR;
+        FR = FindObjectOfType<SettingsManager>().FR;
         if (FR != n)
             Change();
     }

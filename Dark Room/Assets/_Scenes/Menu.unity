@@ -1120,9 +1120,9 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: French
-      m_Image: {fileID: 0}
     - m_Text: English
+      m_Image: {fileID: 0}
+    - m_Text: French
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -7049,9 +7049,9 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: "Fran\xE7ais"
-      m_Image: {fileID: 0}
     - m_Text: Anglais
+      m_Image: {fileID: 0}
+    - m_Text: "Fran\xE7ais"
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -9492,7 +9492,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1663802005}
-  - component: {fileID: 1663802006}
   m_Layer: 5
   m_Name: OptionMenu
   m_TagString: Untagged
@@ -9529,28 +9528,6 @@ RectTransform:
   m_AnchoredPosition: {x: -129.00003, y: 59}
   m_SizeDelta: {x: -885.7, y: -706.4}
   m_Pivot: {x: 0.53410643, y: 0.5}
---- !u!114 &1663802006
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1663802004}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1fc53ae08c794643840d1c1437c58c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fullscreenToggle: {fileID: 1691473496}
-  resolutionDropdown: {fileID: 713558667}
-  textureQualityDropdown: {fileID: 859514885}
-  antialiasingDropdown: {fileID: 0}
-  vSyncDropdown: {fileID: 0}
-  musicVolumeSlider: {fileID: 0}
-  applyButton: {fileID: 0}
-  language: {fileID: 0}
-  FR: 0
-  musicSource: {fileID: 0}
-  gameSettings: {fileID: 0}
 --- !u!1 &1668291847
 GameObject:
   m_ObjectHideFlags: 0
@@ -11354,7 +11331,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Fran\xE7ais"
+  m_Text: Anglais
 --- !u!222 &1812232016
 CanvasRenderer:
   m_ObjectHideFlags: 0

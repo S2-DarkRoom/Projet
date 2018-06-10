@@ -7,28 +7,44 @@ using UnityEngine.UI;
 
 public class Minuteur : MonoBehaviour
 {
+    public bool end = false;
+    public GameObject mainCam, endCam;
+    public GameObject UIend;
 
     private float time = 3600.0f;
 
-
     void Update ()
     {
-        time -= Time.deltaTime * 15; 
+        time -= Time.deltaTime; 
 
 		if (time <= 0) 
 		{
-            //FIXME
-			time = 0;
-			SceneManager.LoadScene("Menu");
+            end = true;
+            EndGame();
 		}
 	}
+
+    public void EndGame()
+    {
+        mainCam.SetActive(false);
+        endCam.SetActive(true);
+    }
+
     void OnGUI()
     {
-        TimeSpan t = TimeSpan.FromSeconds(time);
-        //GUI.Box(new Rect(20, 20, 75, 20), "0 : " + ((time % 3600) / 60).ToString("00") + " : " + (time % 60).ToString("00"));
-        GUI.Box(new Rect(20, 20, 75, 20), string.Format("{0:D2} : {1:D2} : {2:D2}",
-                t.Hours,
-                t.Minutes,
-                t.Seconds));
+        if (!end)
+        {
+            TimeSpan t = TimeSpan.FromSeconds(time);
+            GUI.Box(new Rect(20, 20, 75, 20), string.Format("{0:D2} : {1:D2} : {2:D2}",
+                    t.Hours,
+                    t.Minutes,
+                    t.Seconds));
+        }
+
+        else
+        {
+            GUI.color = Color.red;
+            GUI.Box(new Rect(20, 20, 75, 20), "00 : 00 : 00");
+        }
     }
 }

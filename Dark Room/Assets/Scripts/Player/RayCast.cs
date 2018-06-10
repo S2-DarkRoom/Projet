@@ -28,7 +28,7 @@ public class RayCast : MonoBehaviour
             if (hit.collider.tag == "pickup")
             {
                 displayMessage = true;
-                message = FR ? "[E] Ramasser": "[E] Pick Up";
+                message = FR ? "[E] Ramasser" : "[E] Pick Up";
 
                 if (Input.GetKeyDown(KeyCode.E))
                 {
@@ -66,7 +66,7 @@ public class RayCast : MonoBehaviour
                                 FindObjectOfType<AudioManager>().Play("Flashlight");
                                 break;
                         }
-                            
+
                         paper.SetActive(true);
                         paper.GetComponent<PapersManager>().Show(item.GetComponent<Paper>());
                     }
@@ -94,14 +94,20 @@ public class RayCast : MonoBehaviour
             else if (hit.collider.tag == "interactif")
             {
                 displayMessage = true;
-                switch(hit.collider.GetComponent<Interactible>().name)
+                switch (hit.collider.GetComponent<Interactible>().name)
                 {
                     case ("Levier"):
-                    case("BreakerButton"):
+                    case ("BreakerButton"):
                         message = FR ? "[E] Activer" : "[E] Activate";
+                        break;
+                    case ("Door3"):
+                        message = (!hit.collider.GetComponent<ChooseKeyUI>().opened && !hit.collider.GetComponent<ChooseKeyUI>().on) ? FR ? "[E] Ouvrir" : "[E] Open" : "";
                         break;
                     case ("Cardboard"):
                         message = hit.collider.GetComponentInParent<Cardboard>().CanOpen() ? FR ? "[E] Ouvrir" : "[E] Open" : "";
+                        break;
+                    case ("Seat"):
+                        message = FR ? "[E] S'asseoir" : "[E] Sit";
                         break;
                     case ("Screen"):
                         message = !hit.collider.GetComponentInParent<TV>().pushed ? FR ? "[E] Appuyer" : "[E] Press" : "";
@@ -130,6 +136,12 @@ public class RayCast : MonoBehaviour
                         case ("Levier"):
                             hit.collider.GetComponentInParent<Levier>().Activated();
                             break;
+                        case ("Seat"):
+                            FindObjectOfType<TV>().Sit();
+                            break;
+                        case ("Door3"):
+                            hit.collider.GetComponent<ChooseKeyUI>().Activate();
+                            break;
                         case ("Cardboard"):
                             if (hit.collider.GetComponentInParent<Cardboard>().CanOpen())
                                 hit.collider.GetComponentInParent<Cardboard>().Open();
@@ -156,6 +168,12 @@ public class RayCast : MonoBehaviour
                         default:
                             break;
                     }
+                }
+
+                else if (Input.GetKeyDown(KeyCode.KeypadEnter))
+                {
+                    if (hit.collider.GetComponent<Interactible>().name == "Door3")
+                        hit.collider.GetComponent<ChooseKeyUI>().Success();
                 }
             }
 
@@ -233,9 +251,9 @@ public class RayCast : MonoBehaviour
                         door.Close();
                     }
                 }
-                
+
             }
-            
+
             else
             {
                 displayMessage = false;
