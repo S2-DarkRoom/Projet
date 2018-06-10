@@ -37,6 +37,9 @@ public class ChooseKeyUI : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.X))
             {
+                GameObject.Find("Player").GetComponent<PlayerController>().enabled = true;
+                GameObject.Find("Player").GetComponentInChildren<FirstPerson>().enabled = true;
+
                 on = false;
                 UI.SetActive(false);
             }
