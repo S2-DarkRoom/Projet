@@ -48759,6 +48759,7 @@ GameObject:
   - component: {fileID: 767893465}
   - component: {fileID: 767893464}
   - component: {fileID: 767893463}
+  - component: {fileID: 767893467}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -48869,7 +48870,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  profile: {fileID: 0}
+  profile: {fileID: 11400000, guid: 79ca1d776c4becd48a7b47a8457f9397, type: 2}
 --- !u!114 &767893466
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48883,6 +48884,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sensitivity: 2
   smoothing: 2
+--- !u!114 &767893467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 767893458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aef5e772e3a9a7d419d38ee2ee7deee2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UI: {fileID: 1441015746}
 --- !u!1 &769448646 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1743507936776160, guid: 339103360b2dbbf4a9236dd441c794a7,
@@ -51812,6 +51825,18 @@ MonoBehaviour:
   - name: Bat
     clip: {fileID: 8300000, guid: 2c6df537543976342a1396b4cf00af79, type: 3}
     volume: 0.8
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: TimeOut
+    clip: {fileID: 8300000, guid: ddbb2977f9d28834fb2a6e68ed4b42a0, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: WrongKey
+    clip: {fileID: 8300000, guid: 0404fa2dc84d04041a5ebd171a011f7c, type: 3}
+    volume: 0.5
     pitch: 1
     loop: 0
     source: {fileID: 0}

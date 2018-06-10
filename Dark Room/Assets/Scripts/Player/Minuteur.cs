@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class Minuteur : MonoBehaviour
 {
-    private bool end = false;
+    public bool end = false;
     public GameObject mainCam, endCam;
     public GameObject UIend;
 
@@ -28,8 +28,6 @@ public class Minuteur : MonoBehaviour
     {
         mainCam.SetActive(false);
         endCam.SetActive(true);
-        //endCam.GetComponent<Animator>().SetBool("end", true);
-        UIend.SetActive(true);
     }
 
     void OnGUI()
