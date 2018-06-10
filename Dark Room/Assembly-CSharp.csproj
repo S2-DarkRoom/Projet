@@ -157,6 +157,7 @@
     <Compile Include="Assets\Scripts\UI\Tutorials\PickupTutorial.cs" />
     <Compile Include="Assets\Scripts\UI\Tutorials\Tutorial.cs" />
     <Compile Include="Assets\Scripts\UI\Tutorials\TutorialManager.cs" />
+    <Compile Include="Assets\Seat.cs" />
     <Compile Include="Assets\SubtitlesLanguage.cs" />
     <Compile Include="Assets\VolumetricLight\Scripts\VolumetricLight.cs" />
     <Compile Include="Assets\VolumetricLight\Scripts\VolumetricLightRenderer.cs" />

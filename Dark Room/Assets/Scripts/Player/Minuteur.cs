@@ -15,7 +15,7 @@ public class Minuteur : MonoBehaviour
 
     void Update ()
     {
-        time -= Time.deltaTime * 200; 
+        time -= Time.deltaTime; 
 
 		if (time <= 0) 
 		{

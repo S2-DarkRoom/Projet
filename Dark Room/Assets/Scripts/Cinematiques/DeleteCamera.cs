@@ -37,11 +37,9 @@ public class DeleteCamera : MonoBehaviour
         if (name == "Intro")
         {
             m_MyAudioSource.Play(); 
-            // FindObjectOfType<AudioManager>().Play("R1");
         }
         if (name == "Room2")
         {
-            //FindObjectOfType<AudioManager>().Stop("R1"); 
             m_MyAudioSource.Stop();
             FindObjectOfType<AudioManager>().Play("R2");
         }
