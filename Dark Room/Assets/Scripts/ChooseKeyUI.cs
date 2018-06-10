@@ -87,6 +87,7 @@ public class ChooseKeyUI : MonoBehaviour
             on = true;
             UI.SetActive(true);
             two = true;
+            choose1.SetActive(false);
         }
             
         else if (red)
@@ -149,10 +150,5 @@ public class ChooseKeyUI : MonoBehaviour
             GUI.Label(new Rect(Screen.width / 2 - 20, Screen.height * 0.92f, 200f, 200f), FR ? "[A] Valider" : "[A] Validate");
             GUI.Label(new Rect(Screen.width / 2 - 20, Screen.height * 0.95f, 200f, 200f), FR ? "[X] Fermer" : "[X] Close");
         }
-
-        /*if (zero)
-        {
-            GUI.Label(new Rect(Screen.width / 2 - 20, Screen.height / 2, 200f, 200f), FR ? "Verrouillée" : "Locked");
-        }*/
     }
 }
