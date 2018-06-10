@@ -7,7 +7,7 @@ public class MenuLangage : MonoBehaviour
 {
     public Text solo, explore, quit, options, multi;
     public Text anti, lang, texture, full, apply, back, opt;
-    public GameObject Lfr, Len, Qfr, Qen, Afr, Aen, Vfr, Ven;
+    public Dropdown L, Q, A, V;
     bool FR = true, n = true;
 
     public void Update()
@@ -37,15 +37,24 @@ public class MenuLangage : MonoBehaviour
             back.text = "Retour";
             opt.text = "Options";
 
-            Len.SetActive(false);
-            Qen.SetActive(false);
-            Aen.SetActive(false);
-            Ven.SetActive(false);
+            L.captionText.text = "Anglais";
+            L.options[0].text = "Anglais";
+            L.options[1].text = "Français";
 
-            Lfr.SetActive(true);
-            Qfr.SetActive(true);
-            Afr.SetActive(true);
-            Vfr.SetActive(true);
+            Q.captionText.text = "Haute";
+            Q.options[0].text = "Haute";
+            Q.options[1].text = "Moyenne";
+            Q.options[2].text = "Basse";
+
+            A.captionText.text = "Aucun";
+            A.options[0].text = "Aucun";
+            A.options[1].text = "Moyen";
+            A.options[2].text = "Haut";
+
+            V.captionText.text = "Ne pas synchroniser";
+            V.options[0].text = "Ne pas synchroniser";
+            V.options[1].text = "Synchroniser tous les V Blank";
+            V.options[2].text = "Synchroniser toutes les secondes V Blank";
         }
 
         else
@@ -64,15 +73,24 @@ public class MenuLangage : MonoBehaviour
             back.text = "Back";
             opt.text = "Settings";
 
-            Lfr.SetActive(false);
-            Qfr.SetActive(false);
-            Afr.SetActive(false);
-            Vfr.SetActive(false);
+            L.captionText.text = "English";
+            L.options[0].text = "English";
+            L.options[1].text = "French";
 
-            Len.SetActive(true);
-            Qen.SetActive(true);
-            Aen.SetActive(true);
-            Ven.SetActive(true);
+            Q.captionText.text = "High";
+            Q.options[0].text = "High";
+            Q.options[1].text = "Medium";
+            Q.options[2].text = "Low";
+
+            A.captionText.text = "None";
+            A.options[0].text = "None";
+            A.options[1].text = "Medium";
+            A.options[2].text = "High";
+
+            V.captionText.text = "Don't sync";
+            V.options[0].text = "Don't sync";
+            V.options[1].text = "Sync every V Blank";
+            V.options[2].text = "Sync every second V Blank";
         }
     }
 }
