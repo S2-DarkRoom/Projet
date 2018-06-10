@@ -137,7 +137,7 @@ public class RayCast : MonoBehaviour
                             hit.collider.GetComponentInParent<Levier>().Activated();
                             break;
                         case ("Seat"):
-                            hit.collider.GetComponentInParent<TV>().Sit();
+                            FindObjectOfType<TV>().Sit();
                             break;
                         case ("Door3"):
                             hit.collider.GetComponent<ChooseKeyUI>().Activate();

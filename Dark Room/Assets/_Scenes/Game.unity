@@ -41383,6 +41383,7 @@ MonoBehaviour:
   player: {fileID: 913804684}
   name: End
   m_MyAudioSource: {fileID: 1700101775}
+  subtitles: {fileID: 0}
 --- !u!81 &667507958
 AudioListener:
   m_ObjectHideFlags: 0
@@ -89772,6 +89773,7 @@ MonoBehaviour:
   player: {fileID: 913804684}
   name: Intro
   m_MyAudioSource: {fileID: 1700101775}
+  subtitles: {fileID: 623203374}
 --- !u!82 &1437976102
 AudioSource:
   m_ObjectHideFlags: 0
@@ -98123,6 +98125,7 @@ MonoBehaviour:
   player: {fileID: 913804684}
   name: Room3
   m_MyAudioSource: {fileID: 1700101775}
+  subtitles: {fileID: 0}
 --- !u!114 &1598296857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -115740,7 +115743,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 0a36aa4887f4cba4a97e8d6876a4b6a5, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 0a36aa4887f4cba4a97e8d6876a4b6a5, type: 3}
       propertyPath: m_Name
@@ -119853,6 +119856,7 @@ MonoBehaviour:
   player: {fileID: 913804684}
   name: Room2
   m_MyAudioSource: {fileID: 1700101775}
+  subtitles: {fileID: 0}
 --- !u!95 &1947837502
 Animator:
   serializedVersion: 3
