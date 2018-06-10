@@ -48773,7 +48773,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 767893458}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.794, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 913804692}
@@ -63573,6 +63573,21 @@ Prefab:
       propertyPath: m_AllowMSAA
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114960183765712996, guid: 4af79360864e84a4e82cc3c1997c6e80,
+        type: 2}
+      propertyPath: UIend
+      value: 
+      objectReference: {fileID: 1441015746}
+    - target: {fileID: 114960183765712996, guid: 4af79360864e84a4e82cc3c1997c6e80,
+        type: 2}
+      propertyPath: mainCam
+      value: 
+      objectReference: {fileID: 1942774299}
+    - target: {fileID: 114960183765712996, guid: 4af79360864e84a4e82cc3c1997c6e80,
+        type: 2}
+      propertyPath: endCam
+      value: 
+      objectReference: {fileID: 767893458}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4af79360864e84a4e82cc3c1997c6e80, type: 2}
   m_IsPrefabParent: 0
