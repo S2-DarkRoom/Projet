@@ -10,7 +10,7 @@ public class ChooseKeyUI : MonoBehaviour
     public GameObject UI;
     private bool FR, n, red, blue;
     private bool zero = false, one = false, two = false;
-    public bool on;
+    public bool on, opened = false;
     public GameObject panelGauche, panelDroite;
     public GameObject choose1, choose2;
     private string choice = "";
@@ -126,6 +126,7 @@ public class ChooseKeyUI : MonoBehaviour
 
     public void Success()
     {
+        opened = true;
         anim.SetBool("open", true);
         GameObject.Find("Player").GetComponent<PlayerController>().enabled = true;
         GameObject.Find("Player").GetComponentInChildren<FirstPerson>().enabled = true;
@@ -134,6 +135,7 @@ public class ChooseKeyUI : MonoBehaviour
 
     public void Fail()
     {
+        opened = true;
         GameObject.Find("Player").GetComponent<PlayerController>().enabled = true;
         GameObject.Find("Player").GetComponentInChildren<FirstPerson>().enabled = true;
         on = false;
