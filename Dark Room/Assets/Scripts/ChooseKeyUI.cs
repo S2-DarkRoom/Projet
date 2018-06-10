@@ -15,6 +15,8 @@ public class ChooseKeyUI : MonoBehaviour
     public GameObject choose1, choose2;
     private string choice = "";
     Animator anim;
+    public Sprite keyR, keyB;
+    public Image c1;
 
     public void Start()
     {
@@ -31,40 +33,42 @@ public class ChooseKeyUI : MonoBehaviour
         if (n != FR)
             ChangeLang();
         
-        if (Input.GetKeyDown(KeyCode.X))
+        if (on)
         {
-            on = false;
-            UI.SetActive(false);
-        }
-
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            on = false;
-            UI.SetActive(false);
-
-            if (choice == "B")
-                Success();
-
-            else if (choice == "R")
-                Fail();
-        }
-
-
-        else if (on && two)
-        {
-            choose2.SetActive(true);
-            if (Input.GetKeyDown(KeyCode.LeftArrow))
+            if (Input.GetKeyDown(KeyCode.X))
             {
-                panelGauche.SetActive(true);
-                panelDroite.SetActive(false);
-                choice = "B";
+                on = false;
+                UI.SetActive(false);
             }
 
-            else if (Input.GetKeyDown(KeyCode.RightArrow))
+            if (Input.GetKeyDown(KeyCode.A))
             {
-                panelGauche.SetActive(false);
-                panelDroite.SetActive(true);
-                choice = "R";
+                on = false;
+                UI.SetActive(false);
+
+                if (choice == "B")
+                    Success();
+
+                else if (choice == "R")
+                    Fail();
+            }
+
+            if (two)
+            {
+                choose2.SetActive(true);
+                if (Input.GetKeyDown(KeyCode.LeftArrow))
+                {
+                    panelGauche.SetActive(true);
+                    panelDroite.SetActive(false);
+                    choice = "B";
+                }
+
+                else if (Input.GetKeyDown(KeyCode.RightArrow))
+                {
+                    panelGauche.SetActive(false);
+                    panelDroite.SetActive(true);
+                    choice = "R";
+                }
             }
         }
     }
@@ -91,6 +95,7 @@ public class ChooseKeyUI : MonoBehaviour
             one = true;
             choice = "R";
             choose1.SetActive(true);
+            c1.sprite = keyR;
         }
 
         else if (blue)
@@ -102,6 +107,7 @@ public class ChooseKeyUI : MonoBehaviour
             one = true;
             choice = "B";
             choose1.SetActive(true);
+            c1.sprite = keyB;
         }
             
         else
@@ -139,9 +145,9 @@ public class ChooseKeyUI : MonoBehaviour
             GUI.Label(new Rect(Screen.width / 2 - 20, Screen.height * 0.95f, 200f, 200f), FR ? "[X] Fermer" : "[X] Close");
         }
 
-        if (zero)
+        /*if (zero)
         {
             GUI.Label(new Rect(Screen.width / 2 - 20, Screen.height / 2, 200f, 200f), FR ? "Verrouillée" : "Locked");
-        }
+        }*/
     }
 }
