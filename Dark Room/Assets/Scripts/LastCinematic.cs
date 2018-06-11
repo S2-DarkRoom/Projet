@@ -22,7 +22,7 @@ public class LastCinematic : MonoBehaviour
         else if (i == 1)
             screen.GetComponent<VideoPlayer>().enabled = false;
 
-        if (i != 4)
+        if (i != 5)
             screen.GetComponent<Renderer>().material = mats[i];
 
         else if (i == 4)
