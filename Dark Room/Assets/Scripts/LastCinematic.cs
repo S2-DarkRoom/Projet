@@ -13,9 +13,11 @@ public class LastCinematic : MonoBehaviour
     public Sprite n1EN, n2EN, n2FR, n1FR;
     private bool FR;
     public GameObject lastcam;
+    public GameObject subs;
 
     public void Start()
     {
+        subs.SetActive(true);
         UI.enabled = false;
     }
 
