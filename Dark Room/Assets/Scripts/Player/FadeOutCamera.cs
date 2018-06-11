@@ -18,7 +18,8 @@ public class FadeOutCamera : MonoBehaviour
     {
         if (cam == "main")
             fadeTime = 3f;
-
+        else if (cam == "end")
+            fadeTime = 5f;
         fadeOut = true;
     }
 
@@ -37,6 +38,11 @@ public class FadeOutCamera : MonoBehaviour
             {
                 tuto.SetActive(true);
                 tutomana.SetActive(true);
+            }
+
+            else if (cam == "end")
+            {
+                FindObjectOfType<LastCinematic>().Play();
             }
 
             enabled = false;
