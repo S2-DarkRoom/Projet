@@ -84,6 +84,56 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
+=======
+    <Compile Include="Assets\EndCamera.cs" />
+    <Compile Include="Assets\GameOverUI.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Attributes\TrackballGroupAttribute.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Components\AmbientOcclusionComponent.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Components\BloomComponent.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Components\BuiltinDebugViewsComponent.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Components\ChromaticAberrationComponent.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Components\ColorGradingComponent.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Components\DepthOfFieldComponent.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Components\DitheringComponent.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Components\EyeAdaptationComponent.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Components\FogComponent.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Components\FxaaComponent.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Components\GrainComponent.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Components\MotionBlurComponent.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Components\ScreenSpaceReflectionComponent.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Components\TaaComponent.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Components\UserLutComponent.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Components\VignetteComponent.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Models\AmbientOcclusionModel.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Models\AntialiasingModel.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Models\BloomModel.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Models\BuiltinDebugViewsModel.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Models\ChromaticAberrationModel.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Models\ColorGradingModel.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Models\DepthOfFieldModel.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Models\DitheringModel.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Models\EyeAdaptationModel.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Models\FogModel.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Models\GrainModel.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Models\MotionBlurModel.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Models\ScreenSpaceReflectionModel.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Models\UserLutModel.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Models\VignetteModel.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\PostProcessingBehaviour.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\PostProcessingComponent.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\PostProcessingContext.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\PostProcessingModel.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\PostProcessingProfile.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Utils\ColorGradingCurve.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Utils\GraphicsUtils.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
+    <Compile Include="Assets\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
+    <Compile Include="Assets\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
+>>>>>>> parent of 17560f0... T
     <Compile Include="Assets\Scripts\Audio\AudioManager.cs" />
     <Compile Include="Assets\Scripts\Audio\PlayAudio.cs" />
     <Compile Include="Assets\Scripts\Audio\Sound.cs" />
