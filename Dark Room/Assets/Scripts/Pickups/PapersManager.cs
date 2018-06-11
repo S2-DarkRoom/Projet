@@ -10,7 +10,8 @@ public class PapersManager : MonoBehaviour
 
     public void Show(Paper paper)
     {
-        sheet.sprite = paper.sprite;
+        FR = FindObjectOfType<SettingsManager>().FR;
+        sheet.sprite = FR ? paper.spriteFR : paper.spriteEN;
     }
 
     public void Update()
