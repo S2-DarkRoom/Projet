@@ -10,8 +10,23 @@ public class BreakMirror : MonoBehaviour
     public float radius;
     public float power;
     public float upwards;
+    public float time = 3f;
+    Collider[] colliders;
 
     public bool broken = false;
+
+    public void Update()
+    {
+        if (broken)
+        {
+            time -= Time.deltaTime;
+
+            if (time <= 0)
+            {
+                Destroy(brokenMirror);
+            }
+        }
+    }
 
     public bool Check(bool br)
     {
@@ -28,7 +43,7 @@ public class BreakMirror : MonoBehaviour
         Destroy(intactMirror);
         brokenMirror.SetActive(true);
         Vector3 explPos = transform.position;
-        Collider[] colliders = Physics.OverlapSphere(explPos, radius);
+        colliders = Physics.OverlapSphere(explPos, radius);
 
         foreach (Collider hit in colliders)
         {

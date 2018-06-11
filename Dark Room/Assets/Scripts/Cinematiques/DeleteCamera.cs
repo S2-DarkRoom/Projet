@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DeleteCamera : MonoBehaviour
 {
-    public GameObject player;
+    public GameObject player, crosshair;
     public new string name;
     bool FR;
     public AudioSource m_MyAudioSource;
@@ -13,6 +13,7 @@ public class DeleteCamera : MonoBehaviour
     void Start()
     {
         player.SetActive(false);
+        crosshair.SetActive(false);
     }
 
     void PlayerOff()
@@ -55,6 +56,7 @@ public class DeleteCamera : MonoBehaviour
             subtitles.SetActive(false);
 
         player.SetActive(true);
+        crosshair.SetActive(true);
         Destroy(gameObject);
 	}
 }
