@@ -110,10 +110,10 @@ public class TutorialManager : MonoBehaviour {
     void OnGUI()
     {
         if (instructions.sprite == lastFR || instructions.sprite == lastEN)
-            GUI.Label(new Rect(Screen.height * 0.97f, 20, 200f, 200f), FR? "[X] Quitter" : "[X] Exit");
+            GUI.Label(new Rect(20, Screen.height * 0.98f, 200f, 200f), FR? "[X] Quitter" : "[X] Exit");
             
 
         if (!completed && (showText || currentTuto.order % 2 == 0))
-            GUI.Label(new Rect(Screen.height * 0.97f, 20, 200f, 200f), FR? "[X] Suivant" : "[X] Next");
+            GUI.Label(new Rect(20, Screen.height * 0.98f, 200f, 200f), FR? "[X] Suivant" : "[X] Next");
     }
 }

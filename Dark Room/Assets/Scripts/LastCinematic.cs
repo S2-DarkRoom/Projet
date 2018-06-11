@@ -12,10 +12,17 @@ public class LastCinematic : MonoBehaviour
     public Image UI;
     public Sprite n1EN, n2EN, n2FR, n1FR;
     private bool FR;
+    public GameObject lastcam;
 
     public void Start()
     {
         UI.enabled = false;
+    }
+
+    public void Update()
+    {
+        if (Input.GetKey(KeyCode.Keypad1))
+            End();
     }
 
     public void Play()
@@ -64,5 +71,11 @@ public class LastCinematic : MonoBehaviour
         }
 
         i++;
+    }
+
+    public void End()
+    {
+        lastcam.SetActive(true);
+        enabled = false;
     }
 }

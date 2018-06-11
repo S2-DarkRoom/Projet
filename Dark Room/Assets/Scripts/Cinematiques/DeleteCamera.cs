@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DeleteCamera : MonoBehaviour
 {
@@ -9,11 +10,22 @@ public class DeleteCamera : MonoBehaviour
     bool FR;
     public AudioSource m_MyAudioSource;
     public GameObject subtitles;
+    public GameObject door;
 
     void Start()
     {
         player.SetActive(false);
         crosshair.SetActive(false);
+
+        if (name == "End")
+        {
+            m_MyAudioSource.Stop();
+            FindObjectOfType<AudioManager>().Stop("R2");
+            FindObjectOfType<AudioManager>().Stop("R3");
+        }
+
+        if (name == "Last")
+            door.GetComponent<Transform>().localRotation.Set(-90f, 0, 0, 1);
     }
 
     void PlayerOff()
@@ -34,6 +46,11 @@ public class DeleteCamera : MonoBehaviour
         GUI.Label(new Rect(Screen.width * 0.03f, Screen.height * 0.97f, 200f, 200f), FR ? "[X] Passer cinématique" : "[X] Skip Cutscene");
     }
 
+    public void LastCam()
+    {
+        SceneManager.LoadScene("EndCredits");
+    }
+
     void Delete()
     {
         if (name == "Intro")
@@ -52,13 +69,6 @@ public class DeleteCamera : MonoBehaviour
             m_MyAudioSource.Stop();
             FindObjectOfType<AudioManager>().Stop("R2"); 
             FindObjectOfType<AudioManager>().Play("R3");
-        }
-
-        else if (name == "End")
-        {
-            m_MyAudioSource.Stop();
-            FindObjectOfType<AudioManager>().Stop("R2");
-            FindObjectOfType<AudioManager>().Stop("R3");
         }
 
         if (name == "Intro")
