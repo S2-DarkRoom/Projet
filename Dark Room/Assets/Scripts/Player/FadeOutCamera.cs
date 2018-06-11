@@ -39,11 +39,6 @@ public class FadeOutCamera : MonoBehaviour
                 tutomana.SetActive(true);
             }
 
-            else if (cam == "end")
-            {
-                FindObjectOfType<LastCinematic>().Play();
-            }
-
             enabled = false;
         }
             

@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class LastCinematic : MonoBehaviour
 {
-    public void Play()
+    public void Start()
     {
         GetComponent<Animator>().SetBool("play", true);
+    }
+
+    public void Play()
+    {
+        FindObjectOfType<AudioManager>().Play("Outro");
     }
 }
