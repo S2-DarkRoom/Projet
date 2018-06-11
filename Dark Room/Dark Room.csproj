@@ -86,6 +86,7 @@
   <ItemGroup>
     <Compile Include="Assets\EndCamera.cs" />
     <Compile Include="Assets\GameOverUI.cs" />
+    <Compile Include="Assets\LastCinematic.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
