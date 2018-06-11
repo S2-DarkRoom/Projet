@@ -39,8 +39,6 @@ public class FadeOutCamera : MonoBehaviour
                 tutomana.SetActive(true);
             }
 
-            else if (cam == "end")
-
             enabled = false;
         }
             
