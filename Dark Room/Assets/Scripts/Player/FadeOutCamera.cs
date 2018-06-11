@@ -40,6 +40,9 @@ public class FadeOutCamera : MonoBehaviour
             }
 
             else if (cam == "end")
+            {
+                FindObjectOfType<LastCinematic>().Play();
+            }
 
             enabled = false;
         }

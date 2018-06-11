@@ -40549,6 +40549,7 @@ GameObject:
   - component: {fileID: 667507962}
   - component: {fileID: 667507961}
   - component: {fileID: 667507963}
+  - component: {fileID: 667507964}
   m_Layer: 0
   m_Name: Camera_End
   m_TagString: Untagged
@@ -40674,6 +40675,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5793a952218d0a449eb2cfeacd7922e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &667507964
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 667507955}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c3f96b31c3c3529428d395384a3e78f9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &667762844
 Transform:
   m_ObjectHideFlags: 0
@@ -113070,27 +113089,27 @@ Prefab:
       objectReference: {fileID: 2100000, guid: b8ad9110a4b3d5847865250783707da4, type: 2}
     - target: {fileID: 100004, guid: 0a36aa4887f4cba4a97e8d6876a4b6a5, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 0a36aa4887f4cba4a97e8d6876a4b6a5, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 100006, guid: 0a36aa4887f4cba4a97e8d6876a4b6a5, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 100010, guid: 0a36aa4887f4cba4a97e8d6876a4b6a5, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 100008, guid: 0a36aa4887f4cba4a97e8d6876a4b6a5, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 0a36aa4887f4cba4a97e8d6876a4b6a5, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 0a36aa4887f4cba4a97e8d6876a4b6a5, type: 3}
       propertyPath: m_IsActive
