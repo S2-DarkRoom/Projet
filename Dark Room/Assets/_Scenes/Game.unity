@@ -63300,6 +63300,11 @@ Prefab:
       propertyPath: endCam
       value: 
       objectReference: {fileID: 767893458}
+    - target: {fileID: 114472577210919732, guid: 4af79360864e84a4e82cc3c1997c6e80,
+        type: 2}
+      propertyPath: speed
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4af79360864e84a4e82cc3c1997c6e80, type: 2}
   m_IsPrefabParent: 0
@@ -87560,7 +87565,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 9dea44dea18b9534894216eb2f1a55cc, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -87669,8 +87674,8 @@ MonoBehaviour:
   fadeTexture: {fileID: 2800000, guid: 8f2a4f195044f094ab5422857c470f2c, type: 3}
   fadeOut: 0
   cam: Intro
-  tuto: {fileID: 0}
-  tutomana: {fileID: 0}
+  tuto: {fileID: 1929375076}
+  tutomana: {fileID: 104866169}
 --- !u!114 &1437976105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -116616,7 +116621,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1929375077
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -31,7 +31,7 @@ public class DeleteCamera : MonoBehaviour
 
     void OnGUI()
     {
-        GUI.Label(new Rect(Screen.width * 0.03f, Screen.height * 0.97f, 200f, 200f), FR ? "[X] Passer cinématique" : "[X] Pass kinematic");
+        GUI.Label(new Rect(Screen.width * 0.03f, Screen.height * 0.97f, 200f, 200f), FR ? "[X] Passer cinématique" : "[X] Skip Cutscene");
     }
 
     void Delete()
