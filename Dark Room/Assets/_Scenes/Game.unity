@@ -40735,6 +40735,7 @@ GameObject:
   - component: {fileID: 667507961}
   - component: {fileID: 667507963}
   - component: {fileID: 667507964}
+  - component: {fileID: 667507965}
   m_Layer: 0
   m_Name: Camera_End
   m_TagString: Untagged
@@ -40893,6 +40894,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &667507965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 667507955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c29fae937535ca4489ba8ec789a29808, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeTexture: {fileID: 2800000, guid: 8f2a4f195044f094ab5422857c470f2c, type: 3}
+  fadeOut: 0
+  cam: end
 --- !u!4 &667762844
 Transform:
   m_ObjectHideFlags: 0
@@ -103013,6 +103028,7 @@ GameObject:
   - component: {fileID: 1670930626}
   - component: {fileID: 1670930625}
   - component: {fileID: 1670930624}
+  - component: {fileID: 1670930634}
   m_Layer: 0
   m_Name: Camera_Last
   m_TagString: Untagged
@@ -103265,6 +103281,20 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &1670930634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1670930622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c29fae937535ca4489ba8ec789a29808, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeTexture: {fileID: 2800000, guid: 8f2a4f195044f094ab5422857c470f2c, type: 3}
+  fadeOut: 0
+  cam: last
 --- !u!1 &1673179044
 GameObject:
   m_ObjectHideFlags: 0

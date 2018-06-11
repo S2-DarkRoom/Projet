@@ -529,14 +529,21 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_GenerateMotionCurves: 0
   m_Events:
-  - time: 4.6833334
+  - time: 4.516667
     functionName: Play
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 10
+  - time: 8
+    functionName: InvertFading
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 10.516666
     functionName: LastCam
     data: 
     objectReferenceParameter: {fileID: 0}
