@@ -13331,7 +13331,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1283355191221234, guid: 339103360b2dbbf4a9236dd441c794a7, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114275748690869742, guid: 339103360b2dbbf4a9236dd441c794a7,
         type: 2}
@@ -40748,8 +40748,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 667507955}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.110615, y: -8.098211, z: -2.6999807}
+  m_LocalRotation: {x: 0.6095508, y: 0.0035673685, z: -0.0027430104, w: 0.79273427}
+  m_LocalPosition: {x: 9.308853, y: -7.9413414, z: -2.8113148}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1857540196}
@@ -41930,7 +41930,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &696083004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113317,7 +113317,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 0a36aa4887f4cba4a97e8d6876a4b6a5, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 0a36aa4887f4cba4a97e8d6876a4b6a5, type: 3}
       propertyPath: m_Name
@@ -114672,7 +114672,7 @@ RectTransform:
   m_GameObject: {fileID: 1864757733}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.45, y: 0.45, z: 1}
   m_Children: []
   m_Father: {fileID: 1857540196}
   m_RootOrder: 0
@@ -114680,7 +114680,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1864757735
 MonoBehaviour:
@@ -114701,9 +114701,9 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 55a45929096198c4582b49363fa26407, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -125482,7 +125482,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2041918051
 MonoBehaviour:
   m_ObjectHideFlags: 0

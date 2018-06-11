@@ -6,18 +6,39 @@ using UnityEngine.Video;
 
 public class LastCinematic : MonoBehaviour
 {
-    private int i = 0;
+    private int i = 0, j = 0;
     public Material[] mats;
     public GameObject screen;
     public Image UI;
     public Sprite n1EN, n2EN, n2FR, n1FR;
     private bool FR;
 
+    public void Start()
+    {
+        UI.enabled = false;
+    }
+
     public void Play()
     {
         FR = FindObjectOfType<SettingsManager>().FR;
-        UI.enabled = false;
         FindObjectOfType<AudioManager>().Play("Outro");
+    }
+
+    public void SetUI()
+    {
+        if (j == 1)
+            UI.sprite = FR ? n2FR : n2EN;
+
+        if (j == 0)
+            UI.sprite = FR ? n1FR : n1EN;
+
+        UI.enabled = true;
+        j++;
+    }
+
+    public void CloseUI()
+    {
+        UI.enabled = false;
     }
 
     public void ChangeScreen()
@@ -33,13 +54,11 @@ public class LastCinematic : MonoBehaviour
                 screen.GetComponent<Renderer>().material = mats[i];
                 break;
             case (2):
-                UI.enabled = true;
-                UI.sprite = FR ? n1FR : n1EN;
-                break;
             case (3):
-                
             case (4):
-                UI.enabled = false;
+                screen.GetComponent<Renderer>().material = mats[i];
+                break;
+            case (5):
                 screen.GetComponent<VideoPlayer>().enabled = true;
                 break;
         }
