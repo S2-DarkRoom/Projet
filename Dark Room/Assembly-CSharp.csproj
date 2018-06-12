@@ -59,9 +59,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Fireplace.cs" />
-    <Compile Include="Assets\Fridge.cs" />
-    <Compile Include="Assets\InvertFade.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
@@ -116,6 +113,8 @@
     <Compile Include="Assets\Scripts\Cinematiques\ActivateCine.cs" />
     <Compile Include="Assets\Scripts\Cinematiques\DeleteCamera.cs" />
     <Compile Include="Assets\Scripts\EndCamera.cs" />
+    <Compile Include="Assets\Scripts\Fireplace.cs" />
+    <Compile Include="Assets\Scripts\Fridge.cs" />
     <Compile Include="Assets\Scripts\GameOverUI.cs" />
     <Compile Include="Assets\Scripts\Interactives\Breaker.cs" />
     <Compile Include="Assets\Scripts\Interactives\BreakMirror.cs" />
@@ -132,6 +131,7 @@
     <Compile Include="Assets\Scripts\Inventory\Inventory.cs" />
     <Compile Include="Assets\Scripts\Inventory\InventorySlot.cs" />
     <Compile Include="Assets\Scripts\Inventory\InventoryUI.cs" />
+    <Compile Include="Assets\Scripts\InvertFade.cs" />
     <Compile Include="Assets\Scripts\Langage\CodeLanguage.cs" />
     <Compile Include="Assets\Scripts\LastCinematic.cs" />
     <Compile Include="Assets\Scripts\MenuLangage.cs" />
@@ -157,13 +157,13 @@
     <Compile Include="Assets\Scripts\Player\RayCast.cs" />
     <Compile Include="Assets\Scripts\Seat.cs" />
     <Compile Include="Assets\Scripts\SubtitlesLanguage.cs" />
+    <Compile Include="Assets\Scripts\SubtitlesOutro.cs" />
     <Compile Include="Assets\Scripts\UI\CodeUI.cs" />
     <Compile Include="Assets\Scripts\UI\DigitSlot.cs" />
     <Compile Include="Assets\Scripts\UI\Tutorials\KeyTutorial.cs" />
     <Compile Include="Assets\Scripts\UI\Tutorials\PickupTutorial.cs" />
     <Compile Include="Assets\Scripts\UI\Tutorials\Tutorial.cs" />
     <Compile Include="Assets\Scripts\UI\Tutorials\TutorialManager.cs" />
-    <Compile Include="Assets\SubtitlesOutro.cs" />
     <Compile Include="Assets\VolumetricLight\Scripts\VolumetricLight.cs" />
     <Compile Include="Assets\VolumetricLight\Scripts\VolumetricLightRenderer.cs" />
     <Compile Include="Assets\VolumetricLight\Standard Assets\Effects\ImageEffects\Scripts\PostEffectsBase.cs" />
