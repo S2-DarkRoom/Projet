@@ -5,6 +5,7 @@ using UnityEngine;
 public class Cabinet : MonoBehaviour
 {
     public bool opened = false;
+    public Collider col;
 
     public void TryOpen()
     {
@@ -12,5 +13,10 @@ public class Cabinet : MonoBehaviour
             GetComponent<Animator>().SetBool("open", true);
 
         opened = true;
+    }
+
+    public void Open()
+    {
+        col.enabled = false;
     }
 }

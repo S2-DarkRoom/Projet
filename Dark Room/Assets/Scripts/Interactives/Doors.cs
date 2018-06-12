@@ -63,6 +63,9 @@ public class Doors : MonoBehaviour {
                             if (name.Substring(0, 4) == "Door") //cas des portes 
                                 FindObjectOfType<AudioManager>().Play("Porte");
 
+                            else if (name == "Cabinet")
+                                GetComponent<Cabinet>().Open();
+
                             return true;
                         }
                     }

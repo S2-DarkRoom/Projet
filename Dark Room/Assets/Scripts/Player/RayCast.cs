@@ -242,7 +242,7 @@ public class RayCast : MonoBehaviour
 
                     else if (Input.GetKeyDown(KeyCode.E))
                     {
-                        if (door.name.Substring(0, 4) == "Door")
+                        if (door.name.Substring(0, 4) == "Door" || door.name == "Cabinet")
                         {
                             if (door.TryOpen(false) == false)
                             {
