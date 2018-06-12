@@ -55151,7 +55151,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Je t'ai pr\xE9par\xE9 quelques cadeaux. Le premier est une perte de m\xE9moire
-    que tu devrais d\xE9j\xE0 avoir remarqu\xE9."
+    que tu devrais d\xE9j\xE0 avoir remarqu\xE9e."
 --- !u!222 &923262194
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -64397,7 +64397,7 @@ Prefab:
     - target: {fileID: 114472577210919732, guid: 4af79360864e84a4e82cc3c1997c6e80,
         type: 2}
       propertyPath: speed
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4af79360864e84a4e82cc3c1997c6e80, type: 2}
