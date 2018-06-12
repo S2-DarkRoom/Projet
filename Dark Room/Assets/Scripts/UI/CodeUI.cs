@@ -65,7 +65,7 @@ public class CodeUI : MonoBehaviour
                     _animator.SetBool("open", true);
                     displayMessage = false;
                     UI.SetActive(false);
-                    GetComponent<Chest>().DeleteCollider();
+                    FindObjectOfType<Chest>().DeleteCollider();
                     GetComponent<Doors>().open = true;
                     this.enabled = false;
                 }
@@ -75,6 +75,11 @@ public class CodeUI : MonoBehaviour
                     enter = false;
                     WrongCode();
                 }
+            }
+
+            else if (Input.GetKeyDown(KeyCode.KeypadEnter))
+            {
+                FindObjectOfType<Chest>().DeleteCollider();
             }
 
             else

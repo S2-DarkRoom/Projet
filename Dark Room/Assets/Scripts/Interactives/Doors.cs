@@ -32,7 +32,8 @@ public class Doors : MonoBehaviour {
                 _animator.SetBool("open", true);
                 if (name == "DoorElevator")
                     FindObjectOfType<Elevator>().Activate();
-
+                else if (name == "Chest")
+                    FindObjectOfType<Chest>().DeleteCollider();
                 else if (name.Substring(0, 4) == "Door" || name == "Secret") //cas des portes 
                     FindObjectOfType<AudioManager>().Play("Porte");
 
