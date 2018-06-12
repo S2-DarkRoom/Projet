@@ -103,8 +103,17 @@ public class RayCast : MonoBehaviour
                     case ("Door3"):
                         message = (!hit.collider.GetComponent<ChooseKeyUI>().opened && !hit.collider.GetComponent<ChooseKeyUI>().on) ? FR ? "[E] Ouvrir" : "[E] Open" : "";
                         break;
+                    case ("GlassEmpty"):
+                        message = hit.collider.GetComponent<Glass>().CanPour() ? FR ? "Verser l'eau" : "Pour the water" : "";
+                        break;
+                    case ("Glass"):
+                        message = FR ? "Prendre" : "Take";
+                        break;
                     case ("Cardboard"):
                         message = hit.collider.GetComponentInParent<Cardboard>().CanOpen() ? FR ? "[E] Ouvrir" : "[E] Open" : "";
+                        break;
+                    case ("Fire"):
+                        message = FindObjectOfType<Glass>().onyou ? FR ? "[E] Eteindre" : "[E] Estinguish" : "";
                         break;
                     case ("Fridge"):
                         message = !hit.collider.GetComponentInParent<Fridge>().opened ? FR ? "[E] Ouvrir" : "[E] Open" : "";
@@ -139,6 +148,13 @@ public class RayCast : MonoBehaviour
                         case ("Levier"):
                             hit.collider.GetComponentInParent<Levier>().Activated();
                             break;
+                        case ("Glass"):
+                            hit.collider.GetComponent<Glass>().Take();
+                            break;
+                        case ("GlassEmpty"):
+                            if (hit.collider.GetComponent<Glass>().CanPour())
+                                 hit.collider.GetComponent<Glass>().PourMe();
+                            break;
                         case ("Fridge"):
                             hit.collider.GetComponentInParent<Fridge>().Open();
                             break;
@@ -147,6 +163,9 @@ public class RayCast : MonoBehaviour
                             break;
                         case ("Door3"):
                             hit.collider.GetComponent<ChooseKeyUI>().Activate();
+                            break;
+                        case ("Fire"):
+                            FindObjectOfType<Glass>().FireDown();
                             break;
                         case ("Cardboard"):
                             if (hit.collider.GetComponentInParent<Cardboard>().CanOpen())
