@@ -161,6 +161,7 @@
     <Compile Include="Assets\Scripts\UI\Tutorials\PickupTutorial.cs" />
     <Compile Include="Assets\Scripts\UI\Tutorials\Tutorial.cs" />
     <Compile Include="Assets\Scripts\UI\Tutorials\TutorialManager.cs" />
+    <Compile Include="Assets\SubtitlesOutro.cs" />
     <Compile Include="Assets\VolumetricLight\Scripts\VolumetricLight.cs" />
     <Compile Include="Assets\VolumetricLight\Scripts\VolumetricLightRenderer.cs" />
     <Compile Include="Assets\VolumetricLight\Standard Assets\Effects\ImageEffects\Scripts\PostEffectsBase.cs" />

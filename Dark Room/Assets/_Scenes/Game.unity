@@ -463,7 +463,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Today is the 14th of June, 10 years after your crime. '
+  m_Text: "Aujourd\u2019hui nous sommes le 14 juin, tout juste 10 ans apr\xE8s ton
+    crime. "
 --- !u!222 &19422667
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1586,7 +1587,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'It can''t be me ! It wasn''t me ! Please, don''t kill me ! '
+  m_Text: "Ce n\u2019\xE9tait pas moi ! Piti\xE9, ne me tuez pas."
 --- !u!222 &46854946
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2000,7 +2001,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'It looks like I''m better than you when it comes to hiding my traces, Jennefer. '
+  m_Text: "Il faut croire que je suis meilleur que toi quand il s\u2019agit de cacher
+    ses traces, Jennefer."
 --- !u!222 &59480658
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10811,7 +10813,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: No ! please ! I didn't do it, I... I don't remember anything about it.
+  m_Text: "Non ! S\u2019il vous plait ! Je n\u2019ai rien fait, je \u2026 je ne me
+    souviens de rien."
 --- !u!222 &177280546
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14969,7 +14972,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Jennefer Lloyd, this is you, 12 years ago.
+  m_Text: Jennefer Lloyd, te voici, il y a 12 ans.
 --- !u!222 &280925251
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -34177,7 +34180,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Kill you? It would be too easy...
+  m_Text: Te tuer ? Ca serait trop simple?
 --- !u!222 &564836862
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -49887,6 +49890,7 @@ GameObject:
   - component: {fileID: 774164209}
   - component: {fileID: 774164208}
   - component: {fileID: 774164212}
+  - component: {fileID: 774164213}
   m_Layer: 5
   m_Name: Subtitles Outro
   m_TagString: Untagged
@@ -50001,6 +50005,31 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &774164213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 774164207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2265d4e4b0c31d4887faae0ab29dceb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  s1: {fileID: 0}
+  s2: {fileID: 0}
+  s3: {fileID: 0}
+  s4: {fileID: 0}
+  s5: {fileID: 0}
+  s6: {fileID: 0}
+  s7: {fileID: 0}
+  s8: {fileID: 0}
+  s9: {fileID: 0}
+  s10: {fileID: 0}
+  s11: {fileID: 0}
+  s12: {fileID: 0}
+  s13: {fileID: 0}
+  s14: {fileID: 0}
 --- !u!1 &775746109 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100018, guid: b033e40bb3c380f41b6871ad2344c7c9, type: 3}
@@ -80171,7 +80200,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: But wait ! The next one should be more accurate.
+  m_Text: "Attends, la prochaine photo devrait \xEAtre plus appropri\xE9e."
 --- !u!222 &1337470576
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -80912,7 +80941,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Let me go, it has gone on long enough... '
+  m_Text: "Laissez-moi partir, cela a assez dur\xE9\u2026"
 --- !u!222 &1345257856
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -83479,7 +83508,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Now is the time to tell you the real reason behind your presence here. '
+  m_Text: "Maintenant, il est temps de te raconter la vraie raison de ta pr\xE9sence
+    ici."
 --- !u!222 &1404777870
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -94040,8 +94070,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'My name is Zacchary Harrington. Sam was my little brother, who you killed
-    heartlessly. '
+  m_Text: "Mon nom est Zachary Harrington. Sam \xE9tait mon petit fr\xE8re, que tu
+    as tu\xE9 froidement."
 --- !u!222 &1452065158
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -102839,7 +102869,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Congratulations for going this far. '
+  m_Text: "Je te f\xE9licite d\u2019\xEAtre arriv\xE9e si loin."
 --- !u!222 &1632418148
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -104457,24 +104487,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 913804684}
   crosshair: {fileID: 2041918050}
-  name: Intro
+  name: Last
   m_MyAudioSource: {fileID: 1700101775}
   subtitles: {fileID: 623203374}
   door: {fileID: 1707605207}
---- !u!111 &1670930630
-Animation:
+--- !u!95 &1670930630
+Animator:
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1670930622}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: ea609ae7ad189154d9ce4ddbdc6ae634, type: 2}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 42294fe243a17a5469e06f7c12cc4090, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!81 &1670930631
 AudioListener:
   m_ObjectHideFlags: 0
@@ -112500,7 +112534,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 2
+  m_Lightmapping: 4
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
@@ -112541,7 +112575,7 @@ MonoBehaviour:
   GroundLevel: 0
   Noise: 1
   NoiseScale: 1.81
-  NoiseIntensity: 20
+  NoiseIntensity: 10
   NoiseIntensityOffset: 0.3
   NoiseVelocity: {x: 3, y: 3}
   MaxRayLength: 400
@@ -116201,7 +116235,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: I admit that I may have underastimated you
+  m_Text: "J\u2019admets t\u2019avoir sous-estim\xE9e."
 --- !u!222 &1862869415
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -129438,8 +129472,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: And I provide justice for him, today, the days that preceded and the days
-    that will come.
+  m_Text: "Et je lui rends justice, aujourd\u2019hui, les jours qui l\u2019ont pr\xE9c\xE9d\xE9,
+    et les jours qui suivront."
 --- !u!222 &2113936355
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -129716,8 +129750,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: You may still feel like you don't deserve anything that's happening to you.
-    So here is a little something to refresh your mind.
+  m_Text: "Peut-\xEAtre n\u2019as-tu l\u2019impression de ne rien m\xE9riter de tout
+    ce qu'il t'arrive. Alors voici un petit quelque chose pour te rafraichir la m\xE9moire"
 --- !u!222 &2131259618
 CanvasRenderer:
   m_ObjectHideFlags: 0
