@@ -25,7 +25,7 @@ public class DeleteCamera : MonoBehaviour
         }
 
         if (name == "Last")
-            door.GetComponent<Transform>().localRotation.Set(-90f, 0, 0, 1);
+            door.GetComponent<Transform>().localRotation = Quaternion.Euler(-90f, 0, 0);
     }
 
     void PlayerOff()
