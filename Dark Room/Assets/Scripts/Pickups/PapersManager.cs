@@ -15,6 +15,7 @@ public class PapersManager : MonoBehaviour
 
     public void Update()
     {
+        FR = FindObjectOfType<SettingsManager>().FR;
         if (Input.GetKeyDown(KeyCode.X))
         {
             FindObjectOfType<AudioManager>().Play("Paper");
@@ -24,6 +25,6 @@ public class PapersManager : MonoBehaviour
 
     public void OnGUI()
     {
-        GUI.Label(new Rect(Screen.width / 2 - 20, Screen.height * 0.9f, 200f, 200f), FR? "[X] Fermer": "[X] Close");
+        GUI.Label(new Rect(Screen.width / 2 - 20, Screen.height * 0.95f, 200f, 200f), FR? "[X] Fermer": "[X] Close");
     }
 }

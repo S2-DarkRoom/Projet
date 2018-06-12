@@ -6,7 +6,6 @@ using System.IO;
 
 public class SettingsManager : MonoBehaviour
 {
-
 	public Toggle fullscreenToggle; 
 	public Dropdown resolutionDropdown; 
 	public Dropdown textureQualityDropdown; 
@@ -95,7 +94,6 @@ public class SettingsManager : MonoBehaviour
 
 	public void LoadSettings ()
 	{
-
 		musicVolumeSlider.value = gameSettings.musicVolume; 
 		antialiasingDropdown.value = gameSettings.antialiasing; 
 		vSyncDropdown.value = gameSettings.vSync; 

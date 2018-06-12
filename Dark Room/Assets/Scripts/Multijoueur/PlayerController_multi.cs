@@ -4,7 +4,7 @@
 public class PlayerController_multi : MonoBehaviour
 {
     [SerializeField]
-    private float speed;
+    private float speed = 5f;
     [SerializeField]
     private float lookSensitivity = 3f;
 
@@ -37,9 +37,9 @@ public class PlayerController_multi : MonoBehaviour
 
             float _xRot = Input.GetAxisRaw("Mouse Y");
 
-            Vector3 _cameraRotation = new Vector3(_xRot, 0, 0) * lookSensitivity;
+            float _cameraRotationX = _xRot * lookSensitivity;
 
-            motor.RotateCamera(_cameraRotation);
+            motor.RotateCamera(_cameraRotationX);
         }
     }
  }

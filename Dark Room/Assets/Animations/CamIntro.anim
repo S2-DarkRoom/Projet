@@ -1033,7 +1033,7 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_GenerateMotionCurves: 0
   m_Events:
-  - time: 6
+  - time: 9.05
     functionName: Play
     data: 
     objectReferenceParameter: {fileID: 0}

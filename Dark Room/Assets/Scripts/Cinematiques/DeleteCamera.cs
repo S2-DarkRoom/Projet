@@ -8,6 +8,7 @@ public class DeleteCamera : MonoBehaviour
     public new string name;
     bool FR;
     public AudioSource m_MyAudioSource;
+    public GameObject subtitles;
 
     void Start()
     {
@@ -37,11 +38,9 @@ public class DeleteCamera : MonoBehaviour
         if (name == "Intro")
         {
             m_MyAudioSource.Play(); 
-            // FindObjectOfType<AudioManager>().Play("R1");
         }
         if (name == "Room2")
         {
-            //FindObjectOfType<AudioManager>().Stop("R1"); 
             m_MyAudioSource.Stop();
             FindObjectOfType<AudioManager>().Play("R2");
         }
@@ -51,9 +50,11 @@ public class DeleteCamera : MonoBehaviour
             FindObjectOfType<AudioManager>().Stop("R2"); 
             FindObjectOfType<AudioManager>().Play("R3");
         }
-        
-        player.SetActive(true);
 
+        if (name == "Intro")
+            subtitles.SetActive(false);
+
+        player.SetActive(true);
         Destroy(gameObject);
 	}
 }
