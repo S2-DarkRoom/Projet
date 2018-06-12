@@ -106,11 +106,8 @@ public class RayCast : MonoBehaviour
                     case ("Cardboard"):
                         message = hit.collider.GetComponentInParent<Cardboard>().CanOpen() ? FR ? "[E] Ouvrir" : "[E] Open" : "";
                         break;
-                    case ("FridgeB"):
-                        message = !hit.collider.GetComponentInParent<Fridge>().low ? FR ? "[E] Ouvrir" : "[E] Open" : "";
-                        break;
-                    case ("FridgeH"):
-                        message = !hit.collider.GetComponentInParent<Fridge>().high ? FR ? "[E] Ouvrir" : "[E] Open" : "";
+                    case ("Fridge"):
+                        message = !hit.collider.GetComponentInParent<Fridge>().opened ? FR ? "[E] Ouvrir" : "[E] Open" : "";
                         break;
                     case ("Seat"):
                         message = FR ? "[E] S'asseoir" : "[E] Sit";
@@ -142,11 +139,8 @@ public class RayCast : MonoBehaviour
                         case ("Levier"):
                             hit.collider.GetComponentInParent<Levier>().Activated();
                             break;
-                        case ("FridgeB"):
-                            hit.collider.GetComponentInParent<Fridge>().Low();
-                            break;
-                        case ("FridgeH"):
-                            hit.collider.GetComponentInParent<Fridge>().High();
+                        case ("Fridge"):
+                            hit.collider.GetComponentInParent<Fridge>().Open();
                             break;
                         case ("Seat"):
                             FindObjectOfType<TV>().Sit();
