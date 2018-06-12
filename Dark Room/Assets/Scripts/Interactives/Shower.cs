@@ -14,6 +14,7 @@ public class Shower : MonoBehaviour
     {
         result += order;
         anim = buttons[Int32.Parse(order) - 1].GetComponent<Animator>();
+        Debug.Log("push");
         anim.SetBool("push", true);
     }
 
