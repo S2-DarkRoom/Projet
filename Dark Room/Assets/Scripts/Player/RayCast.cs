@@ -149,7 +149,8 @@ public class RayCast : MonoBehaviour
                             hit.collider.GetComponentInParent<Levier>().Activated();
                             break;
                         case ("Glass"):
-                            hit.collider.GetComponent<Glass>().Take();
+                            if (!hit.collider.GetComponent<Glass>().onyou)
+                                hit.collider.GetComponent<Glass>().Take();
                             break;
                         case ("GlassEmpty"):
                             if (hit.collider.GetComponent<Glass>().CanPour())
