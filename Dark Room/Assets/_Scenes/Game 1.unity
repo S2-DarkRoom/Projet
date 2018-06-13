@@ -107853,6 +107853,18 @@ MonoBehaviour:
   cam: main
   tuto: {fileID: 59858042}
   tutomana: {fileID: 283882682}
+--- !u!114 &1877667584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1877667579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  profile: {fileID: 11400000, guid: c59653b17f163984090f59cae0d60aa8, type: 2}
 --- !u!1 &1879231933
 GameObject:
   m_ObjectHideFlags: 0
