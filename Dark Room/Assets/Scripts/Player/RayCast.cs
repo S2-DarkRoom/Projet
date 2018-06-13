@@ -54,6 +54,9 @@ public class RayCast : MonoBehaviour
                     else if (item.name == "Hammer")
                         FindObjectOfType<AudioManager>().Play("Hammer");
 
+                    else if (item.name == "Knife")
+                        FindObjectOfType<AudioManager>().Play("Knife");
+
                     else if (item.name == "Sheet" || item.name == "Bone" || item.name == "Rib")
                     {
                         switch (item.name)

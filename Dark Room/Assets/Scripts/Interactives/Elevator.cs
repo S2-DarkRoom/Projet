@@ -21,11 +21,16 @@ public class Elevator : MonoBehaviour
     {
         Debug.Log("Entered");
         anim.SetBool("open", false);
-        FindObjectOfType<AudioManager>().
+        FindObjectOfType<AudioManager>().Play("CloseElevator");
     }
 
     public void GoDown()
     {
+        FindObjectOfType<AudioManager>().Stop("R2");
+        FindObjectOfType<AudioManager>().Stop("R3");
+        FindObjectOfType<AudioManager>().Play("Last");
+
         anim.SetBool("down", true);
+        FindObjectOfType<AudioManager>().Play("DownElevator");
     }
 }
