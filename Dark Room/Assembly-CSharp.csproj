@@ -59,6 +59,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Credits.cs" />
     <Compile Include="Assets\Glass.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
     <Compile Include="Assets\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
@@ -139,6 +140,7 @@
     <Compile Include="Assets\Scripts\Menus\ChangeScene.cs" />
     <Compile Include="Assets\Scripts\Menus\MenuPrincipal.cs" />
     <Compile Include="Assets\Scripts\Menus\Pausemenu.cs" />
+    <Compile Include="Assets\Scripts\Multijoueur\Cardboard_multi.cs" />
     <Compile Include="Assets\Scripts\Multijoueur\InventorySlot_multi.cs" />
     <Compile Include="Assets\Scripts\Multijoueur\InventoryUI_multi.cs" />
     <Compile Include="Assets\Scripts\Multijoueur\Minuteur_multi.cs" />
@@ -150,7 +152,7 @@
     <Compile Include="Assets\Scripts\Options et paramètres\SettingsManager.cs" />
     <Compile Include="Assets\Scripts\PauseMenuLanguage.cs" />
     <Compile Include="Assets\Scripts\Pharmacy.cs" />
-    <Compile Include="Assets\Scripts\Pickups\flashlight.cs" />
+    <Compile Include="Assets\Scripts\Pickups\Flashlight.cs" />
     <Compile Include="Assets\Scripts\Pickups\Paper.cs" />
     <Compile Include="Assets\Scripts\Pickups\PapersManager.cs" />
     <Compile Include="Assets\Scripts\Pickups\Pickups.cs" />

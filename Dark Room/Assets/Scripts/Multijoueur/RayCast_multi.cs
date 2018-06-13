@@ -1,9 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Networking;
 
-public class RayCast_multi : NetworkBehaviour
+public class RayCast_multi : MonoBehaviour
 {
     public float distance;
     RaycastHit hit;
@@ -19,7 +18,7 @@ public class RayCast_multi : NetworkBehaviour
     bool FR;
     public GameObject paper;
 
-    void Update ()
+    void Update()
     {
         FR = FindObjectOfType<SettingsManager>().FR; //Get language
 
@@ -29,7 +28,7 @@ public class RayCast_multi : NetworkBehaviour
             if (hit.collider.tag == "pickup")
             {
                 displayMessage = true;
-                message = FR ? "[E] Ramasser": "[E] Pick Up";
+                message = FR ? "[E] Ramasser" : "[E] Pick Up";
 
                 if (Input.GetKeyDown(KeyCode.E))
                 {
@@ -40,19 +39,22 @@ public class RayCast_multi : NetworkBehaviour
                         flashlight.GetComponent<Flashlight>().Enabled();
                     }
 
-                    else if (item.name.Substring(0, 4) == "Door" || item.name == "Chest")
+                    else if (item.name.Substring(0, 3) == "Doo" || item.name == "Chest")
                         FindObjectOfType<AudioManager>().Play("Key");
 
                     else if (item.name == "Crowbar")
                         FindObjectOfType<AudioManager>().Play("Crowbar");
 
                     else if (item.name == "Battery")
+                    {
                         FindObjectOfType<AudioManager>().Play("Battery");
+                        FindObjectOfType<Flashlight>().AddBattery();
+                    }
 
                     else if (item.name == "Hammer")
                         FindObjectOfType<AudioManager>().Play("Hammer");
 
-                    else if (item.name == "Sheet" || item.name == "Bone")
+                    else if (item.name == "Sheet" || item.name == "Bone" || item.name == "Rib")
                     {
                         switch (item.name)
                         {
@@ -60,10 +62,11 @@ public class RayCast_multi : NetworkBehaviour
                                 FindObjectOfType<AudioManager>().Play("Paper");
                                 break;
                             case ("Bone"):
+                            case ("Rib"):
                                 FindObjectOfType<AudioManager>().Play("Flashlight");
                                 break;
                         }
-                            
+
                         paper.SetActive(true);
                         paper.GetComponent<PapersManager>().Show(item.GetComponent<Paper>());
                     }
@@ -91,20 +94,35 @@ public class RayCast_multi : NetworkBehaviour
             else if (hit.collider.tag == "interactif")
             {
                 displayMessage = true;
-                switch(hit.collider.GetComponent<Interactible>().name)
+                switch (hit.collider.GetComponent<Interactible>().name)
                 {
                     case ("Levier"):
-                    case("BreakerButton"):
+                    case ("BreakerButton"):
                         message = FR ? "[E] Activer" : "[E] Activate";
+                        break;
+                    case ("Door3"):
+                        message = (!hit.collider.GetComponent<ChooseKeyUI>().opened && !hit.collider.GetComponent<ChooseKeyUI>().on) ? FR ? "[E] Ouvrir" : "[E] Open" : "";
+                        break;
+                    case ("Cardboard"):
+                        message = hit.collider.GetComponentInParent<Cardboard_multi>().CanOpen() ? FR ? "[E] Ouvrir" : "[E] Open" : "";
+                        break;
+                    case ("Seat"):
+                        message = FR ? "[E] S'asseoir" : "[E] Sit";
+                        break;
+                    case ("Screen"):
+                        message = !hit.collider.GetComponentInParent<TV>().pushed ? FR ? "[E] Appuyer" : "[E] Press" : "";
                         break;
                     case ("Mirror"):
                         message = hit.collider.GetComponentInParent<BreakMirror>().Check(false) ? FR ? "[E] Casser" : "[E] Break" : "";
                         break;
                     case ("ElevatorControls"):
-                        message = FR ? "[E] Baisser" : "[E] Lower";
+                        message = !hit.collider.GetComponentInParent<ElevatorControls>().low ? FR ? "[E] Baisser" : "[E] Lower" : "";
+                        break;
+                    case ("Cabinet"):
+                        message = !hit.collider.GetComponentInParent<Cabinet>().opened ? FR ? "[E] Ouvrir" : "[E] Open" : "";
                         break;
                     case ("BreakerDoor"):
-                        message = FR ? "[E] Forcer l'ouverture" : "[E] Force opening";
+                        message = hit.collider.GetComponentInParent<Breaker>().CanOpen() ? FR ? "[E] Forcer l'ouverture" : "[E] Force opening" : "";
                         break;
                     default:
                         message = FR ? "[E] Interagir" : "[E] Interact";
@@ -118,11 +136,28 @@ public class RayCast_multi : NetworkBehaviour
                         case ("Levier"):
                             hit.collider.GetComponentInParent<Levier>().Activated();
                             break;
+                        case ("Seat"):
+                            FindObjectOfType<TV>().Sit();
+                            break;
+                        case ("Door3"):
+                            hit.collider.GetComponent<ChooseKeyUI>().Activate();
+                            break;
+                        case ("Cardboard"):
+                            if (hit.collider.GetComponentInParent<Cardboard_multi>().CanOpen())
+                                hit.collider.GetComponentInParent<Cardboard_multi>().Open();
+                            break;
+                        case ("Screen"):
+                            hit.collider.GetComponentInParent<TV>().Push();
+                            break;
+                        case ("Cabinet"):
+                            hit.collider.GetComponentInParent<Cabinet>().TryOpen();
+                            break;
                         case ("Mirror"):
                             hit.collider.GetComponentInParent<BreakMirror>().Check(true);
                             break;
                         case ("BreakerDoor"):
-                            hit.collider.GetComponentInParent<Breaker>().Activated();
+                            if (hit.collider.GetComponentInParent<Breaker>().CanOpen())
+                                hit.collider.GetComponentInParent<Breaker>().Activated();
                             break;
                         case ("BreakerButton"):
                             hit.collider.GetComponentInParent<Breaker>().ButtonPressed();
@@ -133,6 +168,12 @@ public class RayCast_multi : NetworkBehaviour
                         default:
                             break;
                     }
+                }
+
+                else if (Input.GetKeyDown(KeyCode.KeypadEnter))
+                {
+                    if (hit.collider.GetComponent<Interactible>().name == "Door3")
+                        hit.collider.GetComponent<ChooseKeyUI>().Success();
                 }
             }
 
@@ -210,15 +251,15 @@ public class RayCast_multi : NetworkBehaviour
                         door.Close();
                     }
                 }
-                
+
             }
-            
+
             else
             {
                 displayMessage = false;
                 lockedMessage = false;
             }
-            
+
         }
     }
 

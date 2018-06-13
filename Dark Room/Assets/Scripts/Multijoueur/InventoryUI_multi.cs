@@ -5,7 +5,6 @@ public class InventoryUI_multi : NetworkBehaviour {
 
     public Transform itemsParent;
     public GameObject inventoryUI;
-    
     Inventory inventory;
 
     InventorySlot[] slots;
@@ -15,7 +14,7 @@ public class InventoryUI_multi : NetworkBehaviour {
         inventory.onItemChangedCallBack += UpdateUI;
 
         slots = itemsParent.GetComponentsInChildren<InventorySlot>();
-        inventoryUI.SetActive(false);
+        inventoryUI.SetActive(!inventoryUI.activeSelf);
     }
 	
 	void Update ()
