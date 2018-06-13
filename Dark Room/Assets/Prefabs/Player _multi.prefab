@@ -603,7 +603,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 80
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!54 &54714430202474256
 Rigidbody:
@@ -801,9 +801,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distance: 3
-  flashlight: {fileID: 0}
-  UIcode: {fileID: 1876523294589166, guid: 7ec393431a5834a408820da428744dc9, type: 2}
-  paper: {fileID: 1225120944893184, guid: 42941eac29a65dd42b36c624cf7455cc, type: 2}
+  flashlight: {fileID: 1277074845241942, guid: 603e7da5d6663b440938ec76c5897f56, type: 2}
+  UIcode: {fileID: 1873051714729048, guid: b2cf853c06002b14f9a77cc1ffaf801d, type: 2}
+  paper: {fileID: 1799528623012922, guid: e84cb87505da92840999f0f7074ab7ea, type: 2}
 --- !u!114 &114624659922952218
 MonoBehaviour:
   m_ObjectHideFlags: 1
