@@ -37,9 +37,9 @@ public class MenuLangage : MonoBehaviour
             back.text = "Retour";
             opt.text = "Options";
 
-            L.captionText.text = "Anglais";
-            L.options[0].text = "Anglais";
-            L.options[1].text = "Français";
+            L.captionText.text = "Français";
+            L.options[0].text = "Français";
+            L.options[1].text = "Anglais";
 
             Q.captionText.text = "Haute";
             Q.options[0].text = "Haute";
@@ -74,8 +74,8 @@ public class MenuLangage : MonoBehaviour
             opt.text = "Settings";
 
             L.captionText.text = "English";
-            L.options[0].text = "English";
-            L.options[1].text = "French";
+            L.options[0].text = "French";
+            L.options[1].text = "English";
 
             Q.captionText.text = "High";
             Q.options[0].text = "High";

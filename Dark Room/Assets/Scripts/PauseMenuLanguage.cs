@@ -36,7 +36,7 @@ public class PauseMenuLanguage : MonoBehaviour
             back.text = "Retour";
             opt.text = "Options";
 
-            L.captionText.text = "Anglais";
+            L.captionText.text = "Français";
             L.options[0].text = "Anglais";
             L.options[1].text = "Français";
 

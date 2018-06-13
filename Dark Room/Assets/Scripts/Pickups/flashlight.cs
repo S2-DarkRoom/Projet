@@ -37,7 +37,9 @@ public class Flashlight : MonoBehaviour {
 
     public void Enabled()
     {
+        Debug.Log("yea");
         gameObject.SetActive(true);
+        enabled = true;
         lightInHand = true;
     }
 

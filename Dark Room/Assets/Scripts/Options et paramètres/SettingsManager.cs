@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using System.IO;
 
@@ -14,7 +15,7 @@ public class SettingsManager : MonoBehaviour
 	public Slider musicVolumeSlider;
 	public Button applyButton;
     public Dropdown language; //Added language  changement 02/06
-    public bool FR = false;
+    public bool FR = true;
 
 	public AudioSource musicSource; 
 	public Resolution[] resolutions; 
@@ -39,11 +40,12 @@ public class SettingsManager : MonoBehaviour
 			resolutionDropdown.options.Add (new Dropdown.OptionData (resolution.ToString()));
 		}
 
-        language.value = 1;
+        if (SceneManager.GetActiveScene().name == "Game")
+            language.value = FR ? 0 : 1;
 		LoadSettings (); 
 	}
 
-	public void onFullscreenToggle ()
+    public void onFullscreenToggle ()
 	{
 		gameSettings.fullscreen = Screen.fullScreen = fullscreenToggle.isOn; 
 	}
@@ -82,7 +84,7 @@ public class SettingsManager : MonoBehaviour
     //Changer de langue et appelle les scripts de changements de sprites
     public void OnLanguageChanged()
     {
-        FR = language.value == 1;
+        FR = !FR;
     }
 
 

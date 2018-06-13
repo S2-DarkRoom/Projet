@@ -52763,7 +52763,7 @@ MonoBehaviour:
     m_Options:
     - m_Text: Anglais
       m_Image: {fileID: 0}
-    - m_Text: Francais
+    - m_Text: "Fran\xE7ais"
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -129324,7 +129324,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1982297342630962, guid: 231a750290b4bba40b1b80b90215e854, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 54008908060403204, guid: 231a750290b4bba40b1b80b90215e854, type: 2}
