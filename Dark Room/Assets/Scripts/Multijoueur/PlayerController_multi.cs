@@ -4,7 +4,7 @@
 public class PlayerController_multi : MonoBehaviour
 {
     [SerializeField]
-    private float speed;
+    private float speed = 5f;
     [SerializeField]
     private float lookSensitivity = 3f;
 
@@ -17,26 +17,29 @@ public class PlayerController_multi : MonoBehaviour
 
     private void Update()
     {
-        float _xMov = Input.GetAxisRaw("Horizontal");
-        float _zMov = Input.GetAxisRaw("Vertical");
+        if (!Pausemenu.paused)
+        {
+            float _xMov = Input.GetAxisRaw("Horizontal");
+            float _zMov = Input.GetAxisRaw("Vertical");
 
-        Vector3 _moveHorizontal = transform.right * _xMov;
-        Vector3 _moveVertical = transform.forward * _zMov;
+            Vector3 _moveHorizontal = transform.right * _xMov;
+            Vector3 _moveVertical = transform.forward * _zMov;
 
-        Vector3 _velocity = (_moveHorizontal + _moveVertical).normalized * speed;
+            Vector3 _velocity = (_moveHorizontal + _moveVertical).normalized * speed;
 
-        motor.Move(_velocity);
+            motor.Move(_velocity);
 
-        float _yRot = Input.GetAxisRaw("Mouse X");
+            float _yRot = Input.GetAxisRaw("Mouse X");
 
-        Vector3 _rotation = new Vector3(0, _yRot, 0) * lookSensitivity;
+            Vector3 _rotation = new Vector3(0, _yRot, 0) * lookSensitivity;
 
-        motor.Rotate(_rotation);
+            motor.Rotate(_rotation);
 
-        float _xRot = Input.GetAxisRaw("Mouse Y");
+            float _xRot = Input.GetAxisRaw("Mouse Y");
 
-        Vector3 _cameraRotation = new Vector3(_xRot, 0, 0) * lookSensitivity;
+            float _cameraRotationX = _xRot * lookSensitivity;
 
-        motor.RotateCamera(_cameraRotation);
+            motor.RotateCamera(_cameraRotationX);
+        }
     }
  }
