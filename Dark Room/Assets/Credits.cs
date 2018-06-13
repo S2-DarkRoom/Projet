@@ -5,6 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class Credits : MonoBehaviour
 {
+
+    public void Update()
+    {
+        if (Input.GetKey(KeyCode.KeypadEnter))
+        {
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+        }
+    }
+
     public void Button()
     {
         SceneManager.LoadScene("Menu");

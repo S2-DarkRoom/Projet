@@ -21,6 +21,7 @@ public class Elevator : MonoBehaviour
     {
         Debug.Log("Entered");
         anim.SetBool("open", false);
+        FindObjectOfType<AudioManager>().
     }
 
     public void GoDown()
