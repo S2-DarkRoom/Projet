@@ -59305,8 +59305,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a57367bb186dc234cb8c1c3c84f2e73a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lightobj: {fileID: 1763891319}
-  FR: 0
 --- !u!136 &1039045131
 CapsuleCollider:
   m_ObjectHideFlags: 0
